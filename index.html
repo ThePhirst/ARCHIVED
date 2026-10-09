@@ -3,16 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
+  <meta name="theme-color" content="#263746">
+  <title>ARCHIVED — Forum Thread</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Website</h1>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="./">ARCHIVED<small>COMMUNITY FORUM ARCHIVE</small></a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a class="active" href="#thread">Forums</a>
+        <a href="#posts">Discussions</a>
+        <a href="#archive">Archive</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
   </header>
-  <main>
-    <p>This is a basic index.html template.</p>
+
+  <main class="page" id="thread">
+    <div class="breadcrumbs">
+      <a href="./">Home</a><span>›</span><a href="#forums">Forum</a><span>›</span><a href="#archive">Community Projects</a><span>›</span>ARCHIVED
+    </div>
+
+    <section class="thread-heading">
+      <h1>ARCHIVED</h1>
+      <p>A preserved discussion page · Browse the thread below</p>
+    </section>
+
+    <div class="thread-tools">
+      <div class="pagination" aria-label="Page navigation">
+        <strong>1</strong><a href="#page-2">2</a><a href="#page-3">3</a><a href="#page-2">Next ›</a><a href="#last">Last »</a>
+      </div>
+      <a class="tool-button" href="#reply">Reply to Thread</a>
+    </div>
+
+    <section id="posts" aria-label="Forum posts">
+      <article class="post">
+        <aside class="post-user">
+          <div class="avatar" aria-hidden="true">A</div>
+          <a class="username" href="#author">ARCHIVED</a>
+          <span class="user-rank">Thread Starter</span>
+          <div class="user-stats">Member<br>Joined: —<br>Posts: —</div>
+        </aside>
+        <div class="post-main">
+          <div class="post-meta"><span>Post #1</span><span>Original post</span></div>
+          <div class="post-body">
+            <h2>Welcome to the archive</h2>
+            <p>This page is a starting template inspired by the classic Facepunch forum thread layout. Replace this text with your own introduction, project details, images, and links.</p>
+            <div class="quote">Use this area for a quoted post, an important note, or a short project summary.</div>
+            <p>You can keep adding posts below to build out the page in the same old-school forum style.</p>
+            <div class="signature">ARCHIVED · Community discussion</div>
+          </div>
+          <div class="post-footer">#1 · ARCHIVED</div>
+        </div>
+      </article>
+
+      <article class="post">
+        <aside class="post-user">
+          <div class="avatar" aria-hidden="true">G</div>
+          <a class="username" href="#member">Guest</a>
+          <span class="user-rank">Member</span>
+          <div class="user-stats">Joined: —<br>Posts: —</div>
+        </aside>
+        <div class="post-main">
+          <div class="post-meta"><span>Post #2</span><span>Discussion</span></div>
+          <div class="post-body">
+            <p>This is a sample reply. Add feedback, updates, screenshots, or other information here. The separate profile column and bordered post panel are designed to evoke the original forum format.</p>
+          </div>
+          <div class="post-footer">#2 · Discussion</div>
+        </div>
+      </article>
+
+      <article class="post">
+        <aside class="post-user">
+          <div class="avatar" aria-hidden="true">G</div>
+          <a class="username" href="#member-2">Guest</a>
+          <span class="user-rank">Member</span>
+          <div class="user-stats">Joined: —<br>Posts: —</div>
+        </aside>
+        <div class="post-main">
+          <div class="post-meta"><span>Post #3</span><span>Discussion</span></div>
+          <div class="post-body">
+            <p>Another example post for you to edit or duplicate. Longer posts will naturally expand, while the layout adapts to smaller screens.</p>
+          </div>
+          <div class="post-footer">#3 · Discussion</div>
+        </div>
+      </article>
+    </section>
+
+    <div class="thread-tools" id="archive">
+      <div class="pagination" aria-label="Page navigation">
+        <strong>1</strong><a href="#page-2">2</a><a href="#page-3">3</a><a href="#page-2">Next ›</a><a href="#last">Last »</a>
+      </div>
+      <a class="tool-button" href="#thread">Back to Top ↑</a>
+    </div>
+
+    <footer class="site-footer" id="about">ARCHIVED · Classic forum-inspired layout</footer>
   </main>
-  <script src="script.js"></script>
 </body>
 </html>
