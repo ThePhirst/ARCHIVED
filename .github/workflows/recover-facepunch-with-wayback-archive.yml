@@ -42,9 +42,14 @@ jobs:
         run: |
           python - <<'PY'
           from pathlib import Path
+          from urllib.parse import urlparse
           import re
+
           root = Path("facepunch-recovered")
-          report = Path("facepunch-recovered/REMOTE-REFERENCES.txt")
+          report = root / "REMOTE-REFERENCES.txt"
+          attr = re.compile(r"""\\b(?:src|poster|href|srcset)\\s*=\\s*["']([^"']+)["']""", re.I)
+          css_url = re.compile(r"""url\\(\\s*['"]?([^'")]+)""", re.I)
+          css_import = re.compile(r"""@import\\s+['"]([^'"]+)""", re.I)
           matches = []
           for path in root.rglob("*"):
               if not path.is_file() or path == report:
@@ -53,16 +58,23 @@ jobs:
                   data = path.read_text(encoding="utf-8", errors="ignore")
               except Exception:
                   continue
-              for line_no, line in enumerate(data.splitlines(), 1):
-                  if "web.archive.org" in line.lower() or "facepunch.com" in line.lower():
-                      matches.append(f"{path}:{line_no}: {line.strip()[:300]}")
+              patterns = [attr]
+              if path.suffix.lower() in {".css", ".scss"}:
+                  patterns += [css_url, css_import]
+              for pattern in patterns:
+                  for match in pattern.finditer(data):
+                      value = match.group(1).strip()
+                      if value.startswith("//") or urlparse(value).scheme in {"http", "https"}:
+                          matches.append(f"{path}: {value}")
+          matches = sorted(set(matches))
           report.write_text(
-              "Remaining references containing web.archive.org or facepunch.com. "
-              "Review this list before treating the copy as fully independent.\n\n"
-              + ("\n".join(matches) if matches else "No matching references found.\n"),
+              "Remote URLs still present in HTML/CSS attributes. Some may be ordinary outbound links; "
+              "any image, stylesheet, script, font, or CSS background URL must be localized before "
+              "this copy can be considered fully self-contained.\n\n"
+              + ("\n".join(matches) if matches else "No remote URLs found in scanned attributes.\n"),
               encoding="utf-8",
           )
-          print(f"Audit found {len(matches)} matching lines; see {report}.")
+          print(f"Found {len(matches)} remote URL references; see {report}.")
           PY
 
       - name: Commit recovered copy
