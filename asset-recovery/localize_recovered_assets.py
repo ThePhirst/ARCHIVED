@@ -106,6 +106,16 @@ def local_ref(raw, base_url, owner_file):
     raw = raw.strip()
     if not raw or raw.startswith(("data:", "blob:", "javascript:", "mailto:", "#", "about:")):
         return raw
+    if not is_remote(raw):
+        # Existing relative paths inside the recovered site are already local.
+        # Relative dependencies inside a downloaded remote CSS file must resolve against that CSS URL.
+        try:
+            owner_file.resolve().relative_to(ASSET_DIR.resolve())
+            from_remote_css = owner_file.suffix.lower() == ".css"
+        except ValueError:
+            from_remote_css = False
+        if not from_remote_css:
+            return raw
     abs_url = urljoin(base_url, raw)
     if not is_remote(abs_url):
         return raw
