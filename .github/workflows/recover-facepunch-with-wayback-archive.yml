@@ -48,7 +48,7 @@ jobs:
           root = Path("facepunch-recovered")
           report = root / "REMOTE-REFERENCES.txt"
           attr = re.compile(r"""\b(?:src|poster|href|srcset)\s*=\s*["']([^"']+)["']""", re.I)
-          css_url = re.compile(r"""url\(\\s*['"]?([^'")]+)""", re.I)
+          css_url = re.compile(r"""url\(\s*['"]?([^'")]+)""", re.I)
           css_import = re.compile(r"""@import\s+['"]([^'"]+)""", re.I)
           matches = []
           for path in root.rglob("*"):
