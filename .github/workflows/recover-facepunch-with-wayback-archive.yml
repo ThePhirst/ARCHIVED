@@ -45,7 +45,6 @@ jobs:
           import re
           root = Path("facepunch-recovered")
           report = Path("facepunch-recovered/REMOTE-REFERENCES.txt")
-          pattern = re.compile(r'''(?:https?:)?//[^\s"'<>)]+' '', re.I)
           matches = []
           for path in root.rglob("*"):
               if not path.is_file() or path == report:
