@@ -28,7 +28,7 @@ jobs:
           OUTPUT_DIR: "./facepunch-recovered"
           REMOVE_TRACKERS: "true"
           REMOVE_ADS: "true"
-          REMOVE_EXTERNAL_IFRAMES: "true"
+          REMOVE_EXTERNAL_IFRAMES: "false"
           REMOVE_EXTERNAL_LINKS_KEEP_ANCHORS: "true"
           MAKE_INTERNAL_LINKS_RELATIVE: "true"
           OPTIMIZE_HTML: "false"
