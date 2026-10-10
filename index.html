@@ -6870,4 +6870,27 @@ google_ad_height = 90;
 
 
 
+
+<!-- Disable navigation and interactive controls while preserving the original layout. -->
+<script>
+(function () {
+  function blockInteraction(event) {
+    var target = event.target;
+    if (!target || !target.closest) return;
+    if (target.closest('a, area, button, input[type="submit"], input[type="image"], input[type="button"], [onclick], [role="link"], [role="button"]')) {
+      event.preventDefault();
+      event.stopPropagation();
+      if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+    }
+  }
+  document.addEventListener('click', blockInteraction, true);
+  document.addEventListener('auxclick', blockInteraction, true);
+  document.addEventListener('submit', function (event) {
+    event.preventDefault();
+    event.stopPropagation();
+    if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+  }, true);
+})();
+</script>
+
 </body></html>
