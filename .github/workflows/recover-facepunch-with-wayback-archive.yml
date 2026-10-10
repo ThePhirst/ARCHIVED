@@ -38,6 +38,9 @@ jobs:
           MAX_FILES: "1500"
         run: wayback-archive
 
+      - name: Localize images and static assets
+        run: python asset-recovery/localize_recovered_assets.py
+
       - name: Audit remaining remote references
         run: |
           python - <<'PY'
