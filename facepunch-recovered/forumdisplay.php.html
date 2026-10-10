@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" id="vbulletin_html" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+<meta content="width=750" name="viewport"/>
+<meta content="iwHLCaoKzuZzXDoIwiRuHi38kbV9yLWgT8Yce2djkRo" name="google-site-verification"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="index.html" id="e_vb_meta_bburl" name="vb_meta_bburl"/>
+
+<meta content="vBulletin 4.1.10" name="generator"/>
+
+<link href="favicon.ico" rel="Shortcut Icon" type="image/x-icon"/>
+<meta content="Developers, facepunch, garrysmod, gmod, fpunch, games, pc games, pc gaming, walsall" name="keywords"/>
+<meta content="" name="description"/>
+<script src="https://web.archive.org/web/20160609171650js_/https://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/yuiloader-dom-event/yuiloader-dom-event.js?v=4110" type="text/javascript"></script>
+<script src="https://web.archive.org/web/20160609171650js_/https://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/connection/connection-min.js?v=4110" type="text/javascript"></script>
+
+<script src="clientscript/vbulletin-core.js?v=4110" type="text/javascript"></script>
+<link href="external.php.html?type=RSS2" rel="alternate" title="Facepunch RSS Feed" type="application/rss+xml"/>
+<link href="external.php.html?type=RSS2&amp;forumids=413" rel="alternate" title="Facepunch - Developers - RSS Feed" type="application/rss+xml"/>
+<link href="css.php.css?styleid=6&amp;langid=1&amp;d=1461653477&amp;td=ltr&amp;sheet=bbcode.css,editor.css,popupmenu.css,reset-fonts.css,vbulletin.css,vbulletin-chrome.css,vbulletin-formcontrols.css" rel="stylesheet" type="text/css"/>
+<script src="//web.archive.org/web/20160609171650js_/https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<script src="fp/js/jQuery/tipsy/jquery.tipsy.js" type="text/javascript"></script>
+<script src="fp/js/jQuery/color/jquery.color.js" type="text/javascript"></script>
+
+<script src="fp/js/rainbow-custom.min.js?6" type="text/javascript"></script>
+<script src="fp/js/Facepunch/fp.js?6" type="text/javascript"></script>
+<script src="fp/js/image_zoomer3.js?6" type="text/javascript"></script>
+<style type="text/css">
+			CANVAS
+			{
+				z-index: 1000;
+				position: fixed;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				pointer-events: none;
+			}
+		</style>
+<title>Developers</title>
+<script src="clientscript/vbulletin-threadbit.js?v=4110" type="text/javascript"></script>
+<script src="clientscript/vbulletin-read-marker.js?v=4110" type="text/javascript"></script>
+<link href="css.php.css?styleid=6&amp;langid=1&amp;d=1461653477&amp;td=ltr&amp;sheet=forumbits.css,forumdisplay.css,threadlist.css" rel="stylesheet" type="text/css"/>
+
+
+<link href="fp/fp-2013.css?21" rel="stylesheet" type="text/css"/>
+<link href="fp/small.css?7" media="only screen and (min-width: 100px) and (max-width: 1000px)" rel="stylesheet"/>
+
+</head>
+<body>
+<div id="content_pad">
+<div class="above_body boxshadow"> 
+<div class="floatcontainer doc_header" id="header">
+<div id="logo"><a href="forum.php.html" name="top"><img alt="Facepunch" src="fp/navbar_inner.png"/></a></div>
+<div id="navbar-login">
+<script src="clientscript/vbulletin_md5.js?v=4110" type="text/javascript"></script>
+<form action="login.php.html?do=login" id="navbar_loginform" method="post" onsubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+<fieldset class="logindetails" id="logindetails">
+<input accesskey="u" class="textbox" id="navbar_username" name="vb_login_username" size="10" style="font-size: 11px" tabindex="101" type="text" value="User Name"/>
+<input class="textbox default-value" id="navbar_password_hint" name="vb_login_password_hint" size="10" style="display:none;" tabindex="102" type="text" value="Password"/>
+<input class="textbox" id="navbar_password" name="vb_login_password" size="10" tabindex="102" type="password"/>
+<input accesskey="s" class="loginbutton" tabindex="104" title="Enter your username and password in the boxes provided to login, or click the 'register' button to create a profile for yourself." type="submit" value="Log in"/>
+</fieldset>
+<input name="s" type="hidden" value=""/>
+<input name="cookieuser" type="hidden" value="1"/>
+<input name="securitytoken" type="hidden" value="guest"/>
+<input name="do" type="hidden" value="login"/>
+<input name="vb_login_md5password" type="hidden"/>
+<input name="vb_login_md5password_utf" type="hidden"/>
+</form>
+<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			YAHOO.util.Dom.setStyle('navbar_username', "color", "#828282");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'User Name')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='black';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='User Name';
+					textbox.style.color='#828282';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+</div>
+<div id="breadcrumb"><a href="forum.php.html">Home</a>
+<span class="navbit">&gt; <a href="forum.php.html">Forum</a></span>
+<div id="lastelement">
+<span>Developers</span>
+</div></div>
+<div id="navbarlinks">
+<div class="navbarlink"><a href="register.php.html"><img alt="Register" src="fp/navbar/register.png"/> Register</a></div>
+<div class="navbarlink"><a href="fp_events.php.html"><img alt="Events" src="fp/navbar/events.png"/> Events</a></div>
+<div class="navbarlink"><a href="fp_popular.php.html"><img alt="Popular Threads" src="fp/navbar/popular.png"/> Popular</a></div>
+
+
+<div class="navbarlink"><a href="#" onclick="return OpenURLInBox( 'more', 'fp/more.html' );"><img alt="More" src="fp/navbar/more.png"/> More</a></div>
+</div>
+<div class="ad_global_header">
+</div>
+<hr/>
+</div>
+</div>
+<div id="content_inner">
+<div style="padding: 10px; background-color: #eee; border: 1px solid #888; border-radius: 4px;">
+Subforums: <a href="forums/240.html">Programming</a>, <a href="forums/38.html">Mapping</a>, <a href="forums/40.html">Modelling</a>
+</div>
+
+
+<div class="boxshadow table" id="bottom_box">
+<div class="tr" id="whos_reading">
+<div class="td img">
+<img alt="Users Browsing this Forum" src="fp/vb/misc/whos_online.gif"/>
+</div>
+<div class="td">
+<ol class="commalist">
+<li><a class="username" href="member.php.html?u=422965"><span style="color:#147;">570</span></a>, </li>
+<li><a class="username" href="member.php.html?u=587886"><span style="color:#147;">KING]THT[WRATH</span></a>, </li>
+<li><a class="username" href="member.php.html?u=218310"><strong><font color="#A06000">TheMask</font></strong></a>, </li>
+<li><a class="username" href="member.php.html?u=734808"><span style="color:#147;">HitmanVere</span></a>, </li>
+<li><a class="username" href="member.php.html?u=61865"><strong><font color="#A06000">DrDevil</font></strong></a>, </li>
+<li><a class="username" href="member.php.html?u=732824"><span style="color:#147;">dynaomi</span></a>, </li>
+<li><a class="username" href="member.php.html?u=585633"><span style="color:#147;">sopmodcake</span></a>, </li>
+<li><a class="username" href="member.php.html?u=183933"><span style="color:#147;">kantz</span></a>, </li>
+<li><a class="username" href="member.php.html?u=488868"><span style="color:#147;">Femedic</span></a>, </li>
+<li><a class="username" href="member.php.html?u=657398"><span style="color:#147;">albino</span></a>, </li>
+<li><a class="username" href="member.php.html?u=466789"><strong><font color="#A06000">johau</font></strong></a>, </li>
+<li><a class="username" href="member.php.html?u=441578"><span style="color:#147;">nessorwar</span></a>, </li>
+<li><a class="username" href="member.php.html?u=60704"><strong><font color="#A06000">high</font></strong></a>, </li>
+<li><a class="username" href="member.php.html?u=412180"><span style="color:#147;">Nabile13</span></a>, </li>
+<li><a class="username" href="member.php.html?u=658610"><span style="color:#147;">M3l0m4ni4c</span></a>, </li>
+<li><a class="username" href="member.php.html?u=720829"><span style="color:#147;">Bottle Boy</span></a>, </li>
+<li><a class="username" href="member.php.html?u=468973"><span style="color:#147;">Darkman321</span></a>, </li>
+<li><a class="username" href="member.php.html?u=603401"><span style="color:#147;">BOBSecond</span></a>, </li>
+<li><a class="username" href="member.php.html?u=648204"><span style="color:#147;">Fourier</span></a>, </li>
+<li><a class="username" href="member.php.html?u=121778"><strong><font color="#A06000">Killer112</font></strong></a>, </li>
+<li><a class="username" href="member.php.html?u=734770"><span style="color:#147;">Arkonnen</span></a>, </li>
+<li><a class="username" href="member.php.html?u=120680"><strong><font color="#A06000">Hattiwatti</font></strong></a>, </li>
+<li><a class="username" href="member.php.html?u=700081"><span style="color:#147;">Evanstr</span></a>, </li>
+<li><a class="username" href="member.php.html?u=260166"><strong><font color="#A06000">Crhem van der B</font></strong></a>, </li>
+<li><a class="username" href="member.php.html?u=658643"><span style="color:#147;">WesleyHarper</span></a>, </li>
+<li><a class="username" href="member.php.html?u=706738"><span style="color:#147;">gnampf</span></a>, </li>
+<li><a class="username" href="member.php.html?u=655735"><span style="color:#147;">LeodroS</span></a>, </li>
+<li><a class="username" href="member.php.html?u=658426"><span style="color:#147;">StupidRussian</span></a>, </li>
+<li><a class="username" href="member.php.html?u=125717"><span style="color:#147;">belink</span></a>, </li>
+<li><a class="username" href="member.php.html?u=398988"><span style="color:#147;">jops12</span></a>, </li>
+<li><a class="username" href="member.php.html?u=9316"><strong><font color="#A06000">chaoselite</font></strong></a>, </li>
+<li><a class="username" href="member.php.html?u=380720"><span style="color:#147;">Tydeus</span></a>, </li>
+<li><a class="username" href="member.php.html?u=384277"><span style="color:#147;">Proclivitas</span></a>, </li>
+<li><a class="username" href="member.php.html?u=734813"><span style="color:#147;">Shortyg78</span></a>, </li>
+<li><a class="username" href="member.php.html?u=294214"><span style="color:#147;">The Prawn</span></a>, </li>
+<li><a class="username" href="member.php.html?u=731504"><span style="color:#147;">Pianotugboat</span></a>, </li>
+<li><a class="username" href="member.php.html?u=645911"><span style="color:#147;">B.J.</span></a>, </li>
+<li><a class="username" href="member.php.html?u=477736"><span style="color:#147;">cpt.rex</span></a>, </li>
+<li><a class="username" href="member.php.html?u=275838"><strong><font color="#A06000">Trek</font></strong></a>, </li>
+<li><a class="username" href="member.php.html?u=390116"><span style="color:#147;">Lord Canistra</span></a>, </li>
+<li><a class="username" href="member.php.html?u=665850"><span style="color:#147;">Freiherr von</span></a>, </li>
+<li><a class="username" href="member.php.html?u=438318"><span style="color:#147;">Fieryshu</span></a>, </li>
+<li><a class="username" href="member.php.html?u=351281"><span style="color:#147;">mutated</span></a>, </li>
+<li><a class="username" href="member.php.html?u=217383"><span style="color:#147;">Fleskhjerta</span></a>, </li>
+<li><a class="username" href="member.php.html?u=655738"><span style="color:#147;">ComradIvan</span></a>, </li>
+<li><a class="username" href="member.php.html?u=265037"><strong><font color="#A06000">PredGD</font></strong></a>, </li>
+<li><a class="username" href="member.php.html?u=733756"><span style="color:#147;">yan3321</span></a>, </li>
+<li><a class="username" href="member.php.html?u=480633"><span style="color:#147;">marti81</span></a>, </li>
+<li><a class="username" href="member.php.html?u=111154"><span style="color:#147;">Deathstriker</span></a>, </li>
+<li><a class="username" href="member.php.html?u=239446"><span style="color:#147;">ben1066</span></a></li>
+</ol>
+			(122 guests)
+		</div>
+</div>
+</div>
+</div>
+<div class="below_body" style="clear: both;">
+<div class="shade footer_time" id="footer_time">All times are GMT. The time now is <span class="time">05:15PM</span>.</div>
+<div class="shade footer_copyright" id="footer_copyright">
+
+
+</div>
+<div class="shade footer_morecopyright" id="footer_morecopyright">
+
+
+</div>
+</div>
+</div>
+<center>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4109526466655731";
+/* Facepunch Bottom */
+google_ad_slot = "7520600124";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+
+</center>
+<div class="floatcontainer footer" id="footer">
+<div id="content_pad">
+<div class="footer_links">
+<a href="showgroups.php.html" rel="nofollow">Moderators</a> - <a href="forumdisplay.php.html?f=413#top" onclick="document.location.hash='top'; return false;">Top</a>
+</div>
+<div id="fps">Facepunch Studios</div>
+<div id="fps_copyright"><a href="fp_rules.php.html">The Rules</a> 
+| <a href="archive/index.html">The Archive</a></div>
+</div>
+<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+</div>
+
+</body>
+</html>

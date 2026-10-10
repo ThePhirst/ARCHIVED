@@ -1,0 +1,3623 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" id="vbulletin_html" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+<meta content="width=750" name="viewport"/>
+<meta content="iwHLCaoKzuZzXDoIwiRuHi38kbV9yLWgT8Yce2djkRo" name="google-site-verification"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="../index.html" id="e_vb_meta_bburl" name="vb_meta_bburl"/>
+
+<meta content="vBulletin 4.1.10" name="generator"/>
+
+<link href="../favicon.ico" rel="Shortcut Icon" type="image/x-icon"/>
+<meta content="Programming, facepunch, garrysmod, gmod, fpunch, games, pc games, pc gaming, walsall" name="keywords"/>
+<meta content="Forum related to programming languages other than GMod Lua" name="description"/>
+<script src="https://web.archive.org/web/20160613144757js_/https://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/yuiloader-dom-event/yuiloader-dom-event.js?v=4110" type="text/javascript"></script>
+<script src="https://web.archive.org/web/20160613144757js_/https://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/connection/connection-min.js?v=4110" type="text/javascript"></script>
+
+<script src="../clientscript/vbulletin-core.js?v=4110" type="text/javascript"></script>
+<link href="../external.php.html?type=RSS2" rel="alternate" title="Facepunch RSS Feed" type="application/rss+xml"/>
+<link href="../external.php.html?type=RSS2&amp;forumids=240" rel="alternate" title="Facepunch - Programming - RSS Feed" type="application/rss+xml"/>
+<link href="../css.php.css?styleid=6&amp;langid=1&amp;d=1461653477&amp;td=ltr&amp;sheet=bbcode.css,editor.css,popupmenu.css,reset-fonts.css,vbulletin.css,vbulletin-chrome.css,vbulletin-formcontrols.css" rel="stylesheet" type="text/css"/>
+<script src="//web.archive.org/web/20160613144757js_/https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<script src="../fp/js/jQuery/tipsy/jquery.tipsy.js" type="text/javascript"></script>
+<script src="../fp/js/jQuery/color/jquery.color.js" type="text/javascript"></script>
+
+<script src="../fp/js/rainbow-custom.min.js?6" type="text/javascript"></script>
+<script src="../fp/js/Facepunch/fp.js?6" type="text/javascript"></script>
+<script src="../fp/js/image_zoomer3.js?6" type="text/javascript"></script>
+<style type="text/css">
+			CANVAS
+			{
+				z-index: 1000;
+				position: fixed;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				pointer-events: none;
+			}
+		</style>
+<title>Programming</title>
+<script src="../clientscript/vbulletin-threadbit.js?v=4110" type="text/javascript"></script>
+<script src="../clientscript/vbulletin-read-marker.js?v=4110" type="text/javascript"></script>
+<link href="../css.php.css?styleid=6&amp;langid=1&amp;d=1461653477&amp;td=ltr&amp;sheet=forumbits.css,forumdisplay.css,threadlist.css" rel="stylesheet" type="text/css"/>
+
+
+<link href="../fp/fp-2013.css?21" rel="stylesheet" type="text/css"/>
+<link href="../fp/small.css?7" media="only screen and (min-width: 100px) and (max-width: 1000px)" rel="stylesheet"/>
+
+</head>
+<body>
+<div id="content_pad">
+<div class="above_body boxshadow"> 
+<div class="floatcontainer doc_header" id="header">
+<div id="logo"><a href="../forum.php.html" name="top"><img alt="Facepunch" src="../fp/navbar_inner.png"/></a></div>
+<div id="navbar-login">
+<script src="../clientscript/vbulletin_md5.js?v=4110" type="text/javascript"></script>
+<form action="../login.php.html?do=login" id="navbar_loginform" method="post" onsubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+<fieldset class="logindetails" id="logindetails">
+<input accesskey="u" class="textbox" id="navbar_username" name="vb_login_username" size="10" style="font-size: 11px" tabindex="101" type="text" value="User Name"/>
+<input class="textbox default-value" id="navbar_password_hint" name="vb_login_password_hint" size="10" style="display:none;" tabindex="102" type="text" value="Password"/>
+<input class="textbox" id="navbar_password" name="vb_login_password" size="10" tabindex="102" type="password"/>
+<input accesskey="s" class="loginbutton" tabindex="104" title="Enter your username and password in the boxes provided to login, or click the 'register' button to create a profile for yourself." type="submit" value="Log in"/>
+</fieldset>
+<input name="s" type="hidden" value=""/>
+<input name="cookieuser" type="hidden" value="1"/>
+<input name="securitytoken" type="hidden" value="guest"/>
+<input name="do" type="hidden" value="login"/>
+<input name="vb_login_md5password" type="hidden"/>
+<input name="vb_login_md5password_utf" type="hidden"/>
+</form>
+<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			YAHOO.util.Dom.setStyle('navbar_username', "color", "#828282");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'User Name')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='black';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='User Name';
+					textbox.style.color='#828282';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+</div>
+<div id="breadcrumb"><a href="../forum.php.html">Home</a>
+<span class="navbit">&gt; <a href="../forum.php.html">Forum</a></span>
+<span class="navbit">&gt; <a href="../forumdisplay.php.html?f=413">Developers</a></span>
+<div id="lastelement">
+<span>Programming</span>
+<span><a href="../fp_images.php.html?f=240"><img alt="This forum has images" src="../fp/hasimages.png" title="This forum has images"/></a></span></div></div>
+<div id="navbarlinks">
+<div class="navbarlink"><a href="../register.php.html"><img alt="Register" src="../fp/navbar/register.png"/> Register</a></div>
+<div class="navbarlink"><a href="../fp_events.php.html"><img alt="Events" src="../fp/navbar/events.png"/> Events</a></div>
+<div class="navbarlink"><a href="../fp_popular.php.html"><img alt="Popular Threads" src="../fp/navbar/popular.png"/> Popular</a></div>
+
+
+<div class="navbarlink"><a href="#" onclick="return OpenURLInBox( 'more', 'fp/more.html' );"><img alt="More" src="../fp/navbar/more.png"/> More</a></div>
+</div>
+<div class="ad_global_header">
+</div>
+<hr/>
+</div>
+</div>
+<div id="content_inner">
+
+<div class="above_threadlist" id="above_threadlist">
+<div class="threadpagenav">
+<div action="../forumdisplay.php.html?f=240&amp;page=11&amp;order=desc" class="pagination popupmenu nohovermenu" method="get" style="float: right; clear: both;">
+<input name="f" type="hidden" value="240"/><input name="order" type="hidden" value="desc"/>
+<span><a class="popupctrl" href="javascript://">Page 1 of 89</a></span>
+<span class="selected"><a href="javascript://" title="Results 1 to 80 of 7,046">1</a></span><span><a href="../forumdisplay.php.html?f=240&amp;page=2&amp;order=desc" title="Show results 81 to 160 of 7,046">2</a></span><span><a href="../forumdisplay.php.html?f=240&amp;page=3&amp;order=desc" title="Show results 161 to 240 of 7,046">3</a></span><span><a href="../forumdisplay.php.html?f=240&amp;page=4&amp;order=desc" title="Show results 241 to 320 of 7,046">4</a></span><span><a href="../forumdisplay.php.html?f=240&amp;page=5&amp;order=desc" title="Show results 321 to 400 of 7,046">5</a></span><span><a href="../forumdisplay.php.html?f=240&amp;page=6&amp;order=desc" title="Show results 401 to 480 of 7,046">6</a></span><span><a href="../forumdisplay.php.html?f=240&amp;page=7&amp;order=desc" title="Show results 481 to 560 of 7,046">7</a></span><span><a href="../forumdisplay.php.html?f=240&amp;page=8&amp;order=desc" title="Show results 561 to 640 of 7,046">8</a></span><span><a href="../forumdisplay.php.html?f=240&amp;page=9&amp;order=desc" title="Show results 641 to 720 of 7,046">9</a></span><span><a href="../forumdisplay.php.html?f=240&amp;page=10&amp;order=desc" title="Show results 721 to 800 of 7,046">10</a></span><span><a href="../forumdisplay.php.html?f=240&amp;page=11&amp;order=desc" title="Show results 801 to 880 of 7,046">11</a></span>
+<span class="prev_next"><a href="../forumdisplay.php.html?f=240&amp;page=2&amp;order=desc" rel="next" title="Next Page - Results 81 to 160 of 7,046">&gt;</a></span>
+<span class="first_last"><a href="../forumdisplay.php.html?f=240&amp;page=89&amp;order=desc" title="Last Page - Results 7,041 to 7,046 of 7,046">Last <strong>»</strong></a></span>
+</div>
+</div>
+</div>
+<div class="threadlist" id="threadlist">
+<form action="../inlinemod.php.html?forumid=240" id="thread_inlinemod_form" method="post">
+<h2 class="hidden">Threads in This Forum</h2>
+<div class="boxshadow">
+<table border="0" cellpadding="6" cellspacing="0" class="threads" id="threads">
+<thead class="threadlisthead">
+<tr>
+<td class="threadicon"> </td>
+<td class="threadinfo">
+<a href="../forumdisplay.php.html?f=240&amp;sort=title&amp;order=asc" rel="nofollow">Title</a> /
+								<a href="../forumdisplay.php.html?f=240&amp;sort=postusername&amp;order=asc" rel="nofollow">Thread Starter</a>
+</td>
+<td class="threadlastpost">
+<a href="../forumdisplay.php.html?f=240&amp;sort=lastpost&amp;order=asc" rel="nofollow">Last Post By<img alt="Reverse Sort Order" border="0" class="sortarrow" src="../fp/vb/buttons/sortarrow-asc.png"/></a>
+</td>
+<td class="threadreplies">
+<a href="../forumdisplay.php.html?f=240&amp;sort=replycount&amp;order=desc" rel="nofollow">Replies</a>
+</td>
+<td class="threadviews">
+<a href="../forumdisplay.php.html?f=240&amp;sort=views&amp;order=desc" rel="nofollow">Views</a>
+</td>
+</tr>
+</thead>
+<tbody>
+<tr class="threadbit hot new nonsticky" id="thread_1464689">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/help.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title threadtitle_unread" href="../showthread.php.html?t=1464689" id="thread_title_1464689" title="I closed the last thread with the 5001th post, so I figure I should be the one to make the new thread. 
+ 
+This is the thread for questions about web dev! If you just want to show off what you've made, just head over to the Web Dev WAYWO thread. If you...">Web Dev Questions That Don't Need Their Own Thread v5</a> <span class="threadpagenav">(  <a href="../showthread.php.html?t=1464689&amp;page=2">2</a> <a href="../showthread.php.html?t=1464689&amp;page=3">3</a> <a href="../showthread.php.html?t=1464689&amp;page=4">4</a> <a href="../showthread.php.html?t=1464689&amp;page=5">5</a>  ..  <a href="../showthread.php.html?t=1464689&amp;page=22">22</a> <a href="../showthread.php.html?t=1464689&amp;page=23">23</a> <a href="../showthread.php.html?t=1464689&amp;page=24">24</a> <a href="../showthread.php.html?t=1464689&amp;page=25">25 Last</a>  )</span>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">I closed the last thread with the 5001th post, so I figure I should be the one to make the new thread. 
+ 
+This is the thread for questions about web dev! If you just want to show off what you've made, just head over to the Web Dev WAYWO thread. If you...</p>
+<div class="author">
+<a href="../member.php.html?u=384395">Rocket</a>
+<a href="../fp_images.php.html?t=1464689" id="thread_has_images">
+<span class="minicons newimages"><img alt="Thread has images" src="../fp/hasimages.png" title="Thread has images"/></span>
+</a>
+<span class="minicons reading"><img alt="3 people are reading this thread" src="../fp/reading.png" title="3 people are reading this thread"/> x <strong>3</strong></span>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>1 Minute Ago</dd>
+<dd>by <a href="../member.php.html?u=464489">johnnyaka</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1464689&amp;p=50510225#post50510225" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1464689" onclick="who(1464689); return false;">993</a>
+</td>
+<td class="threadviews alt">
+<span>62,933</span>
+</td>
+</tr><tr class="threadbit hot new nonsticky" id="thread_1521880">
+
+<td class="threadicon alt">
+<img alt="Work In Progress" border="0" src="../fp/posticons/workinprogress.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title threadtitle_unread" href="../showthread.php.html?t=1521880" id="thread_title_1521880" title="Did we all not see that coming? 
+ 
+Highlights: none, does anyone feel like going through 125 pages to find highlights? (if for some reason you do or have been collecting them during the thread PM me, I just wanted to get a new thread out and I don't...">What are you working on? v64</a> <span class="threadpagenav">(  <a href="../showthread.php.html?t=1521880&amp;page=2">2</a> <a href="../showthread.php.html?t=1521880&amp;page=3">3</a> <a href="../showthread.php.html?t=1521880&amp;page=4">4 Last</a>  )</span>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Did we all not see that coming? 
+ 
+Highlights: none, does anyone feel like going through 125 pages to find highlights? (if for some reason you do or have been collecting them during the thread PM me, I just wanted to get a new thread out and I don't...</p>
+<div class="author">
+<a href="../member.php.html?u=442376">Darkwater124</a>
+<a href="../fp_images.php.html?t=1521880" id="thread_has_images">
+<span class="minicons newimages"><img alt="Thread has images" src="../fp/hasimages.png" title="Thread has images"/></span>
+</a>
+<span class="minicons reading"><img alt="8 people are reading this thread" src="../fp/reading.png" title="8 people are reading this thread"/> x <strong>8</strong></span>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>2 Minutes Ago</dd>
+<dd>by <a href="../member.php.html?u=81797">HiredK</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1521880&amp;p=50510212#post50510212" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1521880" onclick="who(1521880); return false;">155</a>
+</td>
+<td class="threadviews alt">
+<span>8,081</span>
+</td>
+</tr><tr class="threadbit hot new nonsticky" id="thread_1459923">
+
+<td class="threadicon alt">
+<img alt="Art" border="0" src="../fp/posticons/art.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title threadtitle_unread" href="../showthread.php.html?t=1459923" id="thread_title_1459923" title="Unity3D discussion - go!">Unity3D - Discussion V2</a> <span class="threadpagenav">(  <a href="../showthread.php.html?t=1459923&amp;page=2">2</a> <a href="../showthread.php.html?t=1459923&amp;page=3">3</a> <a href="../showthread.php.html?t=1459923&amp;page=4">4</a> <a href="../showthread.php.html?t=1459923&amp;page=5">5</a>  ..  <a href="../showthread.php.html?t=1459923&amp;page=47">47</a> <a href="../showthread.php.html?t=1459923&amp;page=48">48</a> <a href="../showthread.php.html?t=1459923&amp;page=49">49</a> <a href="../showthread.php.html?t=1459923&amp;page=50">50 Last</a>  )</span>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Unity3D discussion - go!</p>
+<div class="author">
+<a href="../member.php.html?u=557371">ryankingstone</a>
+<a href="../fp_images.php.html?t=1459923" id="thread_has_images">
+<span class="minicons newimages"><img alt="Thread has images" src="../fp/hasimages.png" title="Thread has images"/></span>
+</a>
+<span class="minicons reading"><img alt="7 people are reading this thread" src="../fp/reading.png" title="7 people are reading this thread"/> x <strong>7</strong></span>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>1 Hour Ago</dd>
+<dd>by <a href="../member.php.html?u=293850">Richy19</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1459923&amp;p=50509906#post50509906" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1459923" onclick="who(1459923); return false;">1,962</a>
+</td>
+<td class="threadviews alt">
+<span>110,781</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1490195">
+
+<td class="threadicon alt">
+<img alt="Beta" border="0" src="../fp/posticons/beta.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1490195" id="thread_title_1490195" title="This is a project I've been working on over the course of the past couple of years now. First and foremost I'd like to emphasize: This is a very early alpha, unless you're a modder, you most likely won't be getting anything out of this at this point! 
+...">Sciolyte - A 3D multiplayer sandbox engine/game with lua-integration, based on Vulkan and bullet physics</a> <span class="threadpagenav">(  <a href="../showthread.php.html?t=1490195&amp;page=2">2</a> <a href="../showthread.php.html?t=1490195&amp;page=3">3</a> <a href="../showthread.php.html?t=1490195&amp;page=4">4 Last</a>  )</span>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">This is a project I've been working on over the course of the past couple of years now. First and foremost I'd like to emphasize: This is a very early alpha, unless you're a modder, you most likely won't be getting anything out of this at this point! 
+...</p>
+<div class="author">
+<a href="../member.php.html?u=42175">Silverlan</a>
+<a href="../fp_images.php.html?t=1490195" id="thread_has_images">
+<span class="minicons newimages"><img alt="Thread has images" src="../fp/hasimages.png" title="Thread has images"/></span>
+</a>
+<span class="minicons reading"><img alt="1 people are reading this thread" src="../fp/reading.png" title="1 people are reading this thread"/> x <strong>1</strong></span>
+<span class="minicons ratings"><span><img alt="Winner" src="../fp/ratings/winner.png"/>  x <strong>56</strong></span></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>2 Hours Ago</dd>
+<dd>by <a href="../member.php.html?u=436824">James xX</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1490195&amp;p=50509603#post50509603" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1490195" onclick="who(1490195); return false;">145</a>
+</td>
+<td class="threadviews alt">
+<span>13,386</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1446371">
+
+<td class="threadicon alt">
+<img alt="Beta" border="0" src="../fp/posticons/beta.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1446371" id="thread_title_1446371" title="Programming related help thread. 
+ 
+Version 1 
+Version 2 
+Version 3 
+Version 4 
+Version 5 
+Version 6">What Do You Need Help With? V7</a> <span class="threadpagenav">(  <a href="../showthread.php.html?t=1446371&amp;page=2">2</a> <a href="../showthread.php.html?t=1446371&amp;page=3">3</a> <a href="../showthread.php.html?t=1446371&amp;page=4">4</a> <a href="../showthread.php.html?t=1446371&amp;page=5">5</a>  ..  <a href="../showthread.php.html?t=1446371&amp;page=90">90</a> <a href="../showthread.php.html?t=1446371&amp;page=91">91</a> <a href="../showthread.php.html?t=1446371&amp;page=92">92</a> <a href="../showthread.php.html?t=1446371&amp;page=93">93 Last</a>  )</span>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Programming related help thread. 
+ 
+Version 1 
+Version 2 
+Version 3 
+Version 4 
+Version 5 
+Version 6</p>
+<div class="author">
+<a href="../member.php.html?u=439259">Bumrang</a>
+<a href="../fp_images.php.html?t=1446371" id="thread_has_images">
+<span class="minicons newimages"><img alt="Thread has images" src="../fp/hasimages.png" title="Thread has images"/></span>
+</a>
+<span class="minicons reading"><img alt="1 people are reading this thread" src="../fp/reading.png" title="1 people are reading this thread"/> x <strong>1</strong></span>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>8 Hours Ago</dd>
+<dd>by <a href="../member.php.html?u=432768">reevezy67</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1446371&amp;p=50508260#post50508260" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1446371" onclick="who(1446371); return false;">3,718</a>
+</td>
+<td class="threadviews alt">
+<span>131,772</span>
+</td>
+</tr><tr class="threadbit old nonsticky" id="thread_1522618">
+
+<td class="threadicon alt">
+<img alt="Question" border="0" src="../fp/posticons/question.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1522618" id="thread_title_1522618" title="HI I am looking for some new project management tools like Findnerd where I can manage projects and have a close look on my project details and the work assigned to my team. I hope anybody in this forum can help me in related to the same.">Searching for new project management tools</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">HI I am looking for some new project management tools like Findnerd where I can manage projects and have a close look on my project details and the work assigned to my team. I hope anybody in this forum can help me in related to the same.</p>
+<div class="author">
+<a href="../member.php.html?u=734805">Ashish Bisht</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>8 Hours Ago</dd>
+<dd>by <a href="../member.php.html?u=734805">Ashish Bisht</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1522618&amp;p=50508212#post50508212" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1522618" onclick="who(1522618); return false;">0</a>
+</td>
+<td class="threadviews alt">
+<span>47</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1520876">
+
+<td class="threadicon alt">
+<img alt="Poll" border="0" src="../fp/vb/misc/poll_posticon.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1520876" id="thread_title_1520876" title="Hello Facepunch, 
+If you know assembly, I would love to know which kind, in the comments. x86, x64, ARM, etc. 
+I am getting into the phenomenon which is Assembly, and I just want to take a poll.">Do you know assembly?</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Hello Facepunch, 
+If you know assembly, I would love to know which kind, in the comments. x86, x64, ARM, etc. 
+I am getting into the phenomenon which is Assembly, and I just want to take a poll.</p>
+<div class="author">
+<a href="../member.php.html?u=654653">BlueMustache</a>
+<a href="../fp_images.php.html?t=1520876" id="thread_has_images">
+<span class="minicons newimages"><img alt="Thread has images" src="../fp/hasimages.png" title="Thread has images"/></span>
+</a>
+<span class="minicons reading"><img alt="1 people are reading this thread" src="../fp/reading.png" title="1 people are reading this thread"/> x <strong>1</strong></span>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>11 Hours Ago</dd>
+<dd>by <a href="../member.php.html?u=477">mix999</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1520876&amp;p=50506795#post50506795" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1520876" onclick="who(1520876); return false;">31</a>
+</td>
+<td class="threadviews alt">
+<span>1,445</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1377629">
+
+<td class="threadicon alt">
+<img alt="C++" border="0" src="../fp/posticons/cpp.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1377629" id="thread_title_1377629" title="Seeing as how UE4 is now out and documentation will be pretty much nonexistent for a while I feel that this thread is needed. 
+Use this thread to ask others about what will no doubt be somewhat buggy things and hacky ways around it. 
+ 
+Get UE4 Here 
+...">UE4 Development</a> <span class="threadpagenav">(  <a href="../showthread.php.html?t=1377629&amp;page=2">2</a> <a href="../showthread.php.html?t=1377629&amp;page=3">3</a> <a href="../showthread.php.html?t=1377629&amp;page=4">4</a> <a href="../showthread.php.html?t=1377629&amp;page=5">5</a>  ..  <a href="../showthread.php.html?t=1377629&amp;page=97">97</a> <a href="../showthread.php.html?t=1377629&amp;page=98">98</a> <a href="../showthread.php.html?t=1377629&amp;page=99">99</a> <a href="../showthread.php.html?t=1377629&amp;page=100">100 Last</a>  )</span>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Seeing as how UE4 is now out and documentation will be pretty much nonexistent for a while I feel that this thread is needed. 
+Use this thread to ask others about what will no doubt be somewhat buggy things and hacky ways around it. 
+ 
+Get UE4 Here 
+...</p>
+<div class="author">
+<a href="../member.php.html?u=256104">LuaChobo</a>
+<a href="../fp_images.php.html?t=1377629" id="thread_has_images">
+<span class="minicons newimages"><img alt="Thread has images" src="../fp/hasimages.png" title="Thread has images"/></span>
+</a>
+<span class="minicons reading"><img alt="2 people are reading this thread" src="../fp/reading.png" title="2 people are reading this thread"/> x <strong>2</strong></span>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>13 Hours Ago</dd>
+<dd>by <a href="../member.php.html?u=633482">hippowombat</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1377629&amp;p=50505938#post50505938" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1377629" onclick="who(1377629); return false;">3,989</a>
+</td>
+<td class="threadviews alt">
+<span>262,485</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1452809">
+
+<td class="threadicon alt">
+<img alt="Science" border="0" src="../fp/posticons/science.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1452809" id="thread_title_1452809" title="Welcome to the thread dedicated to the wonderful world of electrical engineering. 
+Please read all of this post if you're new to the thread, it contains a lot of useful information. 
+ 
+ 
+ 
+Electrical engineering is a rather broad term that can be applied...">Electrical Engineering V3</a> <span class="threadpagenav">(  <a href="../showthread.php.html?t=1452809&amp;page=2">2</a> <a href="../showthread.php.html?t=1452809&amp;page=3">3</a> <a href="../showthread.php.html?t=1452809&amp;page=4">4</a> <a href="../showthread.php.html?t=1452809&amp;page=5">5</a>  ..  <a href="../showthread.php.html?t=1452809&amp;page=51">51</a> <a href="../showthread.php.html?t=1452809&amp;page=52">52</a> <a href="../showthread.php.html?t=1452809&amp;page=53">53</a> <a href="../showthread.php.html?t=1452809&amp;page=54">54 Last</a>  )</span>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Welcome to the thread dedicated to the wonderful world of electrical engineering. 
+Please read all of this post if you're new to the thread, it contains a lot of useful information. 
+ 
+ 
+ 
+Electrical engineering is a rather broad term that can be applied...</p>
+<div class="author">
+<a href="../member.php.html?u=199636">Chryseus</a>
+<a href="../fp_images.php.html?t=1452809" id="thread_has_images">
+<span class="minicons newimages"><img alt="Thread has images" src="../fp/hasimages.png" title="Thread has images"/></span>
+</a>
+<span class="minicons reading"><img alt="3 people are reading this thread" src="../fp/reading.png" title="3 people are reading this thread"/> x <strong>3</strong></span>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>16 Hours Ago</dd>
+<dd>by <a href="../member.php.html?u=61865">DrDevil</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1452809&amp;p=50504896#post50504896" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1452809" onclick="who(1452809); return false;">2,144</a>
+</td>
+<td class="threadviews alt">
+<span>75,723</span>
+</td>
+</tr><tr class="threadbit old nonsticky" id="thread_1522516">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/help.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1522516" id="thread_title_1522516" title="This is an attempted solution for Project Euler #17: 
+ 
+If the numbers 1 to 5 are written out in words: one, two, three, four, five, then there are 3 + 3 + 5 + 4 + 4 = 19 letters used in total. 
+ 
+If all the numbers from 1 to 1000 (one thousand) inclusive...">C++ : I don't know what's wrong</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">This is an attempted solution for Project Euler #17: 
+ 
+If the numbers 1 to 5 are written out in words: one, two, three, four, five, then there are 3 + 3 + 5 + 4 + 4 = 19 letters used in total. 
+ 
+If all the numbers from 1 to 1000 (one thousand) inclusive...</p>
+<div class="author">
+<a href="../member.php.html?u=649861">Klespyrian</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>17 Hours Ago</dd>
+<dd>by <a href="../member.php.html?u=286558">FalconKrunch</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1522516&amp;p=50504489#post50504489" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1522516" onclick="who(1522516); return false;">1</a>
+</td>
+<td class="threadviews alt">
+<span>147</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1444746">
+
+<td class="threadicon alt">
+<img alt="Computers" border="0" src="../fp/posticons/computers.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1444746" id="thread_title_1444746" title="Since starting a new thread was brought up in the previous thread; and it's now 2015. I thought I'd take initiative and start this new thread. 
+ 
+ 
+ 
+Previous Versions of this thread: 
+- Version 8 
+- Version 7 
+- Version 6 
+- Version 5 
+- Version 4">Web Development - WAYWO - #9</a> <span class="threadpagenav">(  <a href="../showthread.php.html?t=1444746&amp;page=2">2</a> <a href="../showthread.php.html?t=1444746&amp;page=3">3</a> <a href="../showthread.php.html?t=1444746&amp;page=4">4</a> <a href="../showthread.php.html?t=1444746&amp;page=5">5</a>  ..  <a href="../showthread.php.html?t=1444746&amp;page=78">78</a> <a href="../showthread.php.html?t=1444746&amp;page=79">79</a> <a href="../showthread.php.html?t=1444746&amp;page=80">80</a> <a href="../showthread.php.html?t=1444746&amp;page=81">81 Last</a>  )</span>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Since starting a new thread was brought up in the previous thread; and it's now 2015. I thought I'd take initiative and start this new thread. 
+ 
+ 
+ 
+Previous Versions of this thread: 
+- Version 8 
+- Version 7 
+- Version 6 
+- Version 5 
+- Version 4</p>
+<div class="author">
+<a href="../member.php.html?u=558013">benbb</a>
+<a href="../fp_images.php.html?t=1444746" id="thread_has_images">
+<span class="minicons newimages"><img alt="Thread has images" src="../fp/hasimages.png" title="Thread has images"/></span>
+</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>23 Hours Ago</dd>
+<dd>by <a href="../member.php.html?u=65969">Protocol7</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1444746&amp;p=50501923#post50501923" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1444746" onclick="who(1444746); return false;">3,228</a>
+</td>
+<td class="threadviews alt">
+<span>181,655</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1522024">
+
+<td class="threadicon alt">
+<img alt="PHP" border="0" src="../fp/posticons/php.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1522024" id="thread_title_1522024" title="I have been working as a php developer and learning php,web development. I have been searching for best suitable programming forums which help me in learning the latest php techniques. I have searched alot of forums but issue remains the same. I hope any...">Which is the best programming forums for PHP?</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">I have been working as a php developer and learning php,web development. I have been searching for best suitable programming forums which help me in learning the latest php techniques. I have searched alot of forums but issue remains the same. I hope any...</p>
+<div class="author">
+<a href="../member.php.html?u=734805">Ashish Bisht</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>1 Day Ago</dd>
+<dd>by <a href="../member.php.html?u=668389">Segecos</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1522024&amp;p=50500531#post50500531" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1522024" onclick="who(1522024); return false;">7</a>
+</td>
+<td class="threadviews alt">
+<span>364</span>
+</td>
+</tr><tr class="threadbit old nonsticky" id="thread_1522342">
+
+<td class="threadicon alt">
+<img alt="Question" border="0" src="../fp/posticons/question.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1522342" id="thread_title_1522342" title="Hey everyone. I'm delving into the world of Wordpress, and I'm interested in changing the folder structure. 
+ 
+By default, Wordpress searches the root directory of a theme as well as page-templates for overriding PHP files. What I'd like to do is...">Customizing Wordpress Theme Directories</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Hey everyone. I'm delving into the world of Wordpress, and I'm interested in changing the folder structure. 
+ 
+By default, Wordpress searches the root directory of a theme as well as page-templates for overriding PHP files. What I'd like to do is...</p>
+<div class="author">
+<a href="../member.php.html?u=234285">wauterboi</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>2 Days Ago</dd>
+<dd>by <a href="../member.php.html?u=234285">wauterboi</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1522342&amp;p=50496074#post50496074" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1522342" onclick="who(1522342); return false;">0</a>
+</td>
+<td class="threadviews alt">
+<span>84</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1160557">
+
+<td class="threadicon alt">
+<img alt="Humor" border="0" src="../fp/posticons/humor.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1160557" id="thread_title_1160557" title="Watery Highlights:">Programming Jokes February - Obligatory Witty Remark</a> <span class="threadpagenav">(  <a href="../showthread.php.html?t=1160557&amp;page=2">2</a> <a href="../showthread.php.html?t=1160557&amp;page=3">3</a> <a href="../showthread.php.html?t=1160557&amp;page=4">4</a> <a href="../showthread.php.html?t=1160557&amp;page=5">5</a>  ..  <a href="../showthread.php.html?t=1160557&amp;page=27">27</a> <a href="../showthread.php.html?t=1160557&amp;page=28">28</a> <a href="../showthread.php.html?t=1160557&amp;page=29">29</a> <a href="../showthread.php.html?t=1160557&amp;page=30">30 Last</a>  )</span>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Watery Highlights:</p>
+<div class="author">
+<a href="../member.php.html?u=228847">Map in a box</a>
+<a href="../fp_images.php.html?t=1160557" id="thread_has_images">
+<span class="minicons newimages"><img alt="Thread has images" src="../fp/hasimages.png" title="Thread has images"/></span>
+</a>
+<span class="minicons reading"><img alt="1 people are reading this thread" src="../fp/reading.png" title="1 people are reading this thread"/> x <strong>1</strong></span>
+<span class="minicons ratings"><span><img alt="Funny" src="../fp/ratings/funny2.png"/>  x <strong>71</strong></span></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>2 Days Ago</dd>
+<dd>by <a href="../member.php.html?u=534713">WhyNott</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1160557&amp;p=50495886#post50495886" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1160557" onclick="who(1160557); return false;">1,166</a>
+</td>
+<td class="threadviews alt">
+<span>133,721</span>
+</td>
+</tr><tr class="threadbit old nonsticky" id="thread_1522223">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/help.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1522223" id="thread_title_1522223" title="I'm trying to set the cooldown for a toolgun to a ConVar allowing the player to change the speed it works at in game. I managed to get it to set it as the convar's value, I just can't get it to update the value to the new ConVar when it's entered. How can...">Trying to set SWEP.COOLDOWN to a ConVar.</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">I'm trying to set the cooldown for a toolgun to a ConVar allowing the player to change the speed it works at in game. I managed to get it to set it as the convar's value, I just can't get it to update the value to the new ConVar when it's entered. How can...</p>
+<div class="author">
+<a href="../member.php.html?u=715562">Lawlypops</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>2 Days Ago</dd>
+<dd>by <a href="../member.php.html?u=715562">Lawlypops</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1522223&amp;p=50492920#post50492920" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1522223" onclick="who(1522223); return false;">2</a>
+</td>
+<td class="threadviews alt">
+<span>119</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1521868">
+
+<td class="threadicon alt">
+<img alt="C++" border="0" src="../fp/posticons/cpp.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1521868" id="thread_title_1521868" title="Referring to static linking to the libraries, or distributing them with your program. My assumption is &quot;no&quot; but I'm asking just in case. 
+ 
+Bonus points for answering the same question, but for wxWidgets or Qt">Can you sell a program made with GLEW, GLFW, SFML, or any other OpenGL libraries?</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Referring to static linking to the libraries, or distributing them with your program. My assumption is "no" but I'm asking just in case. 
+ 
+Bonus points for answering the same question, but for wxWidgets or Qt</p>
+<div class="author">
+<a href="../member.php.html?u=152043">Octopod</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>2 Days Ago</dd>
+<dd>by <a href="../member.php.html?u=633924">Trebgarta</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1521868&amp;p=50490734#post50490734" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1521868" onclick="who(1521868); return false;">3</a>
+</td>
+<td class="threadviews alt">
+<span>377</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1522164">
+
+<td class="threadicon alt">
+<img alt="Question" border="0" src="../fp/posticons/question.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1522164" id="thread_title_1522164" title="So I have been trying to find out what language this is in so I can start to learn it. I dont know why but i have always liked the way that these menus looked and I wanted to make something that looked and worked like it that I could run on my desktop and...">What language is this?</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">So I have been trying to find out what language this is in so I can start to learn it. I dont know why but i have always liked the way that these menus looked and I wanted to make something that looked and worked like it that I could run on my desktop and...</p>
+<div class="author">
+<a href="../member.php.html?u=698942">zippy36jr</a>
+<a href="../fp_images.php.html?t=1522164" id="thread_has_images">
+<span class="minicons newimages"><img alt="Thread has images" src="../fp/hasimages.png" title="Thread has images"/></span>
+</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>3 Days Ago</dd>
+<dd>by <a href="../member.php.html?u=416165">helifreak</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1522164&amp;p=50488684#post50488684" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1522164" onclick="who(1522164); return false;">1</a>
+</td>
+<td class="threadviews alt">
+<span>225</span>
+</td>
+</tr><tr class="threadbit old nonsticky" id="thread_1522149">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/help.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1522149" id="thread_title_1522149" title="I'm trying to make a distortion shader for water in my game. I have a rendertarget I render everything to, and the water mask, and I'm try to simply capture the pixels underneath the mask, but I can't get it to work. When I pass the textures, it's as if...">Please help - Can't figure out how to pass a texture to an HLSL shader (Monogame)</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">I'm trying to make a distortion shader for water in my game. I have a rendertarget I render everything to, and the water mask, and I'm try to simply capture the pixels underneath the mask, but I can't get it to work. When I pass the textures, it's as if...</p>
+<div class="author">
+<a href="../member.php.html?u=382640">dylanb5123</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>3 Days Ago</dd>
+<dd>by <a href="../member.php.html?u=382640">dylanb5123</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1522149&amp;p=50488026#post50488026" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1522149" onclick="who(1522149); return false;">0</a>
+</td>
+<td class="threadviews alt">
+<span>98</span>
+</td>
+</tr><tr class="threadbit hot lock old nonsticky" id="thread_1499629">
+
+<td class="threadicon alt">
+<img alt="Work In Progress" border="0" src="../fp/posticons/locked.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1499629" id="thread_title_1499629" title="This month's theme is: Nige 
+ 
+v63 - January 2016 
+ 
+ 
+Highlights from the previous thread: 
+ 
+Berkin writes a program to take selfies:">What are you working on?</a> <span class="threadpagenav">(  <a href="../showthread.php.html?t=1499629&amp;page=2">2</a> <a href="../showthread.php.html?t=1499629&amp;page=3">3</a> <a href="../showthread.php.html?t=1499629&amp;page=4">4</a> <a href="../showthread.php.html?t=1499629&amp;page=5">5</a>  ..  <a href="../showthread.php.html?t=1499629&amp;page=123">123</a> <a href="../showthread.php.html?t=1499629&amp;page=124">124</a> <a href="../showthread.php.html?t=1499629&amp;page=125">125</a> <a href="../showthread.php.html?t=1499629&amp;page=126">126 Last</a>  )</span>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">This month's theme is: Nige 
+ 
+v63 - January 2016 
+ 
+ 
+Highlights from the previous thread: 
+ 
+Berkin writes a program to take selfies:</p>
+<div class="author">
+<a href="../member.php.html?u=303885">Nigey Nige</a>
+<a href="../fp_images.php.html?t=1499629" id="thread_has_images">
+<span class="minicons newimages"><img alt="Thread has images" src="../fp/hasimages.png" title="Thread has images"/></span>
+</a>
+<span class="minicons reading"><img alt="1 people are reading this thread" src="../fp/reading.png" title="1 people are reading this thread"/> x <strong>1</strong></span>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>4 Days Ago</dd>
+<dd>by <a href="../member.php.html?u=492604">elevate</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1499629&amp;p=50477868#post50477868" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1499629" onclick="who(1499629); return false;">5,001</a>
+</td>
+<td class="threadviews alt">
+<span>416,358</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1518890">
+
+<td class="threadicon alt">
+<img alt="Computers" border="0" src="../fp/posticons/computers.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1518890" id="thread_title_1518890" title="Hi guys, 
+ 
+I'm working on an assembly project, which is basically making a piano from scratch. I'm using VMWare, asm x86 (16 bits only) and I'm having trouble with the length of my program. As the script must be smaller than 512 bytes (which is the size...">How to run ASM x86 that is longer than 512B</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Hi guys, 
+ 
+I'm working on an assembly project, which is basically making a piano from scratch. I'm using VMWare, asm x86 (16 bits only) and I'm having trouble with the length of my program. As the script must be smaller than 512 bytes (which is the size...</p>
+<div class="author">
+<a href="../member.php.html?u=724853">Eirheinger</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>1 Week Ago</dd>
+<dd>by <a href="../member.php.html?u=724853">Eirheinger</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1518890&amp;p=50458812#post50458812" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1518890" onclick="who(1518890); return false;">12</a>
+</td>
+<td class="threadviews alt">
+<span>1,044</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1521145">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/help.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1521145" id="thread_title_1521145" title="How do you create an SVN repository?  I would like to make this a online SVN repository.">How do you create a SVN repository</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">How do you create an SVN repository?  I would like to make this a online SVN repository.</p>
+<div class="author">
+<a href="../member.php.html?u=649820">xMASTERofWARx</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>1 Week Ago</dd>
+<dd>by <a href="../member.php.html?u=384395">Rocket</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1521145&amp;p=50457792#post50457792" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1521145" onclick="who(1521145); return false;">8</a>
+</td>
+<td class="threadviews alt">
+<span>299</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1520768">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/help.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1520768" id="thread_title_1520768" title="Tap Code is a method of communication by using taps or knocks to signify certain letters. You tap a certain number of times to signify what row the letter is in, then after a pause tap to signify the column.  
+ 
+ 
+ 
+ 
+I am attempting to make a program...">What is the issue? ( Tap Code Program )</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Tap Code is a method of communication by using taps or knocks to signify certain letters. You tap a certain number of times to signify what row the letter is in, then after a pause tap to signify the column.  
+ 
+ 
+ 
+ 
+I am attempting to make a program...</p>
+<div class="author">
+<a href="../member.php.html?u=649861">Klespyrian</a>
+<a href="../fp_images.php.html?t=1520768" id="thread_has_images">
+<span class="minicons newimages"><img alt="Thread has images" src="../fp/hasimages.png" title="Thread has images"/></span>
+</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>1 Week Ago</dd>
+<dd>by <a href="../member.php.html?u=649861">Klespyrian</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1520768&amp;p=50453069#post50453069" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1520768" onclick="who(1520768); return false;">2</a>
+</td>
+<td class="threadviews alt">
+<span>264</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1520701">
+
+<td class="threadicon alt">
+<img alt="PHP" border="0" src="../fp/posticons/php.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1520701" id="thread_title_1520701" title="Hello I am trying to find out how to make  
+ 
+example.php 
+ 
+to alot of php's just every php has the same name. 
+ 
+Lets say there is a example.php that says &quot;Hello&quot; when you enter the site. 
+ 
+Lets say you go to the next page then it does this">.php?type=1</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Hello I am trying to find out how to make  
+ 
+example.php 
+ 
+to alot of php's just every php has the same name. 
+ 
+Lets say there is a example.php that says "Hello" when you enter the site. 
+ 
+Lets say you go to the next page then it does this</p>
+<div class="author">
+<a href="../member.php.html?u=730778">karl-police</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>1 Week Ago</dd>
+<dd>by <a href="../member.php.html?u=90109">asciid</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1520701&amp;p=50448642#post50448642" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1520701" onclick="who(1520701); return false;">10</a>
+</td>
+<td class="threadviews alt">
+<span>602</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1520605">
+
+<td class="threadicon alt">
+<img alt="PHP" border="0" src="../fp/posticons/php.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1520605" id="thread_title_1520605" title="Does anyone know of an alternative for PHP sockets? I'm developing a web based donation system that utilizes the Source RCon protocol. Only problem is Bluehost blocks all data going out on all ports except 80 (http) and 443 (https), so using sockets isn't...">Alternative To PHP Sockets?</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Does anyone know of an alternative for PHP sockets? I'm developing a web based donation system that utilizes the Source RCon protocol. Only problem is Bluehost blocks all data going out on all ports except 80 (http) and 443 (https), so using sockets isn't...</p>
+<div class="author">
+<a href="../member.php.html?u=565628">nulls</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>1 Week Ago</dd>
+<dd>by <a href="../member.php.html?u=251448">MadParakeet</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1520605&amp;p=50446232#post50446232" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1520605" onclick="who(1520605); return false;">6</a>
+</td>
+<td class="threadviews alt">
+<span>279</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1520907">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/help.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1520907" id="thread_title_1520907" title="Alright, I'm creating a StarWarsRP server. The current map is 240 something MBs. So I heard I can FastDL it. I did everything to the spot, the .lua, compressing the map first, etc, and still get a missing map error, as well as other players do. They don't...">FastDL - Oversized Map</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Alright, I'm creating a StarWarsRP server. The current map is 240 something MBs. So I heard I can FastDL it. I did everything to the spot, the .lua, compressing the map first, etc, and still get a missing map error, as well as other players do. They don't...</p>
+<div class="author">
+<a href="../member.php.html?u=734164">Tyro60</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>1 Week Ago</dd>
+<dd>by <a href="../member.php.html?u=553816">code_gs</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1520907&amp;p=50434687#post50434687" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1520907" onclick="who(1520907); return false;">1</a>
+</td>
+<td class="threadviews alt">
+<span>187</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1519819">
+
+<td class="threadicon alt">
+<img alt="Games" border="0" src="../fp/posticons/games.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1519819" id="thread_title_1519819" title='when I try to compile my .qc on crowbar I get the following error: Line 3 is incomplete 
+ 
+the line is referring to is : $modelname " stereo.mdl " 
+ 
+My .QC 
+ 
+ 
+$modelname "stereo.mdl" 
+$body "stereo.smd" 
+$scale 1'>compilling crowbar error: Line 3 is incomplete</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">when I try to compile my .qc on crowbar I get the following error: Line 3 is incomplete 
+ 
+the line is referring to is : $modelname " stereo.mdl " 
+ 
+My .QC 
+ 
+ 
+$modelname "stereo.mdl" 
+$body "stereo.smd" 
+$scale 1</p>
+<div class="author">
+<a href="../member.php.html?u=670383">lucasxgta</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>2 Weeks Ago</dd>
+<dd>by <a href="../member.php.html?u=673203">taz0</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1519819&amp;p=50421627#post50421627" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1519819" onclick="who(1519819); return false;">1</a>
+</td>
+<td class="threadviews alt">
+<span>282</span>
+</td>
+</tr><tr class="threadbit hot lock old nonsticky" id="thread_1520617">
+
+<td class="threadicon alt">
+<img alt="Rant" border="0" src="../fp/posticons/locked.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1520617" id="thread_title_1520617" title="I have personally witnessed bears who can walk through walls, through doors, through spikes, through traps, etc. and this is very frustrating. If these issues are not easily fixable, then perhaps consider making a no-spawn radius around tool cupboards,...">BEAR BUGS! Bears are behaving in very unrealistic ways. Very "glitchy."</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">I have personally witnessed bears who can walk through walls, through doors, through spikes, through traps, etc. and this is very frustrating. If these issues are not easily fixable, then perhaps consider making a no-spawn radius around tool cupboards,...</p>
+<div class="author">
+<a href="../member.php.html?u=733968">Sylva</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>2 Weeks Ago</dd>
+<dd>by <a href="../member.php.html?u=733968">Sylva</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1520617&amp;p=50418048#post50418048" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1520617" onclick="who(1520617); return false;">0</a>
+</td>
+<td class="threadviews alt">
+<span>191</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1274683">
+
+<td class="threadicon alt">
+<img alt="NSFW" border="0" src="../fp/posticons/nsfw.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1274683" id="thread_title_1274683" title="After the whole drama in the Sinking Simulator thread, the Facepunch programming forum is proud to give you: 
+ 
+Terrorism Simulator 2014 version 1.1 
+DOWNLOAD HERE! 
+(If you wanna run this on OSX, get the source and löve 0.9.0 from...">Terrorism Simulator 2014</a> <span class="threadpagenav">(  <a href="../showthread.php.html?t=1274683&amp;page=2">2</a> <a href="../showthread.php.html?t=1274683&amp;page=3">3</a> <a href="../showthread.php.html?t=1274683&amp;page=4">4</a> <a href="../showthread.php.html?t=1274683&amp;page=5">5 Last</a>  )</span>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">After the whole drama in the Sinking Simulator thread, the Facepunch programming forum is proud to give you: 
+ 
+Terrorism Simulator 2014 version 1.1 
+DOWNLOAD HERE! 
+(If you wanna run this on OSX, get the source and löve 0.9.0 from...</p>
+<div class="author">
+<a href="../member.php.html?u=15877">Maurice</a>
+<a href="../fp_images.php.html?t=1274683" id="thread_has_images">
+<span class="minicons newimages"><img alt="Thread has images" src="../fp/hasimages.png" title="Thread has images"/></span>
+</a>
+<span class="minicons ratings"><span><img alt="Winner" src="../fp/ratings/winner.png"/>  x <strong>111</strong></span></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>2 Weeks Ago</dd>
+<dd>by <a href="../member.php.html?u=558582">hakimhakim</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1274683&amp;p=50407021#post50407021" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1274683" onclick="who(1274683); return false;">162</a>
+</td>
+<td class="threadviews alt">
+<span>19,908</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1487400">
+
+<td class="threadicon alt">
+<img alt="Work In Progress" border="0" src="../fp/posticons/workinprogress.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1487400" id="thread_title_1487400" title="Game maker studio was recently on sale on humble bundle so lets see what everyone is up to, new and old are welcome lets help each other out and show off all the cool things we are making! 
+ 
+About GameMaker 
+http://www.yoyogames.com/studio 
+GameMaker:...">GameMaker: Studio discussion</a> <span class="threadpagenav">(  <a href="../showthread.php.html?t=1487400&amp;page=2">2</a> <a href="../showthread.php.html?t=1487400&amp;page=3">3</a> <a href="../showthread.php.html?t=1487400&amp;page=4">4 Last</a>  )</span>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Game maker studio was recently on sale on humble bundle so lets see what everyone is up to, new and old are welcome lets help each other out and show off all the cool things we are making! 
+ 
+About GameMaker 
+http://www.yoyogames.com/studio 
+GameMaker:...</p>
+<div class="author">
+<a href="../member.php.html?u=298774">Isaac96</a>
+<a href="../fp_images.php.html?t=1487400" id="thread_has_images">
+<span class="minicons newimages"><img alt="Thread has images" src="../fp/hasimages.png" title="Thread has images"/></span>
+</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>2 Weeks Ago</dd>
+<dd>by <a href="../member.php.html?u=190410">Gamaz</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1487400&amp;p=50397441#post50397441" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1487400" onclick="who(1487400); return false;">155</a>
+</td>
+<td class="threadviews alt">
+<span>9,125</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1520028">
+
+<td class="threadicon alt">
+<img alt="Lua" border="0" src="../fp/posticons/lua.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1520028" id="thread_title_1520028" title="Hey there! 
+Basically, i'll skip to the point. 
+I'm developing ideas using Gmod's lua, and everything was working perfectly, until i tried to use lua_openscript &lt;filename&gt; in the console today. 
+The console command CRASHED my gmod, and doesn't work...">Problems with lua_openscript in the console of Gmod</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Hey there! 
+Basically, i'll skip to the point. 
+I'm developing ideas using Gmod's lua, and everything was working perfectly, until i tried to use lua_openscript &lt;filename&gt; in the console today. 
+The console command CRASHED my gmod, and doesn't work...</p>
+<div class="author">
+<a href="../member.php.html?u=733823">Mr.Pap</a>
+<a href="../fp_images.php.html?t=1520028" id="thread_has_images">
+<span class="minicons newimages"><img alt="Thread has images" src="../fp/hasimages.png" title="Thread has images"/></span>
+</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>2 Weeks Ago</dd>
+<dd>by <a href="../member.php.html?u=187525">proboardslol</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1520028&amp;p=50391730#post50391730" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1520028" onclick="who(1520028); return false;">1</a>
+</td>
+<td class="threadviews alt">
+<span>178</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1519526">
+
+<td class="threadicon alt">
+<img alt="Release" border="0" src="../fp/posticons/release.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1519526" id="thread_title_1519526" title="Like the title says, the only purpose of this little tool/patch is to get rid of steams link filter. I'm aware that there is already a solution but its some external process and I would always forget running it, so here is a slightly better solution. 
+...">Anti Steam Link Filter 1.0</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Like the title says, the only purpose of this little tool/patch is to get rid of steams link filter. I'm aware that there is already a solution but its some external process and I would always forget running it, so here is a slightly better solution. 
+...</p>
+<div class="author">
+<a href="../member.php.html?u=416659">Zeh Matt</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>3 Weeks Ago</dd>
+<dd>by <a href="../member.php.html?u=416659">Zeh Matt</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1519526&amp;p=50368797#post50368797" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1519526" onclick="who(1519526); return false;">7</a>
+</td>
+<td class="threadviews alt">
+<span>558</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1514282">
+
+<td class="threadicon alt">
+<img alt="Love" border="0" src="../fp/posticons/love.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1514282" id="thread_title_1514282" title="A lot of learners here. Seeing other peoples work can both be inspiring (&quot;Wow, that's so cool! I want to learn Unity and C# so I can do something like that too!&quot;) and intimidating (&quot;I'll never be this good; even if I get good I'm still just copy pasting...">Your goal</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">A lot of learners here. Seeing other peoples work can both be inspiring ("Wow, that's so cool! I want to learn Unity and C# so I can do something like that too!") and intimidating ("I'll never be this good; even if I get good I'm still just copy pasting...</p>
+<div class="author">
+<a href="../member.php.html?u=187525">proboardslol</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>3 Weeks Ago</dd>
+<dd>by <a href="../member.php.html?u=187525">proboardslol</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1514282&amp;p=50359105#post50359105" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1514282" onclick="who(1514282); return false;">38</a>
+</td>
+<td class="threadviews alt">
+<span>1,644</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1518744">
+
+<td class="threadicon alt">
+<img alt="Computers" border="0" src="../fp/posticons/computers.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1518744" id="thread_title_1518744" title="What would the best engine be for simpleness and easy to use interface? Would it be something like unity?">Best Engine for Simplicity and begginers</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">What would the best engine be for simpleness and easy to use interface? Would it be something like unity?</p>
+<div class="author">
+<a href="../member.php.html?u=733238">DExeChaz</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>3 Weeks Ago</dd>
+<dd>by <a href="../member.php.html?u=673203">taz0</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1518744&amp;p=50357903#post50357903" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1518744" onclick="who(1518744); return false;">14</a>
+</td>
+<td class="threadviews alt">
+<span>702</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1519249">
+
+<td class="threadicon alt">
+<img alt="Science" border="0" src="../fp/posticons/science.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1519249" id="thread_title_1519249" title="What text editors, languages, IDEs, compilers, color schemes, operating systems, version control, RDBMS, or anything else you might feel like sharing do you use most often/are your favorite?">What is you preferred development environment?</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">What text editors, languages, IDEs, compilers, color schemes, operating systems, version control, RDBMS, or anything else you might feel like sharing do you use most often/are your favorite?</p>
+<div class="author">
+<a href="../member.php.html?u=187525">proboardslol</a>
+<a href="../fp_images.php.html?t=1519249" id="thread_has_images">
+<span class="minicons newimages"><img alt="Thread has images" src="../fp/hasimages.png" title="Thread has images"/></span>
+</a>
+<span class="minicons reading"><img alt="1 people are reading this thread" src="../fp/reading.png" title="1 people are reading this thread"/> x <strong>1</strong></span>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>3 Weeks Ago</dd>
+<dd>by <a href="../member.php.html?u=65969">Protocol7</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1519249&amp;p=50357694#post50357694" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1519249" onclick="who(1519249); return false;">19</a>
+</td>
+<td class="threadviews alt">
+<span>528</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1519261">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/help.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1519261" id="thread_title_1519261" title="I'm working on a few projects and was wondering if anybody had any good insights on some features i need to add to them. They are windows forms applications and I'm working in Visual Studio 2015 of course. One project needs a list to be populated from an...">A little help in C#?</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">I'm working on a few projects and was wondering if anybody had any good insights on some features i need to add to them. They are windows forms applications and I'm working in Visual Studio 2015 of course. One project needs a list to be populated from an...</p>
+<div class="author">
+<a href="../member.php.html?u=25308">neonwhite</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>3 Weeks Ago</dd>
+<dd>by <a href="../member.php.html?u=25308">neonwhite</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1519261&amp;p=50352967#post50352967" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1519261" onclick="who(1519261); return false;">4</a>
+</td>
+<td class="threadviews alt">
+<span>264</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1519104">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/help.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1519104" id="thread_title_1519104" title="I have the microsoft SQL server thing but i'm sure there's better options out there, especially options that don't do this to my poor computer: 
+ 
+ 
+ 
+at the very least, i'd like it to be able to host a server on my own computer to play around with it,...">What should I use for a virtual SQL database server?</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">I have the microsoft SQL server thing but i'm sure there's better options out there, especially options that don't do this to my poor computer: 
+ 
+ 
+ 
+at the very least, i'd like it to be able to host a server on my own computer to play around with it,...</p>
+<div class="author">
+<a href="../member.php.html?u=152043">Octopod</a>
+<a href="../fp_images.php.html?t=1519104" id="thread_has_images">
+<span class="minicons newimages"><img alt="Thread has images" src="../fp/hasimages.png" title="Thread has images"/></span>
+</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>3 Weeks Ago</dd>
+<dd>by <a href="../member.php.html?u=648204">Fourier</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1519104&amp;p=50350258#post50350258" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1519104" onclick="who(1519104); return false;">5</a>
+</td>
+<td class="threadviews alt">
+<span>245</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1016639">
+
+<td class="threadicon alt">
+<img alt="Release" border="0" src="../fp/posticons/release.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1016639" id="thread_title_1016639" title="Only YOU can help the Unifrog to travel the universe! 
+Register an account and download the software to start supporting unifrog! 
+ 
+ 
+- Users 
+- User stats 
+- Achievements 
+- User achievements 
+- Shop 
+- Money system">Unifrog</a> <span class="threadpagenav">(  <a href="../showthread.php.html?t=1016639&amp;page=2">2</a> <a href="../showthread.php.html?t=1016639&amp;page=3">3</a> <a href="../showthread.php.html?t=1016639&amp;page=4">4</a> <a href="../showthread.php.html?t=1016639&amp;page=5">5</a>  ..  <a href="../showthread.php.html?t=1016639&amp;page=10">10</a> <a href="../showthread.php.html?t=1016639&amp;page=11">11</a> <a href="../showthread.php.html?t=1016639&amp;page=12">12</a> <a href="../showthread.php.html?t=1016639&amp;page=13">13 Last</a>  )</span>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Only YOU can help the Unifrog to travel the universe! 
+Register an account and download the software to start supporting unifrog! 
+ 
+ 
+- Users 
+- User stats 
+- Achievements 
+- User achievements 
+- Shop 
+- Money system</p>
+<div class="author">
+<a href="../member.php.html?u=85411">Giraffen93</a>
+<a href="../fp_images.php.html?t=1016639" id="thread_has_images">
+<span class="minicons newimages"><img alt="Thread has images" src="../fp/hasimages.png" title="Thread has images"/></span>
+</a>
+<span class="minicons ratings"><span><img alt="Programming King" src="../fp/ratings/programming_king.png"/>  x <strong>35</strong></span></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>4 Weeks Ago</dd>
+<dd>by <a href="../member.php.html?u=85411">Giraffen93</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1016639&amp;p=50331378#post50331378" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1016639" onclick="who(1016639); return false;">480</a>
+</td>
+<td class="threadviews alt">
+<span>26,490</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1518705">
+
+<td class="threadicon alt">
+<img alt="Stupid" border="0" src="../fp/posticons/stupid.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1518705" id="thread_title_1518705" title="So I've been trying to figure out why the hell LightOpenID returns a 406 error anytime I try using the Steam web API to verify, but I've had no luck. Has anyone else had this problem before? Any glaring issues in my code? The verification system works...">php - LightOpenID Steam Login Return 406 Error</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">So I've been trying to figure out why the hell LightOpenID returns a 406 error anytime I try using the Steam web API to verify, but I've had no luck. Has anyone else had this problem before? Any glaring issues in my code? The verification system works...</p>
+<div class="author">
+<a href="../member.php.html?u=565628">nulls</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>4 Weeks Ago</dd>
+<dd>by <a href="../member.php.html?u=565628">nulls</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1518705&amp;p=50325987#post50325987" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1518705" onclick="who(1518705); return false;">2</a>
+</td>
+<td class="threadviews alt">
+<span>281</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1518665">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/help.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1518665" id="thread_title_1518665" title="Can anyone send me the Python scripts to decrypt the initfs files in Frostbite games? Since bfeditor went down, I can't find them.">initfs files in Frostbite</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Can anyone send me the Python scripts to decrypt the initfs files in Frostbite games? Since bfeditor went down, I can't find them.</p>
+<div class="author">
+<a href="../member.php.html?u=708960">PlanesFan1</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>4 Weeks Ago</dd>
+<dd>by <a href="../member.php.html?u=708960">PlanesFan1</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1518665&amp;p=50321376#post50321376" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1518665" onclick="who(1518665); return false;">0</a>
+</td>
+<td class="threadviews alt">
+<span>181</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1518581">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/help.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1518581" id="thread_title_1518581" title="This thread could be used for any CS related career questions, but really I'm just posting this to ask a specific question: 
+ 
+I'm going to school in Richmond, VA next semester, and I would love to get some freelance web dev work to help pay for food....">Jobs and Careers</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">This thread could be used for any CS related career questions, but really I'm just posting this to ask a specific question: 
+ 
+I'm going to school in Richmond, VA next semester, and I would love to get some freelance web dev work to help pay for food....</p>
+<div class="author">
+<a href="../member.php.html?u=187525">proboardslol</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>4 Weeks Ago</dd>
+<dd>by <a href="../member.php.html?u=297931">brianosaur</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1518581&amp;p=50319893#post50319893" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1518581" onclick="who(1518581); return false;">7</a>
+</td>
+<td class="threadviews alt">
+<span>348</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1518022">
+
+<td class="threadicon alt">
+<img alt="C#" border="0" src="../fp/posticons/csharp.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1518022" id="thread_title_1518022" title="Hey. I'd like some input on a decision. 
+ 
+I'm building a game engine, and it's currently written in C++. It isn't really a huge effort to convert this to C# but, performance wise, is that a good idea? 
+ 
+I am thinking about this because I find C# a more...">C++ engine to C#, is it a good idea?</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Hey. I'd like some input on a decision. 
+ 
+I'm building a game engine, and it's currently written in C++. It isn't really a huge effort to convert this to C# but, performance wise, is that a good idea? 
+ 
+I am thinking about this because I find C# a more...</p>
+<div class="author">
+<a href="../member.php.html?u=494993">Winded</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>4 Weeks Ago</dd>
+<dd>by <a href="../member.php.html?u=401242">Sapd</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1518022&amp;p=50319325#post50319325" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1518022" onclick="who(1518022); return false;">9</a>
+</td>
+<td class="threadviews alt">
+<span>732</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1517695">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/help.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1517695" id="thread_title_1517695" title="Coming from someone who only knows HTML, CSS, and JS when it comes to making websites, I have actually no clue how to either make a database or connect a website to one. I've tried looking up tutorials but I'm probably not looking correctly since none of...">How would I go about connecting a database to a website?</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Coming from someone who only knows HTML, CSS, and JS when it comes to making websites, I have actually no clue how to either make a database or connect a website to one. I've tried looking up tutorials but I'm probably not looking correctly since none of...</p>
+<div class="author">
+<a href="../member.php.html?u=152043">Octopod</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>4 Weeks Ago</dd>
+<dd>by <a href="../member.php.html?u=556626">Th3applek1d</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1517695&amp;p=50319144#post50319144" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1517695" onclick="who(1517695); return false;">8</a>
+</td>
+<td class="threadviews alt">
+<span>493</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1517939">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/help.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1517939" id="thread_title_1517939" title="Hello, I have a static website that has a FAQ section built into it. The FAQ page is set up to where you click on the question and it does a drop down animation revealing the answer to that question. I am trying to figure out a way to make it so it can be...">Web Programming Help</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Hello, I have a static website that has a FAQ section built into it. The FAQ page is set up to where you click on the question and it does a drop down animation revealing the answer to that question. I am trying to figure out a way to make it so it can be...</p>
+<div class="author">
+<a href="../member.php.html?u=558891">Rekson</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>4 Weeks Ago</dd>
+<dd>by <a href="../member.php.html?u=558891">Rekson</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1517939&amp;p=50305969#post50305969" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1517939" onclick="who(1517939); return false;">6</a>
+</td>
+<td class="threadviews alt">
+<span>291</span>
+</td>
+</tr><tr class="threadbit hot lock old nonsticky" id="thread_1517892">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/locked.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1517892" id="thread_title_1517892" title="I'm looking Source Engine programmers for a project. 
+ 
+You can contact me here for more info : http://steamcommunity.com/id/CookEZ">Looking for Source Engine programmers.</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">I'm looking Source Engine programmers for a project. 
+ 
+You can contact me here for more info : http://steamcommunity.com/id/CookEZ</p>
+<div class="author">
+<a href="../member.php.html?u=732840">Swoog</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>4 Weeks Ago</dd>
+<dd>by <a href="../member.php.html?u=648204">Fourier</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1517892&amp;p=50289328#post50289328" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1517892" onclick="who(1517892); return false;">3</a>
+</td>
+<td class="threadviews alt">
+<span>337</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1517938">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/help.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1517938" id="thread_title_1517938" title="So i'm trying to connect to a database and put all the info into a table and I can not get it to work when i load the html page I get this 
+RPName Wallet &quot;; while($row = mysqli_fetch_array($result)) { echo &quot;&quot;; echo &quot;&quot; . $row . &quot;&quot;; echo &quot;&quot; . $row . &quot;&quot;;...">Html wont connect to the database &gt;:(</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">So i'm trying to connect to a database and put all the info into a table and I can not get it to work when i load the html page I get this 
+RPName Wallet "; while($row = mysqli_fetch_array($result)) { echo ""; echo "" . $row . ""; echo "" . $row . "";...</p>
+<div class="author">
+<a href="../member.php.html?u=698942">zippy36jr</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>4 Weeks Ago</dd>
+<dd>by <a href="../member.php.html?u=698942">zippy36jr</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1517938&amp;p=50288207#post50288207" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1517938" onclick="who(1517938); return false;">14</a>
+</td>
+<td class="threadviews alt">
+<span>437</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1516575">
+
+<td class="threadicon alt">
+<img alt="Question" border="0" src="../fp/posticons/question.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1516575" id="thread_title_1516575" title="Been wanting to get into some web development and I was wondering if any of you here have read these two books here, if you have I would love to know what you think on them! Thanks!">HTML, CSS, JQuery, Javascript; Books</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Been wanting to get into some web development and I was wondering if any of you here have read these two books here, if you have I would love to know what you think on them! Thanks!</p>
+<div class="author">
+<a href="../member.php.html?u=557623">Triage</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>8th May 2016</dd>
+<dd>by <a href="../member.php.html?u=297931">brianosaur</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1516575&amp;p=50282756#post50282756" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1516575" onclick="who(1516575); return false;">23</a>
+</td>
+<td class="threadviews alt">
+<span>739</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1517795">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/help.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1517795" id="thread_title_1517795" title='SOLVED  
+(now I feel dumb) 
+ 
+ 
+ 
+I am currently working on running through the Project Euler problems. This code is for Problem # 7: 
+ 
+" By listing the first six prime numbers: 2, 3, 5, 7, 11 and 13, we can see that the 6th prime is 13. 
+ 
+What is the...'>C++ Help: I have no idea why this code doesn't work [ Project Euler ]</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">SOLVED  
+(now I feel dumb) 
+ 
+ 
+ 
+I am currently working on running through the Project Euler problems. This code is for Problem # 7: 
+ 
+" By listing the first six prime numbers: 2, 3, 5, 7, 11 and 13, we can see that the 6th prime is 13. 
+ 
+What is the...</p>
+<div class="author">
+<a href="../member.php.html?u=649861">Klespyrian</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>7th May 2016</dd>
+<dd>by <a href="../member.php.html?u=648204">Fourier</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1517795&amp;p=50276536#post50276536" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1517795" onclick="who(1517795); return false;">6</a>
+</td>
+<td class="threadviews alt">
+<span>342</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1513414">
+
+<td class="threadicon alt">
+<img alt="Music" border="0" src="../fp/posticons/music.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1513414" id="thread_title_1513414" title="https://www.youtube.com/watch?v=q4yb9T2uCeI 
+ 
+maybe don't use media tags because dozens of iframes on one page makes my pc lag :v:">What's your programming soundtrack</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">https://www.youtube.com/watch?v=q4yb9T2uCeI 
+ 
+maybe don't use media tags because dozens of iframes on one page makes my pc lag :v:</p>
+<div class="author">
+<a href="../member.php.html?u=187525">proboardslol</a>
+<a href="../fp_images.php.html?t=1513414" id="thread_has_images">
+<span class="minicons newimages"><img alt="Thread has images" src="../fp/hasimages.png" title="Thread has images"/></span>
+</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>6th May 2016</dd>
+<dd>by <a href="../member.php.html?u=154325">rymn</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1513414&amp;p=50271018#post50271018" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1513414" onclick="who(1513414); return false;">28</a>
+</td>
+<td class="threadviews alt">
+<span>1,184</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1513816">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/help.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1513816" id="thread_title_1513816" title="Sorry, I was using the wrong term, i'm using windows server and i'm moving it to linux and i'm using gmod dll's for windows and I would use the public linux ones, but there are none of them. Because of that I would like to know how could I make the dll...">Recompile headers for linux</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Sorry, I was using the wrong term, i'm using windows server and i'm moving it to linux and i'm using gmod dll's for windows and I would use the public linux ones, but there are none of them. Because of that I would like to know how could I make the dll...</p>
+<div class="author">
+<a href="../member.php.html?u=630368">SteppuFIN</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>6th May 2016</dd>
+<dd>by <a href="../member.php.html?u=648204">Fourier</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1513816&amp;p=50267721#post50267721" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1513816" onclick="who(1513816); return false;">7</a>
+</td>
+<td class="threadviews alt">
+<span>469</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1517211">
+
+<td class="threadicon alt">
+<img alt="PHP" border="0" src="../fp/posticons/php.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1517211" id="thread_title_1517211" title="Im pretty new to web development, I made a website a while ago (A giveaway one) that was done using PHP but I dont think PHP can do what I need it to. I Have a game that is multiplayer but I want to match people on the website (Kind of like how faceit.com...">What should I use for a webserver's backend?</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Im pretty new to web development, I made a website a while ago (A giveaway one) that was done using PHP but I dont think PHP can do what I need it to. I Have a game that is multiplayer but I want to match people on the website (Kind of like how faceit.com...</p>
+<div class="author">
+<a href="../member.php.html?u=651092">0V3RR1D3</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>3rd May 2016</dd>
+<dd>by <a href="../member.php.html?u=297931">brianosaur</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1517211&amp;p=50248473#post50248473" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1517211" onclick="who(1517211); return false;">6</a>
+</td>
+<td class="threadviews alt">
+<span>423</span>
+</td>
+</tr><tr class="threadbit hot lock old nonsticky" id="thread_1516559">
+
+<td class="threadicon alt">
+<img alt="Lua" border="0" src="../fp/posticons/locked.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1516559" id="thread_title_1516559" title="Hi! I have little problem. My NPC have animation ACT_RUN and ACT_RUN_RIFLE (i can change activity because i port model) and i want that on event he use ACT_RUN_RIFLE as ACT_RUN activity. Is it possible? Or i must change run with guns animation activity? 
+...">Change ACT_RUN to ACT_RUN_RIFLE</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Hi! I have little problem. My NPC have animation ACT_RUN and ACT_RUN_RIFLE (i can change activity because i port model) and i want that on event he use ACT_RUN_RIFLE as ACT_RUN activity. Is it possible? Or i must change run with guns animation activity? 
+...</p>
+<div class="author">
+<a href="../member.php.html?u=719755">IAmError</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>27th April 2016</dd>
+<dd>by <a href="../member.php.html?u=719755">IAmError</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1516559&amp;p=50213433#post50213433" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1516559" onclick="who(1516559); return false;">0</a>
+</td>
+<td class="threadviews alt">
+<span>269</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1515369">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/help.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1515369" id="thread_title_1515369" title="I'm currently working on an open-source mod that has the goal of completely fixing Half-Life 2: Deathmatch, and adding some additional features, such as support for the maps from Adrenaline Gamer 2 (which has unfortunately died, and the source never...">Source SDK 2013: Crossbow sound/spark bug</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">I'm currently working on an open-source mod that has the goal of completely fixing Half-Life 2: Deathmatch, and adding some additional features, such as support for the maps from Adrenaline Gamer 2 (which has unfortunately died, and the source never...</p>
+<div class="author">
+<a href="../member.php.html?u=205392">Mossj32</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>26th April 2016</dd>
+<dd>by <a href="../member.php.html?u=205392">Mossj32</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1515369&amp;p=50207080#post50207080" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1515369" onclick="who(1515369); return false;">3</a>
+</td>
+<td class="threadviews alt">
+<span>386</span>
+</td>
+</tr><tr class="threadbit hot lock old nonsticky" id="thread_1516380">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/locked.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1516380" id="thread_title_1516380" title="When on a multi-player server in Gmod, a lua error occurs whenever my swep is used. 
+The error in question: 
+ 
+ lua/weapons/amandatodd.lua:216: attempt to call method 'TakeDamage' (a nil value) 
+  1. unknown - lua/weapons/amandatodd.lua:216 
+  
+The code...">LUA Errors when "TakeDamage" is Called on a Server (Gmod Swep)</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">When on a multi-player server in Gmod, a lua error occurs whenever my swep is used. 
+The error in question: 
+ 
+ lua/weapons/amandatodd.lua:216: attempt to call method 'TakeDamage' (a nil value) 
+  1. unknown - lua/weapons/amandatodd.lua:216 
+  
+The code...</p>
+<div class="author">
+<a href="../member.php.html?u=652514">Suspicious</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>26th April 2016</dd>
+<dd>by <a href="../member.php.html?u=652514">Suspicious</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1516380&amp;p=50205880#post50205880" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1516380" onclick="who(1516380); return false;">0</a>
+</td>
+<td class="threadviews alt">
+<span>202</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1510625">
+
+<td class="threadicon alt">
+<img alt="Hobbies" border="0" src="../fp/posticons/hobbies.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1510625" id="thread_title_1510625" title="This puzzle is an unsolveable encryption. To figure it out, you must find the key. Here's a hint: the key has no spaces or punctuation.">Crypotgraphy challenge</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">This puzzle is an unsolveable encryption. To figure it out, you must find the key. Here's a hint: the key has no spaces or punctuation.</p>
+<div class="author">
+<a href="../member.php.html?u=187525">proboardslol</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>25th April 2016</dd>
+<dd>by <a href="../member.php.html?u=648204">Fourier</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1510625&amp;p=50200913#post50200913" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1510625" onclick="who(1510625); return false;">38</a>
+</td>
+<td class="threadviews alt">
+<span>1,602</span>
+</td>
+</tr><tr class="threadbit hot lock old nonsticky" id="thread_1516030">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/locked.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1516030" id="thread_title_1516030" title="well I'm trying to do this... 
+ 
+concommand.Add( &quot;play90s&quot;, function( ply, cmd, args, str ) 
+	print( ply:Nick(), cmd ) 
+	PrintTable( args ) 
+        then 
+        sound.PlayFile( &quot;addons\taunts\90s.wav&quot;, &quot;&quot;, function( station ) 
+	if ( IsValid( station ) )...">Lua code ConCommand play sound help!</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">well I'm trying to do this... 
+ 
+concommand.Add( "play90s", function( ply, cmd, args, str ) 
+	print( ply:Nick(), cmd ) 
+	PrintTable( args ) 
+        then 
+        sound.PlayFile( "addons\taunts\90s.wav", "", function( station ) 
+	if ( IsValid( station ) )...</p>
+<div class="author">
+<a href="../member.php.html?u=731953">jacobcooper18</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>24th April 2016</dd>
+<dd>by <a href="../member.php.html?u=187525">proboardslol</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1516030&amp;p=50190896#post50190896" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1516030" onclick="who(1516030); return false;">1</a>
+</td>
+<td class="threadviews alt">
+<span>194</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1514346">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/help.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1514346" id="thread_title_1514346" title="Hey! 
+ 
+So i want to start C# (I have java and lua experience) and create 3d game. (I have done it in java but i think java sucks now) 
+I have been looking and found OpenTK with SFML, but i'm not sure if i should use them. 
+I need some libraries for...">What would be good C# Engine/Library for me?</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Hey! 
+ 
+So i want to start C# (I have java and lua experience) and create 3d game. (I have done it in java but i think java sucks now) 
+I have been looking and found OpenTK with SFML, but i'm not sure if i should use them. 
+I need some libraries for...</p>
+<div class="author">
+<a href="../member.php.html?u=630368">SteppuFIN</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>22nd April 2016</dd>
+<dd>by <a href="../member.php.html?u=718815">Radical_ed</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1514346&amp;p=50182718#post50182718" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1514346" onclick="who(1514346); return false;">11</a>
+</td>
+<td class="threadviews alt">
+<span>655</span>
+</td>
+</tr><tr class="threadbit hot lock old nonsticky" id="thread_1515647">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/locked.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1515647" id="thread_title_1515647" title="Hi, i'm trying to make gcap so more than 1 person can actually use it the original code is 
+CAP.allowance = { 
+     = true, 
+} 
+ 
+this is the code i tried but didn't work i have no idea what i'm doing 
+CAP.allowance = { 
+     = true, 
+}">gcap more than 1 group permission</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Hi, i'm trying to make gcap so more than 1 person can actually use it the original code is 
+CAP.allowance = { 
+     = true, 
+} 
+ 
+this is the code i tried but didn't work i have no idea what i'm doing 
+CAP.allowance = { 
+     = true, 
+}</p>
+<div class="author">
+<a href="../member.php.html?u=714394">dazholmes</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>21st April 2016</dd>
+<dd>by <a href="../member.php.html?u=714394">dazholmes</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1515647&amp;p=50175015#post50175015" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1515647" onclick="who(1515647); return false;">2</a>
+</td>
+<td class="threadviews alt">
+<span>208</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1515450">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/help.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1515450" id="thread_title_1515450" title='"Unhandled exception at 0xC0B60FFF in hl2.exe: 0xC0000005: Access violation executing location 0xC0B60FFF." 
+ 
+Happens on level change, disconnect and game exiting. 
+Apparently caused by this line of code: 
+ 
+...'>Random access violations with latest Source Engine MP SDK</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">"Unhandled exception at 0xC0B60FFF in hl2.exe: 0xC0000005: Access violation executing location 0xC0B60FFF." 
+ 
+Happens on level change, disconnect and game exiting. 
+Apparently caused by this line of code: 
+ 
+...</p>
+<div class="author">
+<a href="../member.php.html?u=697203">The Yiffy Fox</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>20th April 2016</dd>
+<dd>by <a href="../member.php.html?u=697203">The Yiffy Fox</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1515450&amp;p=50166506#post50166506" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1515450" onclick="who(1515450); return false;">0</a>
+</td>
+<td class="threadviews alt">
+<span>251</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1512008">
+
+<td class="threadicon alt">
+<img alt="C++" border="0" src="../fp/posticons/cpp.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1512008" id="thread_title_1512008" title="I have experience about mapping and programing in source engine, if you needed i would like to help you as far as i can">Do you need help in source engine?</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">I have experience about mapping and programing in source engine, if you needed i would like to help you as far as i can</p>
+<div class="author">
+<a href="../member.php.html?u=680669">msalinas2877</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>17th April 2016</dd>
+<dd>by <a href="../member.php.html?u=205392">Mossj32</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1512008&amp;p=50150201#post50150201" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1512008" onclick="who(1512008); return false;">14</a>
+</td>
+<td class="threadviews alt">
+<span>803</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1514759">
+
+<td class="threadicon alt">
+<img alt="Request" border="0" src="../fp/posticons/request.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1514759" id="thread_title_1514759" title="I'm not sure if I put this thread in the correct section, so tell me if I didn't. This probably is a lot to ask for (I'm not totally sure though because I know absolutely nothing about scripting) but could someone finish this maxscript for importing...">Could someone finish this maxscript?</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">I'm not sure if I put this thread in the correct section, so tell me if I didn't. This probably is a lot to ask for (I'm not totally sure though because I know absolutely nothing about scripting) but could someone finish this maxscript for importing...</p>
+<div class="author">
+<a href="../member.php.html?u=725592">Sc4recroW</a>
+<a href="../fp_images.php.html?t=1514759" id="thread_has_images">
+<span class="minicons newimages"><img alt="Thread has images" src="../fp/hasimages.png" title="Thread has images"/></span>
+</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>15th April 2016</dd>
+<dd>by <a href="../member.php.html?u=725592">Sc4recroW</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1514759&amp;p=50134294#post50134294" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1514759" onclick="who(1514759); return false;">1</a>
+</td>
+<td class="threadviews alt">
+<span>285</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1514167">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/help.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1514167" id="thread_title_1514167" title="Hello we are searching a developer for our Harry Potter thamed DarkRP based serious roleplay server. 
+Trying to finda  good coder for a long-term partnership who can solve  problems creatively, and create high quality , optimized content for  us. 
+We have...">Searching for an experienced coder to develop my server after my instructions</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Hello we are searching a developer for our Harry Potter thamed DarkRP based serious roleplay server. 
+Trying to finda  good coder for a long-term partnership who can solve  problems creatively, and create high quality , optimized content for  us. 
+We have...</p>
+<div class="author">
+<a href="../member.php.html?u=63465">pumab</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>14th April 2016</dd>
+<dd>by <a href="../member.php.html?u=49734">AtomiCal</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1514167&amp;p=50130718#post50130718" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1514167" onclick="who(1514167); return false;">29</a>
+</td>
+<td class="threadviews alt">
+<span>879</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1514327">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/help.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1514327" id="thread_title_1514327" title="Okay, so pardon me if this is in the wrong section, but I figure this is the closest to relevant section. Also pardon any poor grammar as I've been up all night trying to solve this issue. 
+ 
+I am trying to install mysql-server-5.5 on Ubuntu 14.04, but no...">Mysql-Server on Ubuntu 14.04</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Okay, so pardon me if this is in the wrong section, but I figure this is the closest to relevant section. Also pardon any poor grammar as I've been up all night trying to solve this issue. 
+ 
+I am trying to install mysql-server-5.5 on Ubuntu 14.04, but no...</p>
+<div class="author">
+<a href="../member.php.html?u=257086">Blasphemy</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>12th April 2016</dd>
+<dd>by <a href="../member.php.html?u=187525">proboardslol</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1514327&amp;p=50120719#post50120719" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1514327" onclick="who(1514327); return false;">3</a>
+</td>
+<td class="threadviews alt">
+<span>234</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1514269">
+
+<td class="threadicon alt">
+<img alt="C++" border="0" src="../fp/posticons/cpp.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1514269" id="thread_title_1514269" title="Hello, I've been trying to compile a c++ dll from source code that I found, but it says I need a few header files to complete the program. I've been searching, but I can't seem to find them. Does anyone know where I can find them, or does anyone happen to...">Need help fiding header files for program</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Hello, I've been trying to compile a c++ dll from source code that I found, but it says I need a few header files to complete the program. I've been searching, but I can't seem to find them. Does anyone know where I can find them, or does anyone happen to...</p>
+<div class="author">
+<a href="../member.php.html?u=655917">daniel41550</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>12th April 2016</dd>
+<dd>by <a href="../member.php.html?u=187525">proboardslol</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1514269&amp;p=50115845#post50115845" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1514269" onclick="who(1514269); return false;">2</a>
+</td>
+<td class="threadviews alt">
+<span>241</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1514065">
+
+<td class="threadicon alt">
+<img alt="Games" border="0" src="../fp/posticons/games.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1514065" id="thread_title_1514065" title="Hello, I made my first android app as an Indie 17 years old developer. 
+ 
+I would like you to try it but since advertising is not allowed I have to ask first. 
+ 
+Can I please post the app so ppl can try it and give me some suggestions ? Thank you!">So I made my first android app.</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Hello, I made my first android app as an Indie 17 years old developer. 
+ 
+I would like you to try it but since advertising is not allowed I have to ask first. 
+ 
+Can I please post the app so ppl can try it and give me some suggestions ? Thank you!</p>
+<div class="author">
+<a href="../member.php.html?u=503107">Martin951</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>11th April 2016</dd>
+<dd>by <a href="../member.php.html?u=503107">Martin951</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1514065&amp;p=50110252#post50110252" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1514065" onclick="who(1514065); return false;">12</a>
+</td>
+<td class="threadviews alt">
+<span>519</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1513721">
+
+<td class="threadicon alt">
+<img alt="Hobbies" border="0" src="../fp/posticons/hobbies.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1513721" id="thread_title_1513721" title="Introduction 
+ 
+I'm looking for two-to-three coders interested in developing a stealth-focused shooter. The combat of the game should resemble Hotline Miami in terms of ruthlessness. Barring the fundamental mechanics, you have a large amount of creative...">Looking for other programmers for a stealth shooter</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Introduction 
+ 
+I'm looking for two-to-three coders interested in developing a stealth-focused shooter. The combat of the game should resemble Hotline Miami in terms of ruthlessness. Barring the fundamental mechanics, you have a large amount of creative...</p>
+<div class="author">
+<a href="../member.php.html?u=555683">Hovaku</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>10th April 2016</dd>
+<dd>by <a href="../member.php.html?u=343697">chimitos</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1513721&amp;p=50103623#post50103623" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1513721" onclick="who(1513721); return false;">3</a>
+</td>
+<td class="threadviews alt">
+<span>505</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1513624">
+
+<td class="threadicon alt">
+<img alt="School" border="0" src="../fp/posticons/school.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1513624" id="thread_title_1513624" title="Hey,  
+ 
+I have 6 months to make a Tool or a Videogame in an Engine of my choice, I think i will use Unity or Monogame, Unreal is not an Option because i dont want to wait 10 mins everytime my Code compiles and blueprints are not going to get rated. 
+ 
+I...">Game ideas for my Diploma graduation project</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Hey,  
+ 
+I have 6 months to make a Tool or a Videogame in an Engine of my choice, I think i will use Unity or Monogame, Unreal is not an Option because i dont want to wait 10 mins everytime my Code compiles and blueprints are not going to get rated. 
+ 
+I...</p>
+<div class="author">
+<a href="../member.php.html?u=659918">6121993</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>9th April 2016</dd>
+<dd>by <a href="../member.php.html?u=255149">nuttyboffin</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1513624&amp;p=50100537#post50100537" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1513624" onclick="who(1513624); return false;">4</a>
+</td>
+<td class="threadviews alt">
+<span>534</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1513899">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/help.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1513899" id="thread_title_1513899" title="snip 
+ 
+fixed it lols">Windows Server 2008 help and VMware</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">snip 
+ 
+fixed it lols</p>
+<div class="author">
+<a href="../member.php.html?u=53662">CaptainSnake</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>8th April 2016</dd>
+<dd>by <a href="../member.php.html?u=53662">CaptainSnake</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1513899&amp;p=50096251#post50096251" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1513899" onclick="who(1513899); return false;">0</a>
+</td>
+<td class="threadviews alt">
+<span>225</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1510705">
+
+<td class="threadicon alt">
+<img alt="C++" border="0" src="../fp/posticons/cpp.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1510705" id="thread_title_1510705" title="hi, 
+ 
+i've been trying since i got off work for 4 hours to fix my visual studio. i cannot seem to get my program to save into a exe. here is my code. 
+ 
+public class Hello1 
+{ 
+   public static void Main() 
+   { 
+      System.Console.WriteLine(&quot;Hello,...">trying to program in c++</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">hi, 
+ 
+i've been trying since i got off work for 4 hours to fix my visual studio. i cannot seem to get my program to save into a exe. here is my code. 
+ 
+public class Hello1 
+{ 
+   public static void Main() 
+   { 
+      System.Console.WriteLine("Hello,...</p>
+<div class="author">
+<a href="../member.php.html?u=729425">fartINmyEYES</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>7th April 2016</dd>
+<dd>by <a href="../member.php.html?u=478785">LobsterPastry</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1510705&amp;p=50084507#post50084507" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1510705" onclick="who(1510705); return false;">33</a>
+</td>
+<td class="threadviews alt">
+<span>1,806</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1513400">
+
+<td class="threadicon alt">
+<img alt="Request" border="0" src="../fp/posticons/request.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1513400" id="thread_title_1513400" title="Im sorry if this the wrong place to post this but im looking for someone that can program for the source engine, its for a project, and i already have a gameplay designer, and and modeler, were just missing the coder, if you can help please friend me on...">Looking for someone that can program for the source engine</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Im sorry if this the wrong place to post this but im looking for someone that can program for the source engine, its for a project, and i already have a gameplay designer, and and modeler, were just missing the coder, if you can help please friend me on...</p>
+<div class="author">
+<a href="../member.php.html?u=660809">cha0s</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>6th April 2016</dd>
+<dd>by <a href="../member.php.html?u=240810">Adzter</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1513400&amp;p=50077282#post50077282" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1513400" onclick="who(1513400); return false;">8</a>
+</td>
+<td class="threadviews alt">
+<span>367</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1513398">
+
+<td class="threadicon alt">
+<img alt="Stupid" border="0" src="../fp/posticons/stupid.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1513398" id="thread_title_1513398" title="Hello, 
+ 
+Do any of you fine gentlemen know how i could make a Sourcemod plugin run only if the server IP = 1.1.1.1? 
+ 
+Some help will be very appreciated. 
+ 
+If the server IP is another one than the listed one, i would like the plugin to not run any of...">[Help] Make Sourcemod plugin run only if whitelisted server IP.</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Hello, 
+ 
+Do any of you fine gentlemen know how i could make a Sourcemod plugin run only if the server IP = 1.1.1.1? 
+ 
+Some help will be very appreciated. 
+ 
+If the server IP is another one than the listed one, i would like the plugin to not run any of...</p>
+<div class="author">
+<a href="../member.php.html?u=730735">StupidNoob</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>5th April 2016</dd>
+<dd>by <a href="../member.php.html?u=730735">StupidNoob</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1513398&amp;p=50075123#post50075123" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1513398" onclick="who(1513398); return false;">1</a>
+</td>
+<td class="threadviews alt">
+<span>240</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1511663">
+
+<td class="threadicon alt">
+<img alt="Poll" border="0" src="../fp/vb/misc/poll_posticon.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1511663" id="thread_title_1511663" title="As I was making my ritualistic cup of coffee this morning I wondered to myself exactly how much other programmers drink. 
+ 
+I usually have either one or two cups, but I need that first cup to really function.">How much caffeine do you drink?</a> <span class="threadpagenav">(  <a href="../showthread.php.html?t=1511663&amp;page=2">2 Last</a>  )</span>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">As I was making my ritualistic cup of coffee this morning I wondered to myself exactly how much other programmers drink. 
+ 
+I usually have either one or two cups, but I need that first cup to really function.</p>
+<div class="author">
+<a href="../member.php.html?u=343697">chimitos</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>4th April 2016</dd>
+<dd>by <a href="../member.php.html?u=565641">HeyBanditoz</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1511663&amp;p=50069944#post50069944" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1511663" onclick="who(1511663); return false;">55</a>
+</td>
+<td class="threadviews alt">
+<span>1,900</span>
+</td>
+</tr><tr class="threadbit hot lock old nonsticky" id="thread_1513262">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/locked.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1513262" id="thread_title_1513262" title="Hey. 
+First of do NOT link me to the megathread ( what do you need help with ) . Ive already posted there and i kinda need an answer today so i cant really wait for another hour ( in about 40 minutes its midnight here ) so i gotta make this a seperate...">Why is there no time.h in visual studio?</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Hey. 
+First of do NOT link me to the megathread ( what do you need help with ) . Ive already posted there and i kinda need an answer today so i cant really wait for another hour ( in about 40 minutes its midnight here ) so i gotta make this a seperate...</p>
+<div class="author">
+<a href="../member.php.html?u=715059">MoustacheSpy</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>4th April 2016</dd>
+<dd>by <a href="../member.php.html?u=715059">MoustacheSpy</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1513262&amp;p=50068930#post50068930" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1513262" onclick="who(1513262); return false;">3</a>
+</td>
+<td class="threadviews alt">
+<span>305</span>
+</td>
+</tr><tr class="threadbit hot lock old nonsticky" id="thread_1513234">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/locked.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1513234" id="thread_title_1513234" title="Hey. 
+So im trying to make the most basic fps system for my 2d game so i can start testing ( i will replace it with a better one along the line ). My idea is to have a separate thread wait 17 milliseconds and then change a pointer variable for 1...">Best timer for a games fps system?</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Hey. 
+So im trying to make the most basic fps system for my 2d game so i can start testing ( i will replace it with a better one along the line ). My idea is to have a separate thread wait 17 milliseconds and then change a pointer variable for 1...</p>
+<div class="author">
+<a href="../member.php.html?u=715059">MoustacheSpy</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>4th April 2016</dd>
+<dd>by <a href="../member.php.html?u=134505">Karmah</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1513234&amp;p=50067089#post50067089" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1513234" onclick="who(1513234); return false;">3</a>
+</td>
+<td class="threadviews alt">
+<span>248</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1512526">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/help.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1512526" id="thread_title_1512526" title="Hey. 
+So i recently made an application with the winbgim version of graphics.h ( in visual studio but the code is the same so that doesnt matter ) and it works really well. For some reason my code slows down after i placed the first few blocks. I need to...">Why is my code slowing down so much?</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Hey. 
+So i recently made an application with the winbgim version of graphics.h ( in visual studio but the code is the same so that doesnt matter ) and it works really well. For some reason my code slows down after i placed the first few blocks. I need to...</p>
+<div class="author">
+<a href="../member.php.html?u=715059">MoustacheSpy</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>3rd April 2016</dd>
+<dd>by <a href="../member.php.html?u=715059">MoustacheSpy</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1512526&amp;p=50059074#post50059074" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1512526" onclick="who(1512526); return false;">7</a>
+</td>
+<td class="threadviews alt">
+<span>524</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1512294">
+
+<td class="threadicon alt">
+<img alt="Question" border="0" src="../fp/posticons/question.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1512294" id="thread_title_1512294" title="Hello! 
+ 
+I'm not entirely sure if this is the best place to post this but I am assuming so since it would be where I could find the coders i'm looking for. If it's not, could a moderator please move my thread to the correct spot and notify me of the...">Coder/Developer wanted</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Hello! 
+ 
+I'm not entirely sure if this is the best place to post this but I am assuming so since it would be where I could find the coders i'm looking for. If it's not, could a moderator please move my thread to the correct spot and notify me of the...</p>
+<div class="author">
+<a href="../member.php.html?u=730254">Habbo</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>2nd April 2016</dd>
+<dd>by <a href="../member.php.html?u=297931">brianosaur</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1512294&amp;p=50053837#post50053837" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1512294" onclick="who(1512294); return false;">8</a>
+</td>
+<td class="threadviews alt">
+<span>775</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1510742">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/help.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1510742" id="thread_title_1510742" title="I`ve got a trouble. I use FoxPro 3.0 and have a lot of data damaged by the virus. Mostly .dbf format suffered. I cleaned the virus but those files are no longer readable or even openable. How can I recover them? There MUST be a way!">dbf file problem</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">I`ve got a trouble. I use FoxPro 3.0 and have a lot of data damaged by the virus. Mostly .dbf format suffered. I cleaned the virus but those files are no longer readable or even openable. How can I recover them? There MUST be a way!</p>
+<div class="author">
+<a href="../member.php.html?u=729438">grantsnow</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>1st April 2016</dd>
+<dd>by <a href="../member.php.html?u=153186">BlkDucky</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1510742&amp;p=50048417#post50048417" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1510742" onclick="who(1510742); return false;">3</a>
+</td>
+<td class="threadviews alt">
+<span>218</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1512681">
+
+<td class="threadicon alt">
+<img alt="Lua" border="0" src="../fp/posticons/lua.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1512681" id="thread_title_1512681" title="-Remove">Luapad</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">-Remove</p>
+<div class="author">
+<a href="../member.php.html?u=281419">willy007</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>31st March 2016</dd>
+<dd>by <a href="../member.php.html?u=281419">willy007</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1512681&amp;p=50040193#post50040193" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1512681" onclick="who(1512681); return false;">0</a>
+</td>
+<td class="threadviews alt">
+<span>283</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1508765">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/help.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1508765" id="thread_title_1508765" title="Hi all.  
+Haven`t seen a topic like mine so hope everything is ok. I have one problem. Recently I was working with my access database and added a lot of info into the document.   I `ve got to hand over month report soon I`m working all day and night long....">BSOD</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Hi all.  
+Haven`t seen a topic like mine so hope everything is ok. I have one problem. Recently I was working with my access database and added a lot of info into the document.   I `ve got to hand over month report soon I`m working all day and night long....</p>
+<div class="author">
+<a href="../member.php.html?u=728402">declanbooth</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>31st March 2016</dd>
+<dd>by <a href="../member.php.html?u=730387">frankiepearso</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1508765&amp;p=50039414#post50039414" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1508765" onclick="who(1508765); return false;">3</a>
+</td>
+<td class="threadviews alt">
+<span>375</span>
+</td>
+</tr><tr class="threadbit hot lock old nonsticky" id="thread_1512562">
+
+<td class="threadicon alt">
+<img alt="Help" border="0" src="../fp/posticons/locked.gif"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1512562" id="thread_title_1512562" title='MS Project 2010, we are actively used "local" graphics that lead users. These charts usually lie in the My Documents users (a network folder). Some graphs are in SharePoint catalog, but also in the MPP-files. 
+ 
+For some time now, the local graphics were...'>MS Project 2010</a>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">MS Project 2010, we are actively used "local" graphics that lead users. These charts usually lie in the My Documents users (a network folder). Some graphs are in SharePoint catalog, but also in the MPP-files. 
+ 
+For some time now, the local graphics were...</p>
+<div class="author">
+<a href="../member.php.html?u=730352">nitrover</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>30th March 2016</dd>
+<dd>by <a href="../member.php.html?u=244899">Bradyns</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1512562&amp;p=50036136#post50036136" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1512562" onclick="who(1512562); return false;">1</a>
+</td>
+<td class="threadviews alt">
+<span>264</span>
+</td>
+</tr><tr class="threadbit hot old nonsticky" id="thread_1511807">
+
+<td class="threadicon alt">
+<img alt="Question" border="0" src="../fp/posticons/question.png"/>
+</td>
+<td class="threadinfo">
+
+
+<div class="inner">
+<h3 class="threadtitle">
+<a class="title" href="../showthread.php.html?t=1511807" id="thread_title_1511807" title="Post the computer languages that you know the best! 
+ 
+ 
+Languages I know best:  HTML, CSS, jQuery, gLua / Lua">Languages you Know Best.</a> <span class="threadpagenav">(  <a href="../showthread.php.html?t=1511807&amp;page=2">2 Last</a>  )</span>
+</h3>
+<div class="threadmeta">
+<p class="threaddesc">Post the computer languages that you know the best! 
+ 
+ 
+Languages I know best:  HTML, CSS, jQuery, gLua / Lua</p>
+<div class="author">
+<a href="../member.php.html?u=720600">[FSG] ToXiiC</a>
+<a href="../fp_images.php.html?t=1511807" id="thread_has_images">
+<span class="minicons newimages"><img alt="Thread has images" src="../fp/hasimages.png" title="Thread has images"/></span>
+</a>
+<span class="minicons ratings"></span>
+</div>
+</div>
+</div>
+</td>
+
+<td class="alt threadlastpost">
+<dl>
+<dt class="lastpostby hidden">Last Post By</dt>
+<dd>30th March 2016</dd>
+<dd>by <a href="../member.php.html?u=406250">Lenzikus</a> <a class="lastpostdate understate" href="../showthread.php.html?t=1511807&amp;p=50034163#post50034163" title="Go to last post"><img alt="Go to last post" src="../fp/vb/buttons/lastpost.gif"/></a></dd>
+</dl>
+</td>
+
+<td class="threadreplies">
+<a href="../misc.php.html?do=whoposted&amp;t=1511807" onclick="who(1511807); return false;">48</a>
+</td>
+<td class="threadviews alt">
+<span>1,218</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr/>
+<div class="noinlinemod forumfoot">
+</div>
+<input name="url" type="hidden" value=""/>
+<input name="s" type="hidden" value=""/>
+<input name="securitytoken" type="hidden" value="guest"/>
+<input name="forumid" type="hidden" value="240"/>
+</form>
+</div>
+<div class="noinlinemod below_threadlist" id="below_threadlist">
+<div class="threadpagenav">
+<div action="../forumdisplay.php.html?f=240&amp;page=11&amp;order=desc" class="pagination popupmenu nohovermenu" method="get" style="float: right; clear: both;">
+<input name="f" type="hidden" value="240"/><input name="order" type="hidden" value="desc"/>
+<span><a class="popupctrl" href="javascript://">Page 1 of 89</a></span>
+<span class="selected"><a href="javascript://" title="Results 1 to 80 of 7,046">1</a></span><span><a href="../forumdisplay.php.html?f=240&amp;page=2&amp;order=desc" title="Show results 81 to 160 of 7,046">2</a></span><span><a href="../forumdisplay.php.html?f=240&amp;page=3&amp;order=desc" title="Show results 161 to 240 of 7,046">3</a></span><span><a href="../forumdisplay.php.html?f=240&amp;page=4&amp;order=desc" title="Show results 241 to 320 of 7,046">4</a></span><span><a href="../forumdisplay.php.html?f=240&amp;page=5&amp;order=desc" title="Show results 321 to 400 of 7,046">5</a></span><span><a href="../forumdisplay.php.html?f=240&amp;page=6&amp;order=desc" title="Show results 401 to 480 of 7,046">6</a></span><span><a href="../forumdisplay.php.html?f=240&amp;page=7&amp;order=desc" title="Show results 481 to 560 of 7,046">7</a></span><span><a href="../forumdisplay.php.html?f=240&amp;page=8&amp;order=desc" title="Show results 561 to 640 of 7,046">8</a></span><span><a href="../forumdisplay.php.html?f=240&amp;page=9&amp;order=desc" title="Show results 641 to 720 of 7,046">9</a></span><span><a href="../forumdisplay.php.html?f=240&amp;page=10&amp;order=desc" title="Show results 721 to 800 of 7,046">10</a></span><span><a href="../forumdisplay.php.html?f=240&amp;page=11&amp;order=desc" title="Show results 801 to 880 of 7,046">11</a></span>
+<span class="prev_next"><a href="../forumdisplay.php.html?f=240&amp;page=2&amp;order=desc" rel="next" title="Next Page - Results 81 to 160 of 7,046">&gt;</a></span>
+<span class="first_last"><a href="../forumdisplay.php.html?f=240&amp;page=89&amp;order=desc" title="Last Page - Results 7,041 to 7,046 of 7,046">Last <strong>»</strong></a></span>
+</div>
+</div>
+</div>
+
+<div class="boxshadow table" id="bottom_box">
+<div class="tr" id="whos_reading">
+<div class="td img">
+<img alt="Users Browsing this Forum" src="../fp/vb/misc/whos_online.gif"/>
+</div>
+<div class="td">
+<ol class="commalist">
+<li><a class="username" href="../member.php.html?u=464489"><span style="color:#147;">johnnyaka</span></a>, </li>
+<li><a class="username" href="../member.php.html?u=230652"><strong><font color="#A06000">Kirth</font></strong></a>, </li>
+<li><a class="username" href="../member.php.html?u=392422"><span style="color:#147;">pinecleandog</span></a>, </li>
+<li><a class="username" href="../member.php.html?u=200703"><span style="color:#147;">Da'Jobat</span></a>, </li>
+<li><a class="username" href="../member.php.html?u=159779"><strong><font color="#A06000">Dr Magnusson</font></strong></a>, </li>
+<li><a class="username" href="../member.php.html?u=490237"><strong><font color="#A06000">Jodern</font></strong></a>, </li>
+<li><a class="username" href="../member.php.html?u=293850"><strong><font color="#A06000">Richy19</font></strong></a>, </li>
+<li><a class="username" href="../member.php.html?u=60704"><strong><font color="#A06000">high</font></strong></a>, </li>
+<li><a class="username" href="../member.php.html?u=498813"><span style="color:#147;">autoit4you</span></a>, </li>
+<li><a class="username" href="../member.php.html?u=476047"><strong><font color="#A06000">krix</font></strong></a>, </li>
+<li><a class="username" href="../member.php.html?u=729276"><span style="color:#147;">CopperWolf</span></a>, </li>
+<li><a class="username" href="../member.php.html?u=412180"><span style="color:#147;">Nabile13</span></a>, </li>
+<li><a class="username" href="../member.php.html?u=378976"><strong><font color="#A06000">the tee</font></strong></a></li>
+</ol>
+			(10 guests)
+		</div>
+</div>
+</div>
+</div>
+<div class="below_body" style="clear: both;">
+<div class="shade footer_time" id="footer_time">All times are GMT. The time now is <span class="time">02:47PM</span>.</div>
+<div class="shade footer_copyright" id="footer_copyright">
+
+
+</div>
+<div class="shade footer_morecopyright" id="footer_morecopyright">
+
+
+</div>
+</div>
+</div>
+<center>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4109526466655731";
+/* Facepunch Bottom */
+google_ad_slot = "7520600124";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+
+</center>
+<div class="floatcontainer footer" id="footer">
+<div id="content_pad">
+<div class="footer_links">
+<a href="../showgroups.php.html" rel="nofollow">Moderators</a> - <a href="240.html#top" onclick="document.location.hash='top'; return false;">Top</a>
+</div>
+<div id="fps">Facepunch Studios</div>
+<div id="fps_copyright"><a href="../fp_rules.php.html">The Rules</a> 
+| <a href="../archive/index.html">The Archive</a></div>
+</div>
+<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+</div>
+
+</body>
+</html>

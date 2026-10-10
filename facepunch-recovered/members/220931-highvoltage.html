@@ -1,0 +1,684 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" id="vbulletin_html" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+<meta content="width=750" name="viewport"/>
+<meta content="iwHLCaoKzuZzXDoIwiRuHi38kbV9yLWgT8Yce2djkRo" name="google-site-verification"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="../index.html" id="e_vb_meta_bburl" name="vb_meta_bburl"/>
+
+<meta content="vBulletin 4.1.10" name="generator"/>
+
+<link href="../favicon.ico" rel="Shortcut Icon" type="image/x-icon"/>
+<meta content="facepunch, garrysmod, gmod, fpunch, games, pc games, pc gaming, walsall" name="keywords"/>
+<meta content="Facepunch Studios Forums" name="description"/>
+<script src="https://web.archive.org/web/20150228080328js_/http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/yuiloader-dom-event/yuiloader-dom-event.js?v=4110" type="text/javascript"></script>
+<script src="https://web.archive.org/web/20150228080328js_/http://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/connection/connection-min.js?v=4110" type="text/javascript"></script>
+
+<script src="../clientscript/vbulletin-core.js?v=4110" type="text/javascript"></script>
+<link href="../external.php.html?type=RSS2" rel="alternate" title="Facepunch RSS Feed" type="application/rss+xml"/>
+<link href="../css.php.css?styleid=6&amp;langid=1&amp;d=1421186663&amp;td=ltr&amp;sheet=bbcode.css,editor.css,popupmenu.css,reset-fonts.css,vbulletin.css,vbulletin-chrome.css,vbulletin-formcontrols.css" rel="stylesheet" type="text/css"/>
+<script src="//web.archive.org/web/20150228080328js_/http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<script src="../fp/js/jQuery/tipsy/jquery.tipsy.js" type="text/javascript"></script>
+<script src="../fp/js/jQuery/color/jquery.color.js" type="text/javascript"></script>
+
+<script src="../fp/js/rainbow-custom.min.js?6" type="text/javascript"></script>
+<script src="../fp/js/Facepunch/fp.js?6" type="text/javascript"></script>
+<script src="../fp/js/image_zoomer3.js?6" type="text/javascript"></script>
+<script src="//web.archive.org/web/20150228080328js_/http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js" type="text/javascript"></script>
+<script src="../fp/unitydog/unitydog.js" type="text/javascript"></script>
+<style type="text/css">
+			CANVAS
+			{
+				z-index: 1000;
+				position: fixed;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				pointer-events: none;
+			}
+		</style>
+<title>View Profile: highvoltage - Facepunch</title>
+<script src="../clientscript/vbulletin_quick_edit_generic.js?v=4110" type="text/javascript"></script>
+<script src="../clientscript/vbulletin_quick_edit_visitormessage.js?v=4110" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+
+vB_XHTML_Ready.subscribe(init_PostBits_Lite);
+
+
+function init_PostBits_Lite()
+{
+	//var posts_container = YAHOO.util.Dom.get("posts");
+	var postbits = YAHOO.util.Dom.getElementsByClassName("postbit_lite", "li", "postlist");
+	for (var i = 0; i < postbits.length; i++)
+	{
+		new PostBit_Lite(postbits[i]);
+	}
+}
+
+function PostBit_Lite(postbit)
+{
+	this.postbit = YAHOO.util.Dom.get(postbit);
+	this.postid = postbit.id.substr("piccom_".length);
+	this.inlinemod = new InlineModControl(this.postbit, this.postid, "imodsel");
+}
+
+//-->
+    </script>
+
+<link href="../css.php.css?styleid=6&amp;langid=1&amp;d=1421186663&amp;td=ltr&amp;sheet=forumbits.css,member.css,postbit.css,postbit-lite.css,showthread.css" rel="stylesheet" type="text/css"/>
+<style type="text/css"></style>
+
+<script type="text/javascript">
+<!--
+
+function getParentElement(starterElement, classPattern, testTagName) {
+	//
+	var currElement = starterElement;
+	var foundElement = null;
+	while(!foundElement && (currElement = currElement.parentNode)) {
+		if ((classPattern && (currElement.className.indexOf(classPattern) != -1)) || (testTagName && (testTagName.toLowerCase() == currElement.tagName.toLowerCase()))) 
+		{
+			foundElement = currElement;
+		}
+	}
+	//go up the parentNode tree until found element with matching className
+	return foundElement;
+}
+//getParentElement
+
+function tabViewPicker(anchorObject) {
+	//
+	
+	var clickedTabId = null;
+
+	var tabtree = getParentElement(anchorObject,"tabslight");
+	var anchorInventory = tabtree.getElementsByTagName("a");
+
+	var tabIds = [];
+	
+	for (var i=0; (currAnchor = anchorInventory[i]); i++) {
+		//
+		var anchorId = currAnchor.href.substring(currAnchor.href.indexOf("#") + 1, currAnchor.href.length);
+		var parentDd = getParentElement(currAnchor,null,"dd");
+		if (currAnchor == anchorObject) {
+			clickedTabId = anchorId;
+			parentDd.className = "selected";
+		} else {
+			parentDd.className = "";
+		}
+		tabIds.push(anchorId);
+	}
+	
+	//loop thru anchors to gather all tab IDs and set appropriate selected status
+	for (var j=0; (currTabId = tabIds[j]); j++) {
+		//
+		var elem = document.getElementById("view-" + currTabId);
+		if (!elem) {continue;}
+		if (currTabId == clickedTabId) {
+			elem.className="selected_view_section";
+		} else {
+			elem.className="view_section";
+		}
+	}
+        
+
+	//set appropriate status on all tabs.
+
+	return false;
+}
+//tabViewPicker
+
+//-->
+    </script>
+
+<link href="../fp/unitydog/unitydog.css" rel="stylesheet" type="text/css"/>
+<link href="../fp/fp-2013.css?21" rel="stylesheet" type="text/css"/>
+<link href="../fp/small.css?7" media="only screen and (min-width: 100px) and (max-width: 1000px)" rel="stylesheet"/>
+
+</head>
+<body>
+<div id="content_pad">
+<div class="above_body boxshadow"> 
+<div class="floatcontainer doc_header" id="header">
+<div id="logo"><a href="../forum.php.html" name="top"><img alt="Facepunch" src="../fp/navbar_inner.png"/></a></div>
+<div id="navbar-login">
+<script src="../clientscript/vbulletin_md5.js?v=4110" type="text/javascript"></script>
+<form action="../login.php.html?do=login" id="navbar_loginform" method="post" onsubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+<fieldset class="logindetails" id="logindetails">
+<input accesskey="u" class="textbox" id="navbar_username" name="vb_login_username" size="10" style="font-size: 11px" tabindex="101" type="text" value="User Name"/>
+<input class="textbox default-value" id="navbar_password_hint" name="vb_login_password_hint" size="10" style="display:none;" tabindex="102" type="text" value="Password"/>
+<input class="textbox" id="navbar_password" name="vb_login_password" size="10" tabindex="102" type="password"/>
+<input accesskey="s" class="loginbutton" tabindex="104" title="Enter your username and password in the boxes provided to login, or click the 'register' button to create a profile for yourself." type="submit" value="Log in"/>
+</fieldset>
+<input name="s" type="hidden" value=""/>
+<input name="cookieuser" type="hidden" value="1"/>
+<input name="securitytoken" type="hidden" value="guest"/>
+<input name="do" type="hidden" value="login"/>
+<input name="vb_login_md5password" type="hidden"/>
+<input name="vb_login_md5password_utf" type="hidden"/>
+</form>
+<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			YAHOO.util.Dom.setStyle('navbar_username', "color", "#828282");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'User Name')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='black';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='User Name';
+					textbox.style.color='#828282';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+</div>
+<div id="breadcrumb"><a href="../forum.php.html">Home</a> <div id="lastelement">
+<span>highvoltage</span>
+</div></div>
+<div id="navbarlinks">
+<div class="navbarlink"><a href="../register.php.html"><img alt="Register" src="../fp/navbar/register.png"/> Register</a></div>
+<div class="navbarlink"><a href="../fp_events.php.html"><img alt="Events" src="../fp/navbar/events.png"/> Events</a></div>
+<div class="navbarlink"><a href="../fp_popular.php.html"><img alt="Popular Threads" src="../fp/navbar/popular.png"/> Popular</a></div>
+
+
+<div class="navbarlink"><a href="#" onclick="return OpenURLInBox( 'more', 'fp/more.html' );"><img alt="More" src="../fp/navbar/more.png"/> More</a></div>
+</div>
+<div class="ad_global_header">
+</div>
+<hr/>
+</div>
+</div>
+<div id="content_inner">
+<div class="member_content">
+<div class="profile_widgets member_summary boxshadow" id="profile_tabs">
+<div class="block mainblock">
+<h1 class="blocksubhead">
+<span id="userinfo">
+<span class="offline"><strong><font color="#A06000">highvoltage</font></strong></span>
+<br/>
+<span class="usertitle">Gold Member</span>
+</span>
+</h1>
+<div class="floatcontainer" id="userinfoblock">
+<a class="avatar" href="../member.php.html?u=220931" title="highvoltage's Avatar">
+<span class="avatarcontainer"><img id="user_avatar" src="../image.php.html?u=220931&amp;dateline=1380854690"/></span>
+</a>
+<ul class="usermenu" id="usermenu">
+<li class="separator"></li>
+<li><a href="../search.php.html?do=finduser&amp;userid=220931&amp;contenttype=vBForum_Post&amp;showposts=1"><img alt="Find latest posts" class="inlineimg" src="../images/site_icons/forum.png"/> Find latest posts</a></li>
+<li><a href="../search.php.html?do=finduser&amp;userid=220931&amp;starteronly=1&amp;contenttype=vBForum_Thread"><img alt="Find latest started threads" class="inlineimg" src="../images/site_icons/forum.png"/> Find latest started threads</a></li>
+<li><a href="../list.php.html?r=author/220931-highvoltage" rel="nofollow"><img alt="" class="inlineimg" src="../images/site_icons/article.png"/> View Articles</a></li>
+<li><a href="../fp_images.php.html?u=220931" rel="nofollow"><img alt="" class="inlineimg" src="../images/site_icons/photo.png"/> View Images Posted</a></li>
+</ul>
+</div>
+</div>
+
+<div class="subsection block" id="view-stats_mini">
+<div class="mini_stats blockbody userprof_content userprof_content_border">
+<div class="userinfo">
+<h5 class="blocksubhead userprof_blocksubhead smaller">Mini Statistics</h5>
+<div class="blockrow member_blockrow">
+<dl class="stats">
+<dt>Join Date</dt>
+<dd> 28th May 2009</dd>
+</dl>
+<dl class="stats">
+<dt>Last Activity</dt>
+<dd> 7 Hours Ago</dd>
+</dl>
+<dl class="stats">
+<dt>Total Posts</dt>
+<dd> 1,966</dd>
+</dl>
+</div>
+</div>
+</div>
+</div>
+<div class="underblock"></div>
+
+</div>
+<div class="member_tabs">
+<dl class="tabslight">
+<dt>Tab Content</dt>
+<dd><a class="wider" href="220931-highvoltage.html#visitor_messaging" id="visitor_messaging-tab" onclick="return tabViewPicker(this);">Visitor Messages</a></dd>
+<dd class="selected"><a href="220931-highvoltage.html#aboutme" id="aboutme-tab" onclick="return tabViewPicker(this);">About Me</a></dd>
+</dl>
+<div class="profile_content boxshadow">
+<div class="view_section" id="view-visitor_messaging">
+<div class="userprof" id="postlist">
+<h3 class="subsectionhead userprof_title"><span class="comments_total">7</span> Visitor Messages</h3>
+<form action="../member_inlinemod.php.html?u=220931" id="visitor_message_inlinemod_form" method="post">
+
+<ol class="userprof" id="message_list">
+<li class="postbit postbit-lite postcontainer" id="vmessage_477116">
+<a name="vmessage477116"></a>
+<a class="avatarlink" href="../member.php.html?u=332065">
+<img alt="Hamsteronfire" src="../image.php.html?u=332065&amp;dateline=1424987442&amp;type=thumb"/>
+</a>
+<span class="postbit-chkbox">
+</span>
+<div class="postbithead">
+<label for="vmessage_477116">
+<a class="username" href="../member.php.html?u=332065"><strong><font color="#A06000">Hamsteronfire</font></strong></a>
+		
+
+		
+		 - <span class="postdate">3 Weeks Ago</span>
+</label>
+</div>
+<div id="vmessage_message_477116">
+<blockquote class="posttext restore">
+			FIRE IN THE DISCO<br/>
+FIRE IN THE TACO BELL<br/>
+FIRE IN THE GATES OF HELL<br/>
+<br/>
+DANGER<br/>
+DANGER
+			
+		</blockquote>
+</div>
+<div class="postbitfoot floatcontainer">
+<span class="postcontrols">
+</span>
+</div>
+<script type="text/javascript"> 
+	<!-- 
+	vBulletin.register_control("vB_QuickEdit", "477116", 'VisitorMessage'); 
+	//--> 
+	</script>
+</li>
+<li class="postbit postbit-lite postcontainer" id="vmessage_439759">
+<a name="vmessage439759"></a>
+<a class="avatarlink" href="../member.php.html?u=558296">
+<img alt="upsideonion" src="../image.php.html?u=558296&amp;dateline=1418585544&amp;type=thumb"/>
+</a>
+<span class="postbit-chkbox">
+</span>
+<div class="postbithead">
+<label for="vmessage_439759">
+<a class="username" href="../member.php.html?u=558296"><strong><font color="#A06000">upsideonion</font></strong></a>
+		
+
+		
+		 - <span class="postdate">15th July 2014</span>
+</label>
+</div>
+<div id="vmessage_message_439759">
+<blockquote class="posttext restore">
+			we'll be best friends<br/>
+<br/>
+forever
+			
+		</blockquote>
+</div>
+<div class="postbitfoot floatcontainer">
+<span class="postcontrols">
+<a href="../converse.php.html?u=220931&amp;u2=558296" title="View Conversation Between highvoltage and upsideonion">View Conversation</a>
+</span>
+</div>
+<script type="text/javascript"> 
+	<!-- 
+	vBulletin.register_control("vB_QuickEdit", "439759", 'VisitorMessage'); 
+	//--> 
+	</script>
+</li>
+<li class="postbit postbit-lite postcontainer" id="vmessage_380449">
+<a name="vmessage380449"></a>
+<a class="avatarlink" href="../member.php.html?u=559171">
+<img alt="WalkingZombie" src="../image.php.html?u=559171&amp;dateline=1424453865&amp;type=thumb"/>
+</a>
+<span class="postbit-chkbox">
+</span>
+<div class="postbithead">
+<label for="vmessage_380449">
+<a class="username" href="../member.php.html?u=559171">WalkingZombie</a>
+		
+
+		
+		 - <span class="postdate">11th December 2013</span>
+</label>
+</div>
+<div id="vmessage_message_380449">
+<blockquote class="posttext restore">
+<img alt="" border="0" class="inlineimg" src="../fp/emoot/tinfoil.gif" title="Tinfoil"/> Your lightning avatar is mesmerizing... <img alt="" border="0" class="inlineimg" src="../fp/emoot/pwn.gif" title="Pwn"/>
+</blockquote>
+</div>
+<div class="postbitfoot floatcontainer">
+<span class="postcontrols">
+</span>
+</div>
+<script type="text/javascript"> 
+	<!-- 
+	vBulletin.register_control("vB_QuickEdit", "380449", 'VisitorMessage'); 
+	//--> 
+	</script>
+</li>
+<li class="postbit postbit-lite postcontainer" id="vmessage_373964">
+<a name="vmessage373964"></a>
+<a class="avatarlink" href="../member.php.html?u=488224">
+<img alt="BlackMadd" src="../image.php.html?u=488224&amp;dateline=1397519395&amp;type=thumb"/>
+</a>
+<span class="postbit-chkbox">
+</span>
+<div class="postbithead">
+<label for="vmessage_373964">
+<a class="username" href="../member.php.html?u=488224">BlackMadd</a>
+		
+
+		
+		 - <span class="postdate">17th November 2013</span>
+</label>
+</div>
+<div id="vmessage_message_373964">
+<blockquote class="posttext restore">
+			I saw in one of your videos that you had a rather interesting weapons selection at the bottom of your screen. Is this an addon or did you make it? And if you made it could you point me in some direction of making my own?
+			
+		</blockquote>
+</div>
+<div class="postbitfoot floatcontainer">
+<span class="postcontrols">
+<a href="../converse.php.html?u=220931&amp;u2=488224" title="View Conversation Between highvoltage and BlackMadd">View Conversation</a>
+</span>
+</div>
+<script type="text/javascript"> 
+	<!-- 
+	vBulletin.register_control("vB_QuickEdit", "373964", 'VisitorMessage'); 
+	//--> 
+	</script>
+</li>
+<li class="postbit postbit-lite postcontainer" id="vmessage_356442">
+<a name="vmessage356442"></a>
+<a class="avatarlink" href="../member.php.html?u=201103">
+<img alt="Emperor Scorpious II" src="../image.php.html?u=201103&amp;dateline=1393896891&amp;type=thumb"/>
+</a>
+<span class="postbit-chkbox">
+</span>
+<div class="postbithead">
+<label for="vmessage_356442">
+<a class="username" href="../member.php.html?u=201103"><strong><font color="#A06000">Emperor Scorpious II</font></strong></a>
+		
+
+		
+		 - <span class="postdate">4th October 2013</span>
+</label>
+</div>
+<div id="vmessage_message_356442">
+<blockquote class="posttext restore">
+			Compliments of haloguy234:<br/>
+<br/>
+http://i.imgur.com/RT1IxXE.gif<br/>
+<br/>
+http://i.imgur.com/OkqsYbM.gif
+			
+		</blockquote>
+</div>
+<div class="postbitfoot floatcontainer">
+<span class="postcontrols">
+<a href="../converse.php.html?u=220931&amp;u2=201103" title="View Conversation Between highvoltage and Emperor Scorpious II">View Conversation</a>
+</span>
+</div>
+<script type="text/javascript"> 
+	<!-- 
+	vBulletin.register_control("vB_QuickEdit", "356442", 'VisitorMessage'); 
+	//--> 
+	</script>
+</li>
+<li class="postbit postbit-lite postcontainer" id="vmessage_356175">
+<a name="vmessage356175"></a>
+<a class="avatarlink" href="../member.php.html?u=266176">
+<img alt="hunterNormandy" src="../image.php.html?u=266176&amp;dateline=1402451628&amp;type=thumb"/>
+</a>
+<span class="postbit-chkbox">
+</span>
+<div class="postbithead">
+<label for="vmessage_356175">
+<a class="username" href="../member.php.html?u=266176"><strong><font color="#A06000">hunterNormandy</font></strong></a>
+		
+
+		
+		 - <span class="postdate">3rd October 2013</span>
+</label>
+</div>
+<div id="vmessage_message_356175">
+<blockquote class="posttext restore">
+			Welcome to Gold!
+			
+		</blockquote>
+</div>
+<div class="postbitfoot floatcontainer">
+<span class="postcontrols">
+<a href="../converse.php.html?u=220931&amp;u2=266176" title="View Conversation Between highvoltage and hunterNormandy">View Conversation</a>
+</span>
+</div>
+<script type="text/javascript"> 
+	<!-- 
+	vBulletin.register_control("vB_QuickEdit", "356175", 'VisitorMessage'); 
+	//--> 
+	</script>
+</li>
+<li class="postbit postbit-lite postcontainer" id="vmessage_310844">
+<a name="vmessage310844"></a>
+<a class="avatarlink" href="../member.php.html?u=462258">
+<img alt="Margen67" src="../image.php.html?u=462258&amp;dateline=1382187884&amp;type=thumb"/>
+</a>
+<span class="postbit-chkbox">
+</span>
+<div class="postbithead">
+<label for="vmessage_310844">
+<a class="username" href="../member.php.html?u=462258"><strong><font color="#A06000">Margen67</font></strong></a>
+		
+
+		
+		 - <span class="postdate">3rd June 2013</span>
+</label>
+</div>
+<div id="vmessage_message_310844">
+<blockquote class="posttext restore">
+			zing
+			
+		</blockquote>
+</div>
+<div class="postbitfoot floatcontainer">
+<span class="postcontrols">
+<a href="../converse.php.html?u=220931&amp;u2=462258" title="View Conversation Between highvoltage and Margen67">View Conversation</a>
+</span>
+</div>
+<script type="text/javascript"> 
+	<!-- 
+	vBulletin.register_control("vB_QuickEdit", "310844", 'VisitorMessage'); 
+	//--> 
+	</script>
+</li>
+</ol>
+<div>
+</div>
+<input name="s" type="hidden" value=""/>
+<input name="securitytoken" type="hidden" value="guest"/>
+<input name="u" type="hidden" value="220931"/>
+</form>
+<div id="above_postlist">
+<div id="pagination_top">
+</div>
+</div>
+</div>
+<div id="below_postlist">
+</div>
+</div>
+<div class="selected_view_section" id="view-aboutme">
+<div class="blocksubhead subsectionhead userprof_headers userprof_headers_border">
+<span class="subsectiontitle">About highvoltage</span>
+
+<h4 class="subsectionhead-understate" id="about-me">Basic Information</h4>
+</div>
+<div class="subsection">
+<div class="blockbody userprof_content userprof_content_border">
+<dl class="stats agerow">
+<dt>Date of Birth</dt>
+<dd> May 31, 1994 (20)</dd>
+</dl>
+<h5 class="subblocksubhead subsubsectionhead first">About highvoltage</h5>
+<dl>
+<dt>Location:</dt>
+<dd>Middle of nowhere</dd>
+</dl><dl>
+<dt>Steam profile ID:</dt>
+<dd>SuperHighVoltage</dd>
+</dl><dl>
+<dt>YouTube Name:</dt>
+<dd>highvoltage0022</dd>
+</dl><dl>
+<dt>XBL Username:</dt>
+<dd>HighVoltage02</dd>
+</dl><dl>
+<dt>Display Toybox:</dt>
+<dd>No</dd>
+</dl>
+</div>
+</div>
+
+<div class="subsection block" id="view-stats">
+
+<div class="blocksubhead subsectionhead userprof_headers userprof_headers_border">
+<h4 class="subsectionhead-understate" id="view-statistics" style="width:100%">Statistics</h4><br/>
+</div>
+<div class="blockbody subsection userprof_content userprof_content_border">
+<h5 class="subblocksubhead subsubsectionhead first">Total Posts</h5>
+<dl class="blockrow stats">
+<dt>Total Posts</dt>
+<dd> 1,966</dd>
+</dl>
+<dl class="blockrow stats">
+<dt>Posts Per Day</dt>
+<dd> 0.94</dd>
+</dl>
+<h5 class="subblocksubhead subsubsectionhead">Visitor Messages</h5>
+<dl class="blockrow stats">
+<dt>Total Messages</dt>
+<dd> 7</dd>
+</dl>
+<dl class="blockrow stats">
+<dt>Most Recent Message</dt>
+<dd>3 Weeks Ago</dd>
+</dl>
+<ul class="group">
+<li><a href="javascript://" onclick="return tabViewPicker(document.getElementById('visitor_messaging-tab'));">Visitor Messages for highvoltage</a></li>
+</ul>
+<h5 class="subblocksubhead subsubsectionhead">General Information</h5>
+<dl class="blockrow stats">
+<dt>Last Activity</dt>
+<dd> 7 Hours Ago</dd>
+</dl>
+<dl class="blockrow stats">
+<dt>Join Date</dt>
+<dd> 28th May 2009</dd>
+</dl>
+</div>
+
+</div>
+<div class="underblock"></div>
+
+</div>
+<div class="view_section" id="view-friends-content">
+</div>
+<div class="view_section" id="view-infractions-content">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="below_body" style="clear: both;">
+<div class="shade footer_time" id="footer_time">All times are GMT. The time now is <span class="time">08:03AM</span>.</div>
+<div class="shade footer_copyright" id="footer_copyright">
+
+
+</div>
+<div class="shade footer_morecopyright" id="footer_morecopyright">
+
+
+</div>
+</div>
+</div>
+<center>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4109526466655731";
+/* Facepunch Bottom */
+google_ad_slot = "7520600124";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+
+</center>
+<div class="floatcontainer footer" id="footer">
+<div id="content_pad">
+<div class="footer_links">
+<a href="../showgroups.php.html" rel="nofollow">Moderators</a> - <a href="220931-highvoltage.html#top" onclick="document.location.hash='top'; return false;">Top</a>
+</div>
+<div id="fps">Facepunch Studios</div>
+<div id="fps_copyright"><a href="../fp_rules.php.html">The Rules</a> 
+| <a href="../archive/index.html">The Archive</a></div>
+</div>
+<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+</div>
+
+</body>
+</html>

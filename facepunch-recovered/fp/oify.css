@@ -1,0 +1,509 @@
+html {
+	background: url("https://web.archive.org/web/20160623182940im_/http://elexar.com/oify/background/background.php")
+		repeat scroll 0 0 #BBB
+}
+
+body {
+	color: #0F0;
+	font: 13px System;
+}
+
+.above_body {
+	background: url(oify/colors.gif) repeat scroll 0 0 #BBB;
+	border: 1px solid #888;
+	margin-top: 4px;
+}
+
+a:visited,body_avisited {
+	color: #0B0
+}
+
+a:link,body_alink {
+	color: #0F0
+}
+
+body a:hover,body a:hover .time,body a:hover .shade,body a:hover .understate
+	{
+	color: #F00
+}
+
+.popupbox {
+	background-color: #444;
+	border: 1px solid #222;
+	color: #080;
+}
+
+.popupbox div {
+	color: #080 !important
+}
+
+.threadlisthead {
+	background:
+		url(../images/buttons/newbtn_middle.png)
+		repeat-x scroll 0 0 #FA0;
+	border: 1px solid #888;
+	color: #eee;
+}
+
+div#above_threadlist div.threadpagenav a.popupctrl,div#below_threadlist div.threadpagenav a.popupctrl,div#above_postlist div.pagination_top a.popupctrl,div#below_postlist div.pagination_bottom a.popupctrl,div#above_postlist a.popupctrl,div#pagination_top a.popupctrl,div#below_postlist div#pagination_bottom a.popupctrl,div#below_searchresults a.popupctrl
+	{
+	background: url(../images/buttons/newbtn_middle.png) repeat-x scroll
+		left top #0A2;
+	border: 1px solid #666;
+	color: #FFF;
+}
+
+div#above_threadlist div.threadpagenav span.selected a,div#below_threadlist div.threadpagenav span.selected a,div#above_postlist div.pagination_top span.selected a,div#below_postlist div.pagination_bottom span.selected a,div#above_postlist span.selected a,div#pagination_top span.selected a,div#below_postlist div#pagination_bottom span.selected a,div#below_searchresults span.selected a
+	{
+	background-color: #01A3E5;
+	color: #500;
+}
+
+div#above_threadlist div.threadpagenav span>a,div#below_threadlist div.threadpagenav span>a,div#above_postlist div.pagination_top span>a,div#below_postlist div.pagination_bottom span>a,div#above_postlist span>a,div#pagination_top span>a,div#below_postlist div#pagination_bottom span>a,div#below_searchresults span>a
+	{
+	background-color: #0a0a0a;
+	border-color: #666;
+	border-style: solid;
+	border-width: 1px 0;
+}
+
+.popupbody {
+	background: none repeat-x scroll 0 0 #222;
+	border: 1px solid #0F0;
+}
+
+.button {
+	-moz-border-radius: 10px 10px 10px 10px;
+	background:
+		url(../images/buttons/newbtn_middle.png)
+		repeat-x scroll left top #0A2;
+	color: #FFF;
+}
+
+.button:hover {
+	background: url(oify/colors.gif) repeat scroll left top #0A2;
+	color: #FFF;
+}
+
+.newcontent_textcontrol {
+	background:
+		url(../images/buttons/newbtn_middle.png)
+		repeat-x scroll left top #0A2;
+	color: #FFF;
+}
+
+a.newcontent_textcontrol:hover {
+	background: url(oify/colors.gif) repeat scroll left top #0A2;
+	color: #FFF;
+}
+
+table#threads tr.threadbit {
+	border-bottom: 0px solid #202020
+}
+
+table#threads tr.threadbit td {
+	background-color: #101010;
+	border-bottom: 2px solid #202020;
+}
+
+table#threads tr.threadbit td.alt {
+	background-color: #202020;
+	border-bottom: 2px solid #101010;
+}
+
+table#threads tr.threadbit.new td {
+	background-color: #383;
+	border-bottom: 2px solid #353;
+}
+
+table#threads tr.threadbit.new td.alt {
+	background-color: #353;
+	border-bottom: 2px solid #383;
+}
+
+table#threads tr.threadbit.sticky td {
+	background-color: #d8b850;
+	border-bottom: 2px solid #f8c850;
+}
+
+table#threads tr.threadbit.sticky td.alt {
+	background-color: #f8c850;
+	border-bottom: 2px solid #d8b850;
+}
+
+table#threads tr.threadbit td.threadinfo .newposts {
+	background-color: #202020;
+	border: 1px solid #888;
+	font-size: 13px;
+	padding: 3px;
+}
+
+table#threads tr.threadbit td.threadinfo .newposts:hover {
+	background-color: #505050;
+	border: 1px solid #888;
+}
+
+h3.threadtitle a.title {
+	font-weight: bold !important
+}
+
+h3.threadtitle a.title:hover {
+	color: #FFAA0D !important
+}
+
+table#threads tr.threadbit td.threadinfo .author .viewers {
+	background-color: #111;
+	padding: 2px;
+	color: #090;
+	border: 1px solid #090;
+}
+
+table#threads tr.threadbit td.threadinfo .author a {
+	color: #0F0
+}
+
+#bottom_box {
+	background-color: #444;
+	border: 1px solid #222;
+}
+
+#bottom_box div.td {
+	border-bottom: 0px solid #CCC
+}
+
+#mod_list {
+	background: url(oify/colors.gif) repeat scroll left top #fff
+}
+
+div.threadhead,div.threadfoot {
+	background:
+		url(../images/buttons/newbtn_middle.png)
+		repeat-x scroll left top #0A2 !important;
+	border: 1px solid #888 !important;
+	color: #FFF !important;
+}
+
+ol#posts .postbitlegacy,ol#announcements .postbitlegacy,div#showpm>ol .postbitlegacy,ol#message_list .postbitlegacy,ol#posts .postbit,ol#announcements .postbit,div#showpm>ol .postbit,ol#message_list .postbit,ol#posts .postbitdeleted,ol#announcements .postbitdeleted,div#showpm>ol .postbitdeleted,ol#message_list .postbitdeleted
+	{
+	border-color: #FFFF0D !important;
+	color: #0F0 !important;
+}
+
+.posthead {
+	background-color: #FFAA0D !important;
+	color: #333 !important;
+	border-left: 0px #FFFF0D solid !important;
+	border-top: 0px #FFFF0D solid !important;
+	border-bottom: 0px #FFFF0D solid !important;
+	border-right: 0px #FFFF0D solid !important;
+}
+
+ol#posts .postbitold div.postdetails {
+	background: #353 !important;
+	border-left: 0px #FFFF0D solid !important;
+	border-top: 0px #FFFF0D solid !important;
+	border-bottom: 0px #FFFF0D solid !important;
+	border-right: 1px #FFFF0D solid !important;
+	padding-top: 0px !important;
+}
+
+ol#posts .yourpost div.postdetails {
+	background: #573 !important;
+	border-left: 0px #FFFF0D solid !important;
+	border-top: 0px #FFFF0D solid !important;
+	border-bottom: 0px #FFFF0D solid !important;
+	border-right: 1px #FFFF0D solid !important;
+	padding-top: 0px !important !important;
+}
+
+ol#posts .postbitnew div.postdetails {
+	background: #373 !important;
+	border-left: 0px #FFFF0D solid !important;
+	border-top: 0px #FFFF0D solid !important;
+	border-bottom: 0px #FFFF0D solid !important;
+	border-right: 1px #FFFF0D solid !important;
+	padding-top: 0px !important;
+}
+
+div.postfoot {
+	background: #242 !important;
+	border-left: 0px #FFFF0D solid !important;
+	border-top: 1px #FFFF0D solid !important;
+	border-bottom: 1px #FFFF0D solid !important;
+	border-right: 0px #FFFF0D solid !important;
+	padding-bottom: 12px !important;
+	padding-top: 6px !important;
+}
+
+.postdetails .postbody {
+	margin-left: 120px !important
+}
+
+.postdetails .postbody .postrow {
+	color: #000 !important;
+	font: 13px System !important;
+	margin-top: 120px !important;
+}
+
+.postdetails .postbody .postrow .content {
+	-moz-border-radius: 24px 24px 24px 24px !important;
+	background-color: #FFF !important;
+	border: 2px solid #000 !important;
+	float: left !important;
+	margin-bottom: 10px !important;
+	margin-left: 20px !important;
+	min-width: 40px !important;
+	padding: 16px 24px !important;
+	position: relative !important;
+	width: auto !important;
+}
+
+.userinfo {
+	background-color: #242 !important;
+	border-left: 0px #FFFF0D solid !important;
+	border-top: 0px #FFFF0D solid !important;
+	border-bottom: 1px #FFFF0D solid !important;
+	border-right: 1px #FFFF0D solid !important;
+	width: 140px !important;
+}
+
+.username_container a.username {
+	display: block !important
+}
+
+.online {
+	background: repeat scroll left top yellow !important;
+	border: 2px dashed #F00 !important;
+}
+
+.offline {
+	background: repeat scroll left top #fc0 !important;
+	border: 2px dashed #333 !important;
+}
+
+.quote {
+	-moz-border-radius: 24px 24px 24px 24px !important;
+	background-color: #FFF !important;
+	border: 2px solid #000 !important;
+	margin-bottom: 30px !important;
+	min-width: 40px !important;
+	padding: 16px 24px !important;
+	position: relative !important;
+	width: auto !important;
+}
+
+.quote .information {
+	color: #000;
+	background-color: #FFF;
+	border-bottom: 1px solid #000 !important;
+}
+
+.quote .information a {
+	color: #000;
+	background-color: #FFF;
+	font: 15px Verdana, Arial, sans-serif; !
+	important: ;
+	font-style: italic !important;
+}
+
+.quote .message {
+	color: #000;
+	background-color: #FFF;
+}
+
+DIV.media {
+	color: #080;
+	background-color: #111;
+	border: 1px solid #888;
+}
+
+DIV.media .infobar {
+	background-color: #222
+}
+
+DIV.media .infobar A {
+	color: #fff
+}
+
+.postfoot .postcontrols a.post_button {
+	-moz-border-radius: 10px 10px 10px 10px !important;
+	background:
+		url(../images/buttons/newbtn_middle.png)
+		repeat-x scroll left top #0A2 !important;
+	color: #FFF !important;
+	font: 14px Arial, sans-serif !important;
+	padding: 5px 15px !important;
+}
+
+.postfoot .postcontrols a.post_button:hover {
+	background: url(oify/colors.gif) repeat scroll left top #0A2
+		!important;
+	color: #FFF !important;
+}
+
+#quickreply_title {
+	background:
+		url(../images/buttons/newbtn_middle.png)
+		repeat-x scroll left top #0A2 !important;
+	border: 1px solid #888 !important;
+	color: #FFF !important;
+}
+
+.blockfoot,.blocksubfoot,.wysiwyg_block {
+	background: #FFAA0D !important;
+	border: 1px solid #FFFF0D !important;
+}
+
+.formcontrols {
+	background: url(oify/colors.gif) repeat scroll left top #0A2
+		!important;
+	border: 1px solid #FFFF0D !important;
+}
+
+#quick_reply .wysiwyg_block {
+	border: 1px solid #FFFF0D !important
+}
+
+.actionbuttons {
+	border-width: 0px !important
+}
+
+#qr_submit {
+	-moz-border-radius: 10px 10px 10px 10px !important;
+	background:
+		url(../images/buttons/newbtn_middle.png)
+		repeat-x scroll left top #0A2 !important;
+	color: #FFF !important;
+	font: 14px Arial, sans-serif !important;
+	padding: 5px 15px !important;
+	border: 1px solid #888 !important;
+}
+
+#qr_submit:hover {
+	background: url(oify/colors.gif) repeat scroll left top #0A2
+		!important;
+	color: #FFF !important;
+}
+
+#qr_preview {
+	-moz-border-radius: 10px 10px 10px 10px !important;
+	background:
+		url(../images/buttons/newbtn_middle.png)
+		repeat-x scroll left top #0A2 !important;
+	color: #FFF !important;
+	font: 14px Arial, sans-serif !important;
+	padding: 5px 15px !important;
+	border: 1px solid #888 !important;
+}
+
+#qr_preview:hover {
+	background: url(oify/colors.gif) repeat scroll left top #0A2
+		!important;
+	color: #FFF !important;
+}
+
+#qr_cancelbutton {
+	-moz-border-radius: 10px 10px 10px 10px !important;
+	background:
+		url(../images/buttons/newbtn_middle.png)
+		repeat-x scroll left top #0A2 !important;
+	color: #FFF !important;
+	font: 14px Arial, sans-serif !important;
+	padding: 5px 15px !important;
+	border: 1px solid #888 !important;
+}
+
+#qr_cancelbutton:hover {
+	background: url(oify/colors.gif) repeat scroll left top #0A2
+		!important;
+	color: #FFF !important;
+}
+
+div.eventtime {
+	background: #242 !important;
+	border: 1px #FFFF0D solid !important;
+	margin-bottom: 4px !important;
+}
+
+div.events li {
+	color: #F11
+}
+
+.blockhead {
+	background:
+		url(../images/buttons/newbtn_middle.png)
+		repeat-x scroll left top #0A2 !important;
+	border: 1px solid #888 !important;
+	color: #FFF !important;
+}
+
+input.button {
+	-moz-border-radius: 10px 10px 10px 10px !important;
+	background:
+		url(../images/buttons/newbtn_middle.png)
+		repeat-x scroll left top #0A2 !important;
+	color: #FFF !important;
+	font: 14px Arial, sans-serif !important;
+	padding: 5px 15px !important;
+	border: 1px solid #888 !important;
+}
+
+input.button:hover {
+	background: url(oify/colors.gif) repeat scroll left top #0A2
+		!important;
+	color: #FFF !important;
+}
+
+.preview {
+	background: #573 !important
+}
+
+.section .blockrow {
+	background-color: #383 !important;
+	border: 2px solid #353 !important;
+}
+
+div.tail {
+	background-image: url(oify/box_arrow.gif);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	top: -16px;
+	height: 31px;
+	left: 24px;
+	position: absolute;
+	width: 27px;
+}
+
+div.qtail {
+	background-image: url(oify/box_arrow_down.gif);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	bottom: -32px;
+	height: 31px;
+	left: 10px;
+	position: relative;
+	width: 27px;
+}
+
+a,div,table,body,tr,td,img,input[type='submit'],input[type='reset'] {
+	cursor: url(oify/gayhouse.cur), auto !important
+}
+/*
+     FILE ARCHIVED ON 18:29:40 Jun 23, 2016 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 03:16:52 Oct 10, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 1.413
+  exclusion.robots: 0.121
+  exclusion.robots.policy: 0.107
+  esindex: 0.017
+  cdx.remote: 9.665
+  LoadShardBlock: 93.858 (3)
+  PetaboxLoader3.datanode: 82.699 (4)
+  load_resource: 9.384
+*/

@@ -1,0 +1,942 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" id="vbulletin_html" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+<meta content="width=750" name="viewport"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="index.html" id="e_vb_meta_bburl" name="vb_meta_bburl"/>
+
+<meta content="vBulletin 4.1.10" name="generator"/>
+
+<link href="favicon.ico" rel="Shortcut Icon" type="image/x-icon"/>
+<meta content="facepunch, garrysmod, gmod, fpunch, games, pc games, pc gaming, walsall" name="keywords"/>
+<meta content="Facepunch Studios Forums" name="description"/>
+<script src="https://web.archive.org/web/20160724195032js_/https://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/yuiloader-dom-event/yuiloader-dom-event.js?v=4110" type="text/javascript"></script>
+<script src="https://web.archive.org/web/20160724195032js_/https://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/connection/connection-min.js?v=4110" type="text/javascript"></script>
+
+<script src="clientscript/vbulletin-core.js?v=4110" type="text/javascript"></script>
+<link href="external.php.html?type=RSS2" rel="alternate" title="Facepunch RSS Feed" type="application/rss+xml"/>
+<link href="css.php.css?styleid=6&amp;langid=1&amp;d=1467029151&amp;td=ltr&amp;sheet=bbcode.css,editor.css,popupmenu.css,reset-fonts.css,vbulletin.css,vbulletin-chrome.css,vbulletin-formcontrols.css" rel="stylesheet" type="text/css"/>
+<script src="//web.archive.org/web/20160724195032js_/https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<script src="fp/js/jQuery/tipsy/jquery.tipsy.js" type="text/javascript"></script>
+<script src="fp/js/jQuery/color/jquery.color.js" type="text/javascript"></script>
+
+<script src="fp/js/rainbow-custom.min.js?6" type="text/javascript"></script>
+<script src="fp/js/Facepunch/fp.js?6" type="text/javascript"></script>
+<script src="fp/js/image_zoomer3.js?6" type="text/javascript"></script>
+<style type="text/css">
+			CANVAS
+			{
+				z-index: 1000;
+				position: fixed;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				pointer-events: none;
+			}
+		</style>
+<title>Event Log</title>
+
+<link href="fp/fp-2013.css?21" rel="stylesheet" type="text/css"/>
+<link href="fp/small.css?7" media="only screen and (min-width: 100px) and (max-width: 1000px)" rel="stylesheet"/>
+
+</head>
+<body>
+<div id="content_pad">
+<div class="above_body boxshadow"> 
+<div class="floatcontainer doc_header" id="header">
+<div id="logo"><a href="forum.php.html" name="top"><img alt="Facepunch" src="fp/navbar_inner.png"/></a></div>
+<div id="navbar-login">
+<script src="clientscript/vbulletin_md5.js?v=4110" type="text/javascript"></script>
+<form action="login.php.html?do=login" id="navbar_loginform" method="post" onsubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+<fieldset class="logindetails" id="logindetails">
+<input accesskey="u" class="textbox" id="navbar_username" name="vb_login_username" size="10" style="font-size: 11px" tabindex="101" type="text" value="User Name"/>
+<input class="textbox default-value" id="navbar_password_hint" name="vb_login_password_hint" size="10" style="display:none;" tabindex="102" type="text" value="Password"/>
+<input class="textbox" id="navbar_password" name="vb_login_password" size="10" tabindex="102" type="password"/>
+<input accesskey="s" class="loginbutton" tabindex="104" title="Enter your username and password in the boxes provided to login, or click the 'register' button to create a profile for yourself." type="submit" value="Log in"/>
+</fieldset>
+<input name="s" type="hidden" value=""/>
+<input name="cookieuser" type="hidden" value="1"/>
+<input name="securitytoken" type="hidden" value="guest"/>
+<input name="do" type="hidden" value="login"/>
+<input name="vb_login_md5password" type="hidden"/>
+<input name="vb_login_md5password_utf" type="hidden"/>
+</form>
+<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			YAHOO.util.Dom.setStyle('navbar_username', "color", "#828282");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'User Name')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='black';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='User Name';
+					textbox.style.color='#828282';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+</div>
+<div id="breadcrumb"><a href="forum.php.html">Home</a> <div id="lastelement">
+<span>Event Log</span>
+</div></div>
+<div id="navbarlinks">
+<div class="navbarlink"><a href="register.php.html"><img alt="Register" src="fp/navbar/register.png"/> Register</a></div>
+<div class="navbarlink"><a href="fp_events.php.html"><img alt="Events" src="fp/navbar/events.png"/> Events</a></div>
+<div class="navbarlink"><a href="fp_popular.php.html"><img alt="Popular Threads" src="fp/navbar/popular.png"/> Popular</a></div>
+
+
+<div class="navbarlink"><a href="#" onclick="return OpenURLInBox( 'more', 'fp/more.html' );"><img alt="More" src="fp/navbar/more.png"/> More</a></div>
+</div>
+<div class="ad_global_header">
+</div>
+<hr/>
+</div>
+</div>
+<div id="content_inner">
+<div class="fp_custom_page events_container"><div style="margin-left: 20px; padding-right: 20px;"><div class="events"><div id="event_types"><a href="fp_events.php.html?type=closed"><img alt="closed" border="0" height="16" src="fp/events/closed.png" width="16"/></a> <a href="fp_events.php.html?type=opened"><img alt="opened" border="0" height="16" src="fp/events/opened.png" width="16"/></a> <a href="fp_events.php.html?type=ban"><img alt="ban" border="0" height="16" src="fp/events/ban.png" width="16"/></a> <a href="fp_events.php.html?type=unban"><img alt="unban" border="0" height="16" src="fp/events/unban.png" width="16"/></a> <a href="fp_events.php.html?type=ddt"><img alt="ddt" border="0" height="16" src="fp/events/ddt.png" width="16"/></a> <a href="fp_events.php.html?type=rename"><img alt="rename" border="0" height="16" src="fp/events/rename.png" width="16"/></a> <a href="fp_events.php.html?type=delhard"><img alt="delhard" border="0" height="16" src="fp/events/delhard.png" width="16"/></a> <a href="fp_events.php.html?type=delsoft"><img alt="delsoft" border="0" height="16" src="fp/events/delsoft.png" width="16"/></a> <a href="fp_events.php.html?type=join"><img alt="join" border="0" height="16" src="fp/events/join.png" width="16"/></a> <a href="fp_events.php.html?type=pban"><img alt="pban" border="0" height="16" src="fp/events/pban.png" width="16"/></a> <a href="fp_events.php.html?type=capsfix"><img alt="capsfix" border="0" height="16" src="fp/events/capsfix.png" width="16"/></a> <a href="fp_events.php.html?type=mov"><img alt="mov" border="0" height="16" src="fp/events/mov.png" width="16"/></a> <a href="fp_events.php.html?type=toobig"><img alt="toobig" border="0" height="16" src="fp/events/toobig.png" width="16"/></a> <a href="fp_events.php.html?type=title"><img alt="title" border="0" height="16" src="fp/events/title.png" width="16"/></a> <a href="fp_events.php.html?type=regi"><img alt="regi" border="0" height="16" src="fp/events/regi.png" width="16"/></a> <a href="fp_events.php.html?type=spmb"><img alt="spmb" border="0" height="16" src="fp/events/spmb.png" width="16"/></a> </div><div class="eventtime">Recent<ul><div class="event">
+<li><a href="fp_events.php.html?type=delsoft"><img border="0" height="16" src="fp/events/delsoft.png" width="16"/></a>
+ <a href="member.php.html?u=242336">Pascall</a><a href="#" onclick="return OpenEventlog( '242336' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> deleted the thread <a href="showthread.php.html?t=1528093">A very painful video</a> in <a href="forumdisplay.php.html?f=36">Drop Dead Thread</a> with the reason “<b>Spam</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=242336">Pascall</a><a href="#" onclick="return OpenEventlog( '242336' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=737259">Marble</a><a href="#" onclick="return OpenEventlog( '737259' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1528093">A very painful video</a> in <a href="forumdisplay.php.html?f=64">Videos And Flash Movies and That Kind Of Crap</a> with the reason “<b>Spam</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=242336">Pascall</a><a href="#" onclick="return OpenEventlog( '242336' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=571661">JudgeDredd</a><a href="#" onclick="return OpenEventlog( '571661' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1528093&amp;p=50767723&amp;viewfull=1#post50767723">A very painful video</a> with the reason “<b>Don't reply, just report.</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=242336">Pascall</a><a href="#" onclick="return OpenEventlog( '242336' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=737259">Marble</a><a href="#" onclick="return OpenEventlog( '737259' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1528093&amp;p=50767719&amp;viewfull=1#post50767719">A very painful video</a> with the reason “<b>Spam</b>”
+</li></div></ul></div><div class="eventtime">2 Hours ago<ul><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=737252">alicoverup</a><a href="#" onclick="return OpenEventlog( '737252' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527936&amp;p=50766850&amp;viewfull=1#post50766850">Munich gunman 'obsessed with mass shootings', not linked to ISIS</a> with the reason “<b>Alt gimmick</b>”
+</li></div></ul></div><div class="eventtime">5 Hours ago<ul><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=205107">Big Dumb American</a><a href="#" onclick="return OpenEventlog( '205107' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=86291">luck_or_loss</a><a href="#" onclick="return OpenEventlog( '86291' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1528043&amp;p=50765920&amp;viewfull=1#post50765920">its not rating spam</a> with the reason “<b>Ya blew it</b>”
+</li></div></ul></div><div class="eventtime">12 Hours ago<ul><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=417990">soulharvester</a><a href="#" onclick="return OpenEventlog( '417990' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1528030&amp;p=50765363&amp;viewfull=1#post50765363">Secretly filming up a woman’s skirt ruled legal by Court of Appeal in Georgia</a> with the reason “<b>Memeshit</b>”
+</li></div></ul></div><div class="eventtime">13 Hours ago<ul><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=469250">MissingNoGuy</a><a href="#" onclick="return OpenEventlog( '469250' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1527914&amp;p=50764933&amp;viewfull=1#post50764933">Feed a single french fry to a seagull in Ocean City, NJ and face a $500 fine + 90 days in jail</a> with the reason “<b>Copypasta</b>”
+</li></div></ul></div><div class="eventtime">14 Hours ago<ul><div class="event">
+<li><a href="fp_events.php.html?type=closed"><img border="0" height="16" src="fp/events/closed.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> closed <a href="member.php.html?u=101304">certified</a><a href="#" onclick="return OpenEventlog( '101304' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1528032">Trump is a Russian stooge. Here's hard evidence</a> in <a href="forumdisplay.php.html?f=396">Sensationalist Headlines</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=101304">certified</a><a href="#" onclick="return OpenEventlog( '101304' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1528032&amp;p=50765336&amp;viewfull=1#post50765336">Trump is a Russian stooge. Here's hard evidence</a> with the reason “<b>Didn't read the sticky</b>”
+</li></div></ul></div><div class="eventtime">15 Hours ago<ul><div class="event">
+<li><a href="fp_events.php.html?type=delsoft"><img border="0" height="16" src="fp/events/delsoft.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> deleted the thread <a href="showthread.php.html?t=1528027">LEETNOOB's Opinions on the Munich Shooting</a> in <a href="forumdisplay.php.html?f=36">Drop Dead Thread</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=715647">MaximLaHaxim</a><a href="#" onclick="return OpenEventlog( '715647' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1528027">LEETNOOB's Opinions on the Munich Shooting</a> in <a href="forumdisplay.php.html?f=64">Videos And Flash Movies and That Kind Of Crap</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=715647">MaximLaHaxim</a><a href="#" onclick="return OpenEventlog( '715647' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>3 Days</b> in <a href="showthread.php.html?t=1528027&amp;p=50765218&amp;viewfull=1#post50765218">LEETNOOB's Opinions on the Munich Shooting</a> with the reason “<b>Posting on behalf of permabanned user</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=48009">redback3</a><a href="#" onclick="return OpenEventlog( '48009' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> with the reason “<b>NSFW avatar</b>”
+</li></div></ul></div><div class="eventtime">17 Hours ago<ul><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=309321">27X</a><a href="#" onclick="return OpenEventlog( '309321' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1527843&amp;p=50760862&amp;viewfull=1#post50760862">CD Projekt proves that game DRM is a complete waste of time and money</a> with the reason “<b>Meme reply</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=mov"><img border="0" height="16" src="fp/events/mov.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> moved <a href="member.php.html?u=105654">Fangz</a><a href="#" onclick="return OpenEventlog( '105654' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread titled “<a href="showthread.php.html?t=1528016">Guardians of the Galaxy - Mission: BREAKOUT! Coming to Disney California Adventure Park (RIP ToT)</a>” from <a href="forumdisplay.php.html?f=64">Videos And Flash Movies and That Kind Of Crap</a> to <a href="forumdisplay.php.html?f=396">Sensationalist Headlines</a>
+</li></div></ul></div><div class="eventtime">19 Hours ago<ul><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=1800">Orkel</a><a href="#" onclick="return OpenEventlog( '1800' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=598062">SCH</a><a href="#" onclick="return OpenEventlog( '598062' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1526792&amp;p=50763728&amp;viewfull=1#post50763728">LMAO Pics V. LMAO Pics: GO</a> with the reason “<b>gimmick</b>”
+</li></div></ul></div><div class="eventtime">22 Hours ago<ul><div class="event">
+<li><a href="fp_events.php.html?type=closed"><img border="0" height="16" src="fp/events/closed.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> closed <a href="member.php.html?u=474352">Solomon</a><a href="#" onclick="return OpenEventlog( '474352' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527998">Rick and Morty season 3 preview</a> in <a href="forumdisplay.php.html?f=64">Videos And Flash Movies and That Kind Of Crap</a> with the reason “<b>we have a search feature numbnuts</b>”
+</li></div></ul></div><div class="eventtime">23 Hours ago<ul><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=242336">Pascall</a><a href="#" onclick="return OpenEventlog( '242336' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=737230">dabrownbrevik</a><a href="#" onclick="return OpenEventlog( '737230' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527936&amp;p=50763011&amp;viewfull=1#post50763011">Munich gunman 'obsessed with mass shootings', not linked to ISIS</a> with the reason “<b>Alt.</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=242336">Pascall</a><a href="#" onclick="return OpenEventlog( '242336' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=719574">raz r23</a><a href="#" onclick="return OpenEventlog( '719574' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>3 Days</b> in <a href="showthread.php.html?t=1527980&amp;p=50762529&amp;viewfull=1#post50762529">Americans are increasingly in favor of stricter gun laws</a> with the reason “<b>Didn't read the sticky.</b>”
+</li></div></ul></div><div class="eventtime">1 Day ago<ul><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=281663">Melnek</a><a href="#" onclick="return OpenEventlog( '281663' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Month</b> in <a href="showthread.php.html?t=1527756&amp;p=50754653&amp;viewfull=1#post50754653">Call of Duty®: Infinite Warfare – "Black Sky" Gameplay</a> with the reason “<b>Rude trolling, again. Next ban is permanent.</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=mov"><img border="0" height="16" src="fp/events/mov.png" width="16"/></a>
+ <a href="member.php.html?u=152306">Robotboy655</a><a href="#" onclick="return OpenEventlog( '152306' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> moved <a href="member.php.html?u=737218">Syntax2056</a><a href="#" onclick="return OpenEventlog( '737218' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread titled “<a href="showthread.php.html?t=1527962">surface.DrawPoly not working propperly</a>” from <a href="forumdisplay.php.html?f=240">Programming</a> to <a href="forumdisplay.php.html?f=65">Developer Discussion</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=205107">Big Dumb American</a><a href="#" onclick="return OpenEventlog( '205107' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=86291">luck_or_loss</a><a href="#" onclick="return OpenEventlog( '86291' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>7 Days</b> with the reason “<b>Quit the rating spam you fucking baby. Also, quit getting banned.</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=242336">Pascall</a><a href="#" onclick="return OpenEventlog( '242336' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=737215">CallMeMK</a><a href="#" onclick="return OpenEventlog( '737215' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527950">Cracked Games in Third World Country?</a> in <a href="forumdisplay.php.html?f=15">Garry's Mod General Discussion</a> with the reason “<b>Warez</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=closed"><img border="0" height="16" src="fp/events/closed.png" width="16"/></a>
+ <a href="member.php.html?u=242336">Pascall</a><a href="#" onclick="return OpenEventlog( '242336' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> closed <a href="member.php.html?u=737215">CallMeMK</a><a href="#" onclick="return OpenEventlog( '737215' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527950">Cracked Games in Third World Country?</a> in <a href="forumdisplay.php.html?f=15">Garry's Mod General Discussion</a> with the reason “<b>Warez</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=242336">Pascall</a><a href="#" onclick="return OpenEventlog( '242336' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=737215">CallMeMK</a><a href="#" onclick="return OpenEventlog( '737215' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>7 Days</b> in <a href="showthread.php.html?t=1527950&amp;p=50761313&amp;viewfull=1#post50761313">Cracked Games in Third World Country?</a> with the reason “<b>Warez</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=delsoft"><img border="0" height="16" src="fp/events/delsoft.png" width="16"/></a>
+ <a href="member.php.html?u=1800">Orkel</a><a href="#" onclick="return OpenEventlog( '1800' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> deleted the thread <a href="showthread.php.html?t=1527941">I am the new one</a> in <a href="forumdisplay.php.html?f=110">General Games Discussion</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=1800">Orkel</a><a href="#" onclick="return OpenEventlog( '1800' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=737185">Michel4051</a><a href="#" onclick="return OpenEventlog( '737185' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527941&amp;p=50761071&amp;viewfull=1#post50761071">I am the new one</a> with the reason “<b>bot</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=72507">Swebonny</a><a href="#" onclick="return OpenEventlog( '72507' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=737211">therabbit</a><a href="#" onclick="return OpenEventlog( '737211' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527936&amp;p=50761162&amp;viewfull=1#post50761162">Munich gunman 'obsessed with mass shootings', not linked to ISIS</a> with the reason “<b>Gimmick</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=737055">gwash</a><a href="#" onclick="return OpenEventlog( '737055' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527898&amp;p=50760666&amp;viewfull=1#post50760666">Washington Post rules out endorsing 'threat to democracy' Donald Trump in brutal full-page editorial</a> with the reason “<b>Gimmick</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=737193">michaelachupa</a><a href="#" onclick="return OpenEventlog( '737193' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527921">Wow nice palming here</a> in <a href="forumdisplay.php.html?f=38">Mapping</a> with the reason “<b>Spam</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=737193">michaelachupa</a><a href="#" onclick="return OpenEventlog( '737193' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527921&amp;p=50760096&amp;viewfull=1#post50760096">Wow nice palming here</a> with the reason “<b>Spam</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=103553">rilez</a><a href="#" onclick="return OpenEventlog( '103553' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=164220">hexpunK</a><a href="#" onclick="return OpenEventlog( '164220' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>3 Days</b> in <a href="showthread.php.html?t=1527807&amp;p=50756032&amp;viewfull=1#post50756032">WikiLeaks threatens to start its own Twitter because of ‘cyber feudalism’</a> with the reason “<b>Shitposting</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=205107">Big Dumb American</a><a href="#" onclick="return OpenEventlog( '205107' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=394698">Mining Bill</a><a href="#" onclick="return OpenEventlog( '394698' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1527898&amp;p=50757920&amp;viewfull=1#post50757920">Washington Post rules out endorsing 'threat to democracy' Donald Trump in brutal full-page editorial</a> with the reason “<b>Memeshit</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=458972">keda009</a><a href="#" onclick="return OpenEventlog( '458972' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1509637&amp;p=50754416&amp;viewfull=1#post50754416">Pokémon General</a> with the reason “<b>Reaction image</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=544459">NiandraLades</a><a href="#" onclick="return OpenEventlog( '544459' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=737112">K4M1s</a><a href="#" onclick="return OpenEventlog( '737112' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527679">Give weapon after time</a> in <a href="forumdisplay.php.html?f=240">Programming</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=544459">NiandraLades</a><a href="#" onclick="return OpenEventlog( '544459' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=737112">K4M1s</a><a href="#" onclick="return OpenEventlog( '737112' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1527679&amp;p=50748700&amp;viewfull=1#post50748700">Give weapon after time</a> with the reason “<b>Missed forum description - see DEVELOPER DISCUSSION for gmod help!</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=720090">Solodris</a><a href="#" onclick="return OpenEventlog( '720090' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527907">Spirituality - The door to eternity</a> in <a href="forumdisplay.php.html?f=6">General Discussion</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=720090">Solodris</a><a href="#" onclick="return OpenEventlog( '720090' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1527907&amp;p=50758636&amp;viewfull=1#post50758636">Spirituality - The door to eternity</a> with the reason “<b>Didn't read the sticky</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=closed"><img border="0" height="16" src="fp/events/closed.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> closed <a href="member.php.html?u=459918">Infab</a><a href="#" onclick="return OpenEventlog( '459918' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527905">this thread</a> in <a href="forumdisplay.php.html?f=60">Fast Threads</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=toobig"><img border="0" height="16" src="fp/events/toobig.png" width="16"/></a>
+ The thread <a href="showthread.php.html?t=1526951">What Are You Thinking v. Kiwi traps???</a> was closed because it had over “<b>5000</b>” posts
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=toobig"><img border="0" height="16" src="fp/events/toobig.png" width="16"/></a>
+ The thread <a href="showthread.php.html?t=1526951">What Are You Thinking v. Kiwi traps???</a> was closed because it had over “<b>5000</b>” posts
+</li></div></ul></div><div class="eventtime">2 Days ago<ul><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=72507">Swebonny</a><a href="#" onclick="return OpenEventlog( '72507' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=558864">morky</a><a href="#" onclick="return OpenEventlog( '558864' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1527836&amp;p=50756348&amp;viewfull=1#post50756348">BREAKING - Shots fired in Munich shopping centre</a> with the reason “<b>Shitpost</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=closed"><img border="0" height="16" src="fp/events/closed.png" width="16"/></a>
+ <a href="member.php.html?u=91315">OvB</a><a href="#" onclick="return OpenEventlog( '91315' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> closed <a href="member.php.html?u=542325">Dr.Critic</a><a href="#" onclick="return OpenEventlog( '542325' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527837">Shots Fired in Munich Shopping Centre</a> in <a href="forumdisplay.php.html?f=396">Sensationalist Headlines</a> with the reason “<b>Late</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=737161">gagaltour</a><a href="#" onclick="return OpenEventlog( '737161' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527804">Cheap Fitted Kitchens Glasgow</a> in <a href="forumdisplay.php.html?f=110">General Games Discussion</a> with the reason “<b>Spam</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=737161">gagaltour</a><a href="#" onclick="return OpenEventlog( '737161' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527804&amp;p=50754300&amp;viewfull=1#post50754300">Cheap Fitted Kitchens Glasgow</a> with the reason “<b>Spam</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=737154">loakan</a><a href="#" onclick="return OpenEventlog( '737154' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527789">Cheap Kitchens Cardiff</a> in <a href="forumdisplay.php.html?f=110">General Games Discussion</a> with the reason “<b>Spam</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=737154">loakan</a><a href="#" onclick="return OpenEventlog( '737154' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527789&amp;p=50753806&amp;viewfull=1#post50753806">Cheap Kitchens Cardiff</a> with the reason “<b>Spam</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=445369">Svenskunganka</a><a href="#" onclick="return OpenEventlog( '445369' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1308430">SQLite to MySQL Converter</a> in <a href="forumdisplay.php.html?f=66">Gamemode &amp; Addon Releases</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=701103">jaxjaxk</a><a href="#" onclick="return OpenEventlog( '701103' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>3 Days</b> in <a href="showthread.php.html?t=1308430&amp;p=50752968&amp;viewfull=1#post50752968">SQLite to MySQL Converter</a> with the reason “<b>dumb bump</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=737147">Markymark</a><a href="#" onclick="return OpenEventlog( '737147' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> with the reason “<b>gimmick</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=505838">Jarokwa</a><a href="#" onclick="return OpenEventlog( '505838' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>3 Days</b> in <a href="showthread.php.html?t=1527659&amp;p=50748486&amp;viewfull=1#post50748486">Cop shoots caretaker of autistic man playing in the street with toy truck</a> with the reason “<b>"the blacks"</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=737110">ManOfChaos</a><a href="#" onclick="return OpenEventlog( '737110' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527675&amp;p=50748601&amp;viewfull=1#post50748601">Requesting someone other than Apoc Hedgie to make Deadly Six models</a> with the reason “<b>Gimmick</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=closed"><img border="0" height="16" src="fp/events/closed.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> closed <a href="member.php.html?u=737110">ManOfChaos</a><a href="#" onclick="return OpenEventlog( '737110' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527675">Requesting someone other than Apoc Hedgie to make Deadly Six models</a> in <a href="forumdisplay.php.html?f=66">Gamemode &amp; Addon Releases</a> with the reason “<b>Crap Thread</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=553816">code_gs</a><a href="#" onclick="return OpenEventlog( '553816' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1527734&amp;p=50750989&amp;viewfull=1#post50750989">Terry Crews has built his PC, now he wants to go SLI</a> with the reason “<b>Why reply</b>”
+</li></div></ul></div><div class="eventtime">3 Days ago<ul><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=1800">Orkel</a><a href="#" onclick="return OpenEventlog( '1800' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=366652">Mio Akiyama</a><a href="#" onclick="return OpenEventlog( '366652' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1509637&amp;p=50747434&amp;viewfull=1#post50747434">Pokémon General</a> with the reason “<b>rude</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=737127">piscipo</a><a href="#" onclick="return OpenEventlog( '737127' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> with the reason “<b>alt</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=242336">Pascall</a><a href="#" onclick="return OpenEventlog( '242336' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=737088">dorkside</a><a href="#" onclick="return OpenEventlog( '737088' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1509637&amp;p=50748232&amp;viewfull=1#post50748232">Pokémon General</a> with the reason “<b>Spam</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=242336">Pascall</a><a href="#" onclick="return OpenEventlog( '242336' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=7090">FZE</a><a href="#" onclick="return OpenEventlog( '7090' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>12 Hours</b> in <a href="showthread.php.html?t=1527659&amp;p=50749287&amp;viewfull=1#post50749287">Cop shoots caretaker of autistic man playing in the street with toy truck</a> with the reason “<b>Ironic shitposting is still shitposting.</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=205107">Big Dumb American</a><a href="#" onclick="return OpenEventlog( '205107' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=436427">Damjen</a><a href="#" onclick="return OpenEventlog( '436427' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>3 Days</b> in <a href="showthread.php.html?t=1526792&amp;p=50744449&amp;viewfull=1#post50744449">LMAO Pics V. LMAO Pics: GO</a> with the reason “<b>This is not a LMAO Pic</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=205107">Big Dumb American</a><a href="#" onclick="return OpenEventlog( '205107' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=585646">Duchess</a><a href="#" onclick="return OpenEventlog( '585646' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527393&amp;p=50746317&amp;viewfull=1#post50746317">Leslie Jones (Ghostbusters actress) leaves Twitter after trolls continue to harass her vigorously</a> with the reason “<b>This is a GIMMICK account, Novangel! You DOOF!</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=unban"><img border="0" height="16" src="fp/events/unban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> unbanned <a href="member.php.html?u=25498">Moo</a><a href="#" onclick="return OpenEventlog( '25498' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> with the explanation “<b>re-PBan me even if I sneeze wrong</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=unban"><img border="0" height="16" src="fp/events/unban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> unbanned <a href="member.php.html?u=736921">NoDachshund</a><a href="#" onclick="return OpenEventlog( '736921' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> with the explanation “<b></b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=737096">Aults1002</a><a href="#" onclick="return OpenEventlog( '737096' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527648">Looking For Staff (1942RP) (NUTSCRIPT)</a> in <a href="forumdisplay.php.html?f=240">Programming</a> with the reason “<b>Spam</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=737096">Aults1002</a><a href="#" onclick="return OpenEventlog( '737096' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527648&amp;p=50747080&amp;viewfull=1#post50747080">Looking For Staff (1942RP) (NUTSCRIPT)</a> with the reason “<b>Spam</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=499747">Primigenes</a><a href="#" onclick="return OpenEventlog( '499747' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>7 Days</b> in <a href="showthread.php.html?t=1527393&amp;p=50745879&amp;viewfull=1#post50745879">Leslie Jones (Ghostbusters actress) leaves Twitter after trolls continue to harass her vigorously</a> with the reason “<b>Mispress shit</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=737093">NoDash</a><a href="#" onclick="return OpenEventlog( '737093' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527617&amp;p=50746552&amp;viewfull=1#post50746552">[UK] UKIP councillor apologises for 'joking' Remain voters be killed</a> with the reason “<b>Ban evasion alt</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=242336">Pascall</a><a href="#" onclick="return OpenEventlog( '242336' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=249603">Pops</a><a href="#" onclick="return OpenEventlog( '249603' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1527645&amp;p=50746938&amp;viewfull=1#post50746938">We showed Battlefield 1 to a World War I historian</a> with the reason “<b>Why reply?</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=242336">Pascall</a><a href="#" onclick="return OpenEventlog( '242336' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=182535">kill3r</a><a href="#" onclick="return OpenEventlog( '182535' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1526792&amp;p=50744097&amp;viewfull=1#post50744097">LMAO Pics V. LMAO Pics: GO</a> with the reason “<b>Not an LMAO pic, don't debate bans in here you fool...</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=736642">Heatf2</a><a href="#" onclick="return OpenEventlog( '736642' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527622&amp;p=50745652&amp;viewfull=1#post50745652">When people take Pokemon go too far</a> with the reason “<b>Spam</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=53501">Grenadiac</a><a href="#" onclick="return OpenEventlog( '53501' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1527561&amp;p=50744559&amp;viewfull=1#post50744559">Pro Skiier Matilda Rapaport dies filming commercial for Ubisoft's Steep Game</a> with the reason “<b>Pointless reply</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=53501">Grenadiac</a><a href="#" onclick="return OpenEventlog( '53501' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>3 Days</b> in <a href="showthread.php.html?t=1527561&amp;p=50744559&amp;viewfull=1#post50744559">Pro Skiier Matilda Rapaport dies filming commercial for Ubisoft's Steep Game</a> with the reason “<b>Pointless reply</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=499747">Primigenes</a><a href="#" onclick="return OpenEventlog( '499747' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527393&amp;p=50745879&amp;viewfull=1#post50745879">Leslie Jones (Ghostbusters actress) leaves Twitter after trolls continue to harass her vigorously</a> with the reason “<b>Let's extend that a bit</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=499747">Primigenes</a><a href="#" onclick="return OpenEventlog( '499747' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>7 Days</b> in <a href="showthread.php.html?t=1527393&amp;p=50745879&amp;viewfull=1#post50745879">Leslie Jones (Ghostbusters actress) leaves Twitter after trolls continue to harass her vigorously</a> with the reason “<b>Let's extend that a bit</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=499747">Primigenes</a><a href="#" onclick="return OpenEventlog( '499747' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>3 Days</b> in <a href="showthread.php.html?t=1527393&amp;p=50745927&amp;viewfull=1#post50745927">Leslie Jones (Ghostbusters actress) leaves Twitter after trolls continue to harass her vigorously</a> with the reason “<b>Flaming again</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=585646">Duchess</a><a href="#" onclick="return OpenEventlog( '585646' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>3 Days</b> in <a href="showthread.php.html?t=1527393&amp;p=50746317&amp;viewfull=1#post50746317">Leslie Jones (Ghostbusters actress) leaves Twitter after trolls continue to harass her vigorously</a> with the reason “<b>Trolling</b>”
+</li></div></ul></div><div class="eventtime">4 Days ago<ul><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=158243">mastfire</a><a href="#" onclick="return OpenEventlog( '158243' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>3 Days</b> in <a href="showthread.php.html?t=1526792&amp;p=50745159&amp;viewfull=1#post50745159">LMAO Pics V. LMAO Pics: GO</a> with the reason “<b>Not a request thread</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=438620">Loadingue</a><a href="#" onclick="return OpenEventlog( '438620' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1526792&amp;p=50744243&amp;viewfull=1#post50744243">LMAO Pics V. LMAO Pics: GO</a> with the reason “<b>Not a lmao pic / offtopic</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=delsoft"><img border="0" height="16" src="fp/events/delsoft.png" width="16"/></a>
+ <a href="member.php.html?u=91315">OvB</a><a href="#" onclick="return OpenEventlog( '91315' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> deleted the thread <a href="showthread.php.html?t=1527525">[RELEASE] Ultra Donate - The All-In-One solution to Your Garry's Mod Server Donation Needs</a> in <a href="forumdisplay.php.html?f=66">Gamemode &amp; Addon Releases</a> with the reason “<b>Advertisement</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=205107">Big Dumb American</a><a href="#" onclick="return OpenEventlog( '205107' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=362910">fruxodaily</a><a href="#" onclick="return OpenEventlog( '362910' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527535">Twitter permanently bans Milo Yiannopoulos after Leslie Jones incident</a> in <a href="forumdisplay.php.html?f=396">Sensationalist Headlines</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=closed"><img border="0" height="16" src="fp/events/closed.png" width="16"/></a>
+ <a href="member.php.html?u=205107">Big Dumb American</a><a href="#" onclick="return OpenEventlog( '205107' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> closed <a href="member.php.html?u=362910">fruxodaily</a><a href="#" onclick="return OpenEventlog( '362910' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527535">Twitter permanently bans Milo Yiannopoulos after Leslie Jones incident</a> in <a href="forumdisplay.php.html?f=396">Sensationalist Headlines</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=closed"><img border="0" height="16" src="fp/events/closed.png" width="16"/></a>
+ <a href="member.php.html?u=1800">Orkel</a><a href="#" onclick="return OpenEventlog( '1800' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> closed <a href="member.php.html?u=217383">Fleskhjerta</a><a href="#" onclick="return OpenEventlog( '217383' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527450">Armed man hidden in hotel with possible explosives in Bollène, France</a> in <a href="forumdisplay.php.html?f=396">Sensationalist Headlines</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=42774">UncleJimmema</a><a href="#" onclick="return OpenEventlog( '42774' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=438581">RainbowStalin</a><a href="#" onclick="return OpenEventlog( '438581' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1527393&amp;p=50740519&amp;viewfull=1#post50740519">Leslie Jones (Ghostbusters actress) leaves Twitter after trolls continue to harass her vigorously</a> with the reason “<b>Shit Posting</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=delsoft"><img border="0" height="16" src="fp/events/delsoft.png" width="16"/></a>
+ <a href="member.php.html?u=42774">UncleJimmema</a><a href="#" onclick="return OpenEventlog( '42774' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> deleted the thread <a href="showthread.php.html?t=1527543">실- EDIT THE SPAM TITLES - 트</a> in <a href="forumdisplay.php.html?f=36">Drop Dead Thread</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=42774">UncleJimmema</a><a href="#" onclick="return OpenEventlog( '42774' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=737058">rkeeyw6857</a><a href="#" onclick="return OpenEventlog( '737058' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527543">실- EDIT THE SPAM TITLES - 트</a> in <a href="forumdisplay.php.html?f=110">General Games Discussion</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=42774">UncleJimmema</a><a href="#" onclick="return OpenEventlog( '42774' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=737058">rkeeyw6857</a><a href="#" onclick="return OpenEventlog( '737058' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527543&amp;p=50743059&amp;viewfull=1#post50743059">실- EDIT THE SPAM TITLES - 트</a> with the reason “<b>Spam</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=closed"><img border="0" height="16" src="fp/events/closed.png" width="16"/></a>
+ <a href="member.php.html?u=244899">Bradyns</a><a href="#" onclick="return OpenEventlog( '244899' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> closed <a href="member.php.html?u=239774">Pretiacruento</a><a href="#" onclick="return OpenEventlog( '239774' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527481">Scientists 'at tipping point' for predicting children's school grades from DNA</a> in <a href="forumdisplay.php.html?f=396">Sensationalist Headlines</a> with the reason “<b>Closed: Unreliable Source</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=244899">Bradyns</a><a href="#" onclick="return OpenEventlog( '244899' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=239774">Pretiacruento</a><a href="#" onclick="return OpenEventlog( '239774' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>12 Hours</b> in <a href="showthread.php.html?t=1527481&amp;p=50739897&amp;viewfull=1#post50739897">Scientists 'at tipping point' for predicting children's school grades from DNA</a> with the reason “<b>Find a better source</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=unban"><img border="0" height="16" src="fp/events/unban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> unbanned <a href="member.php.html?u=125924">Take_Opal</a><a href="#" onclick="return OpenEventlog( '125924' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> with the explanation “<b>actually nah</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=125924">Take_Opal</a><a href="#" onclick="return OpenEventlog( '125924' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>7 Days</b> in <a href="showthread.php.html?t=1527510&amp;p=50741231&amp;viewfull=1#post50741231">Assault Charges Dropped for Alabama Cop Who Partially Paralyzed Indian Grandfather</a> with the reason “<b>Still shit-posting in SH. Next is perma.</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=737056">juuuliiieee</a><a href="#" onclick="return OpenEventlog( '737056' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527539&amp;p=50742579&amp;viewfull=1#post50742579">Cheap Kitchens For Sale Leeds</a> with the reason “<b>bot.</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=delsoft"><img border="0" height="16" src="fp/events/delsoft.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> deleted the thread <a href="showthread.php.html?t=1527539">Cheap Kitchens For Sale Leeds</a> in <a href="forumdisplay.php.html?f=36">Drop Dead Thread</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=737056">juuuliiieee</a><a href="#" onclick="return OpenEventlog( '737056' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527539">Cheap Kitchens For Sale Leeds</a> in <a href="forumdisplay.php.html?f=6">General Discussion</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=733054">DavyDev</a><a href="#" onclick="return OpenEventlog( '733054' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>7 Days</b> in <a href="showthread.php.html?t=1527158&amp;p=50725050&amp;viewfull=1#post50725050">I really need help :/</a> with the reason “<b>Undescriptive thread title, don't make duplicate threads, barely any information</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=733054">DavyDev</a><a href="#" onclick="return OpenEventlog( '733054' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527158">I really need help :/</a> in <a href="forumdisplay.php.html?f=65">Developer Discussion</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=mov"><img border="0" height="16" src="fp/events/mov.png" width="16"/></a>
+ <a href="member.php.html?u=42774">UncleJimmema</a><a href="#" onclick="return OpenEventlog( '42774' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> moved <a href="member.php.html?u=730447">Trini</a><a href="#" onclick="return OpenEventlog( '730447' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread titled “<a href="showthread.php.html?t=1527494">Could someone please put this model and texture into sfm?</a>” from <a href="forumdisplay.php.html?f=6">General Discussion</a> to <a href="forumdisplay.php.html?f=40">Modelling</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=mov"><img border="0" height="16" src="fp/events/mov.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> moved <a href="member.php.html?u=104366">King of Limbs</a><a href="#" onclick="return OpenEventlog( '104366' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread titled “<a href="showthread.php.html?t=1527532">4K - Hate song to my Ex</a>” from <a href="forumdisplay.php.html?f=60">Fast Threads</a> to <a href="forumdisplay.php.html?f=6">General Discussion</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=unban"><img border="0" height="16" src="fp/events/unban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> unbanned <a href="member.php.html?u=228433">UntouchedShadow</a><a href="#" onclick="return OpenEventlog( '228433' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> with the explanation “<b>My bad</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=58724">Blizzerd</a><a href="#" onclick="return OpenEventlog( '58724' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>3 Days</b> in <a href="showthread.php.html?t=1527415&amp;p=50738935&amp;viewfull=1#post50738935">Melania Trump's Convention Speech Part Plagiarised from Michelle Obama's 2008 Speech</a> with the reason “<b>Kek meme shit</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=736309">baslan</a><a href="#" onclick="return OpenEventlog( '736309' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527528&amp;p=50741629&amp;viewfull=1#post50741629">The Human Slaughterhouses in Mexico Dwarf Anything the Islamic State has Done</a> with the reason “<b>Gimmick</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=709580">CMPunkBITW</a><a href="#" onclick="return OpenEventlog( '709580' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>3 Days</b> in <a href="showthread.php.html?t=1446307&amp;p=50740663&amp;viewfull=1#post50740663">Post Your Current WIP!: V5 "it's a Gumpert Apollo"</a> with the reason “<b>Don't be rude + awful drama</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=736708">VSonyPower420</a><a href="#" onclick="return OpenEventlog( '736708' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>3 Days</b> in <a href="showthread.php.html?t=1446307&amp;p=50740266&amp;viewfull=1#post50740266">Post Your Current WIP!: V5 "it's a Gumpert Apollo"</a> with the reason “<b>Report, don't reply to flip out. Also awful drama</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=734591">Karskonov</a><a href="#" onclick="return OpenEventlog( '734591' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>7 Days</b> in <a href="showthread.php.html?t=1446307&amp;p=50738523&amp;viewfull=1#post50738523">Post Your Current WIP!: V5 "it's a Gumpert Apollo"</a> with the reason “<b>Dumb drama</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=closed"><img border="0" height="16" src="fp/events/closed.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> closed <a href="member.php.html?u=558582">hakimhakim</a><a href="#" onclick="return OpenEventlog( '558582' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1516981">How to reset router properly?</a> in <a href="forumdisplay.php.html?f=397">Hardware and Software</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=736989">FloridaDesy</a><a href="#" onclick="return OpenEventlog( '736989' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1516981&amp;p=50733083&amp;viewfull=1#post50733083">How to reset router properly?</a> with the reason “<b>bot</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=736891">Terminator543</a><a href="#" onclick="return OpenEventlog( '736891' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>7 Days</b> in <a href="showthread.php.html?t=1527400&amp;p=50737084&amp;viewfull=1#post50737084">Some SFM models</a> with the reason “<b>Wrong section, crap thread, you didn't even say WHAT the models are??</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=736891">Terminator543</a><a href="#" onclick="return OpenEventlog( '736891' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527400">Some SFM models</a> in <a href="forumdisplay.php.html?f=240">Programming</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=736833">AwesomeNachos</a><a href="#" onclick="return OpenEventlog( '736833' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1526920&amp;p=50711699&amp;viewfull=1#post50711699">whats next</a> with the reason “<b>undescriptive thread title + gimmick i guess</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=736833">AwesomeNachos</a><a href="#" onclick="return OpenEventlog( '736833' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1526920">whats next</a> in <a href="forumdisplay.php.html?f=15">Garry's Mod General Discussion</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=737031">NinciaRed</a><a href="#" onclick="return OpenEventlog( '737031' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>3 Days</b> in <a href="showthread.php.html?t=1527467&amp;p=50739445&amp;viewfull=1#post50739445">►I Made This In Garry's Mod! Please tell me if you like it!◄</a> with the reason “<b>Obnoxious thread title + poll + crap thread</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=737031">NinciaRed</a><a href="#" onclick="return OpenEventlog( '737031' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527467">►I Made This In Garry's Mod! Please tell me if you like it!◄</a> in <a href="forumdisplay.php.html?f=198">Screenshots, Movies, Saves and Dupes</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=578108">Sonic2756</a><a href="#" onclick="return OpenEventlog( '578108' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1292625">Keen Brigade TTT</a> in <a href="forumdisplay.php.html?f=189">Games In Progress</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=736983">420_baljeet</a><a href="#" onclick="return OpenEventlog( '736983' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1292625&amp;p=50732561&amp;viewfull=1#post50732561">Keen Brigade TTT</a> with the reason “<b>gimmick oh my goddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=111659">Alxnotorious</a><a href="#" onclick="return OpenEventlog( '111659' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1526792&amp;p=50740497&amp;viewfull=1#post50740497">LMAO Pics V. LMAO Pics: GO</a> with the reason “<b>Not a LMAO pic</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=474352">Solomon</a><a href="#" onclick="return OpenEventlog( '474352' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1526792&amp;p=50741520&amp;viewfull=1#post50741520">LMAO Pics V. LMAO Pics: GO</a> with the reason “<b>Not a LMAO pic</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=405001">icarusfoundyou</a><a href="#" onclick="return OpenEventlog( '405001' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>7 Days</b> in <a href="showthread.php.html?t=1526792&amp;p=50740022&amp;viewfull=1#post50740022">LMAO Pics V. LMAO Pics: GO</a> with the reason “<b>Late, already posted. + sense you are being butthurt</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=152219">orgornot</a><a href="#" onclick="return OpenEventlog( '152219' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Month</b> in <a href="showthread.php.html?t=1527449&amp;p=50739220&amp;viewfull=1#post50739220">Turkey suspends 15,200 education staff</a> with the reason “<b>Gimmick posting is wearing off</b>”
+</li></div></ul></div><div class="eventtime">5 Days ago<ul><div class="event">
+<li><a href="fp_events.php.html?type=unban"><img border="0" height="16" src="fp/events/unban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> unbanned <a href="member.php.html?u=733753">Teufel</a><a href="#" onclick="return OpenEventlog( '733753' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> with the explanation “<b>Understands</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=205107">Big Dumb American</a><a href="#" onclick="return OpenEventlog( '205107' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=579321">Warmeup</a><a href="#" onclick="return OpenEventlog( '579321' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1527353&amp;p=50734953&amp;viewfull=1#post50734953">Germany: Axe attack on train injures four</a> with the reason “<b>Trolling</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=228433">UntouchedShadow</a><a href="#" onclick="return OpenEventlog( '228433' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1525420&amp;p=50736820&amp;viewfull=1#post50736820">Overwatch - Threads never die</a> with the reason “<b>Warez</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=42774">UncleJimmema</a><a href="#" onclick="return OpenEventlog( '42774' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=435543">Hogie bear</a><a href="#" onclick="return OpenEventlog( '435543' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1526792&amp;p=50735561&amp;viewfull=1#post50735561">LMAO Pics V. LMAO Pics: GO</a> with the reason “<b>not a LMAO pic</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=42774">UncleJimmema</a><a href="#" onclick="return OpenEventlog( '42774' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=669076">Shalaska</a><a href="#" onclick="return OpenEventlog( '669076' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1526792&amp;p=50735555&amp;viewfull=1#post50735555">LMAO Pics V. LMAO Pics: GO</a> with the reason “<b>not a LMAO pic</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=42774">UncleJimmema</a><a href="#" onclick="return OpenEventlog( '42774' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=436427">Damjen</a><a href="#" onclick="return OpenEventlog( '436427' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1526792&amp;p=50735707&amp;viewfull=1#post50735707">LMAO Pics V. LMAO Pics: GO</a> with the reason “<b>not a LMAO pic</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=42774">UncleJimmema</a><a href="#" onclick="return OpenEventlog( '42774' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=151815">gufu</a><a href="#" onclick="return OpenEventlog( '151815' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1526792&amp;p=50735656&amp;viewfull=1#post50735656">LMAO Pics V. LMAO Pics: GO</a> with the reason “<b>not a LMAO pic</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=42774">UncleJimmema</a><a href="#" onclick="return OpenEventlog( '42774' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=145982">Retyuoligkl</a><a href="#" onclick="return OpenEventlog( '145982' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1526792&amp;p=50735571&amp;viewfull=1#post50735571">LMAO Pics V. LMAO Pics: GO</a> with the reason “<b>not a LMAO pic</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=42774">UncleJimmema</a><a href="#" onclick="return OpenEventlog( '42774' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=86291">luck_or_loss</a><a href="#" onclick="return OpenEventlog( '86291' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1526792&amp;p=50735602&amp;viewfull=1#post50735602">LMAO Pics V. LMAO Pics: GO</a> with the reason “<b>not a LMAO pic</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=91315">OvB</a><a href="#" onclick="return OpenEventlog( '91315' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=558299">Svinnik</a><a href="#" onclick="return OpenEventlog( '558299' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527389">Refugee in Germany attacks people on train with axe, hurts 4, killed by police</a> in <a href="forumdisplay.php.html?f=396">Sensationalist Headlines</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=closed"><img border="0" height="16" src="fp/events/closed.png" width="16"/></a>
+ <a href="member.php.html?u=91315">OvB</a><a href="#" onclick="return OpenEventlog( '91315' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> closed <a href="member.php.html?u=558299">Svinnik</a><a href="#" onclick="return OpenEventlog( '558299' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527389">Refugee in Germany attacks people on train with axe, hurts 4, killed by police</a> in <a href="forumdisplay.php.html?f=396">Sensationalist Headlines</a> with the reason “<b>late</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=closed"><img border="0" height="16" src="fp/events/closed.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> closed <a href="member.php.html?u=202456">Ningaglio</a><a href="#" onclick="return OpenEventlog( '202456' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=948731">NICK : Nice Intelligent Chatbot Kewl !</a> in <a href="forumdisplay.php.html?f=66">Gamemode &amp; Addon Releases</a> with the reason “<b>Old</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=733753">Teufel</a><a href="#" onclick="return OpenEventlog( '733753' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=948731&amp;p=50731452&amp;viewfull=1#post50731452">NICK : Nice Intelligent Chatbot Kewl !</a> with the reason “<b>Dumb bump</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=736985">bot1</a><a href="#" onclick="return OpenEventlog( '736985' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527318">Garry's mod Engine Error</a> in <a href="forumdisplay.php.html?f=6">General Discussion</a> with the reason “<b>Wrong section</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=736985">bot1</a><a href="#" onclick="return OpenEventlog( '736985' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>12 Hours</b> in <a href="showthread.php.html?t=1527318&amp;p=50732754&amp;viewfull=1#post50732754">Garry's mod Engine Error</a> with the reason “<b>Wrong section</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=205107">Big Dumb American</a><a href="#" onclick="return OpenEventlog( '205107' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=62466">junker154</a><a href="#" onclick="return OpenEventlog( '62466' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527354">[Germany] 17 year old afghan attacks passengers of a regional train with an axe</a> in <a href="forumdisplay.php.html?f=396">Sensationalist Headlines</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=closed"><img border="0" height="16" src="fp/events/closed.png" width="16"/></a>
+ <a href="member.php.html?u=205107">Big Dumb American</a><a href="#" onclick="return OpenEventlog( '205107' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> closed <a href="member.php.html?u=62466">junker154</a><a href="#" onclick="return OpenEventlog( '62466' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527354">[Germany] 17 year old afghan attacks passengers of a regional train with an axe</a> in <a href="forumdisplay.php.html?f=396">Sensationalist Headlines</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=unban"><img border="0" height="16" src="fp/events/unban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> unbanned <a href="member.php.html?u=294141">AaronM202</a><a href="#" onclick="return OpenEventlog( '294141' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> with the explanation “<b>asdfghjkl;'</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=294141">AaronM202</a><a href="#" onclick="return OpenEventlog( '294141' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> with the reason “<b>rip</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=736487">Ryuki</a><a href="#" onclick="return OpenEventlog( '736487' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>7 Days</b> in <a href="showthread.php.html?t=1526951&amp;p=50734028&amp;viewfull=1#post50734028">What Are You Thinking v. Kiwi traps???</a> with the reason “<b>terrible</b>”
+</li></div></ul></div><div class="eventtime">6 Days ago<ul><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=736986">jamliten</a><a href="#" onclick="return OpenEventlog( '736986' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527317&amp;p=50732736&amp;viewfull=1#post50732736">Keep in safe life</a> with the reason “<b>bot</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=delsoft"><img border="0" height="16" src="fp/events/delsoft.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> deleted the thread <a href="showthread.php.html?t=1527317">Keep in safe life</a> in <a href="forumdisplay.php.html?f=36">Drop Dead Thread</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=736986">jamliten</a><a href="#" onclick="return OpenEventlog( '736986' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527317">Keep in safe life</a> in <a href="forumdisplay.php.html?f=6">General Discussion</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=544459">NiandraLades</a><a href="#" onclick="return OpenEventlog( '544459' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=725618">DaBiGBoSs</a><a href="#" onclick="return OpenEventlog( '725618' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1526999">Gamemode voting question</a> in <a href="forumdisplay.php.html?f=15">Garry's Mod General Discussion</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=405001">icarusfoundyou</a><a href="#" onclick="return OpenEventlog( '405001' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1526792&amp;p=50727868&amp;viewfull=1#post50727868">LMAO Pics V. LMAO Pics: GO</a> with the reason “<b>Furry shit / not a lmao pic</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=664928">Doctor_Lazlo</a><a href="#" onclick="return OpenEventlog( '664928' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>3 Days</b> in <a href="showthread.php.html?t=1520026&amp;p=50731015&amp;viewfull=1#post50731015">TF2 Emporium 65 - End of an era</a> with the reason “<b>Threadshitting</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=727842">Dusty-Pixels</a><a href="#" onclick="return OpenEventlog( '727842' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1520026&amp;p=50729563&amp;viewfull=1#post50729563">TF2 Emporium 65 - End of an era</a> with the reason “<b>Image macro</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=unban"><img border="0" height="16" src="fp/events/unban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> unbanned <a href="member.php.html?u=446598">~Kiwi~v2</a><a href="#" onclick="return OpenEventlog( '446598' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> with the explanation “<b>asdfghjkl;'</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=736963">going2kilzu</a><a href="#" onclick="return OpenEventlog( '736963' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527258&amp;p=50730483&amp;viewfull=1#post50730483">DESCRIPTIVE</a> with the reason “<b>Won't read the rules</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=446598">~Kiwi~v2</a><a href="#" onclick="return OpenEventlog( '446598' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1526951&amp;p=50730688&amp;viewfull=1#post50730688">What Are You Thinking v. Kiwi traps???</a> with the reason “<b>all i read were the words "ban me"</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=736967">oozingbeing</a><a href="#" onclick="return OpenEventlog( '736967' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> with the reason “<b>gimmick</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=delsoft"><img border="0" height="16" src="fp/events/delsoft.png" width="16"/></a>
+ <a href="member.php.html?u=244899">Bradyns</a><a href="#" onclick="return OpenEventlog( '244899' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> deleted the thread <a href="showthread.php.html?t=1527255">snip</a> in <a href="forumdisplay.php.html?f=36">Drop Dead Thread</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=244899">Bradyns</a><a href="#" onclick="return OpenEventlog( '244899' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=736966">Triggared</a><a href="#" onclick="return OpenEventlog( '736966' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527255">snip</a> in <a href="forumdisplay.php.html?f=15">Garry's Mod General Discussion</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=closed"><img border="0" height="16" src="fp/events/closed.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> closed <a href="member.php.html?u=593065">sopra</a><a href="#" onclick="return OpenEventlog( '593065' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527190">Message Encoder Glua</a> in <a href="forumdisplay.php.html?f=65">Developer Discussion</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=593065">sopra</a><a href="#" onclick="return OpenEventlog( '593065' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>12 Hours</b> in <a href="showthread.php.html?t=1527190&amp;p=50726871&amp;viewfull=1#post50726871">Message Encoder Glua</a> with the reason “<b>Didn't read the sticky</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=736965">Kosher</a><a href="#" onclick="return OpenEventlog( '736965' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1526966&amp;p=50730271&amp;viewfull=1#post50730271">Andrea Leadsom Says It Is ‘Sensible’ Not To Let Men Look After Children As They May Be Paedophiles</a> with the reason “<b>Gimmick</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=delsoft"><img border="0" height="16" src="fp/events/delsoft.png" width="16"/></a>
+ <a href="member.php.html?u=42774">UncleJimmema</a><a href="#" onclick="return OpenEventlog( '42774' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> deleted the thread <a href="showthread.php.html?t=1527250">Behold her haunted period!!!!!</a> in <a href="forumdisplay.php.html?f=36">Drop Dead Thread</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=42774">UncleJimmema</a><a href="#" onclick="return OpenEventlog( '42774' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=736964">Naven</a><a href="#" onclick="return OpenEventlog( '736964' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527250">Behold her haunted period!!!!!</a> in <a href="forumdisplay.php.html?f=64">Videos And Flash Movies and That Kind Of Crap</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=42774">UncleJimmema</a><a href="#" onclick="return OpenEventlog( '42774' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=736964">Naven</a><a href="#" onclick="return OpenEventlog( '736964' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527250&amp;p=50730098&amp;viewfull=1#post50730098">Behold her haunted period!!!!!</a> with the reason “<b>Spam</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=544459">NiandraLades</a><a href="#" onclick="return OpenEventlog( '544459' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=718491">MelonShooter</a><a href="#" onclick="return OpenEventlog( '718491' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1527219&amp;p=50730186&amp;viewfull=1#post50730186">[Help] Melon clicker</a> with the reason “<b>Why reply/rude</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=736963">going2kilzu</a><a href="#" onclick="return OpenEventlog( '736963' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1527249&amp;p=50730051&amp;viewfull=1#post50730051">memory error</a> with the reason “<b>wrong section</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=736963">going2kilzu</a><a href="#" onclick="return OpenEventlog( '736963' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527249">memory error</a> in <a href="forumdisplay.php.html?f=6">General Discussion</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=closed"><img border="0" height="16" src="fp/events/closed.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> closed <a href="member.php.html?u=657842">dashingzowie1</a><a href="#" onclick="return OpenEventlog( '657842' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527244">How do I logout?</a> in <a href="forumdisplay.php.html?f=60">Fast Threads</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=95632">NickFury666</a><a href="#" onclick="return OpenEventlog( '95632' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1446402&amp;p=50729301&amp;viewfull=1#post50729301">Pictures of You 2015 (or v3 w/e) - shave it</a> with the reason “<b>Embarrassing</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=mov"><img border="0" height="16" src="fp/events/mov.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> moved <a href="member.php.html?u=476845">FlandersNed</a><a href="#" onclick="return OpenEventlog( '476845' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread titled “<a href="showthread.php.html?t=1526197">The Ghostbusters Reboot Fan Club</a>” from <a href="forumdisplay.php.html?f=64">Videos And Flash Movies and That Kind Of Crap</a> to <a href="forumdisplay.php.html?f=6">General Discussion</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=646829">Assassin723</a><a href="#" onclick="return OpenEventlog( '646829' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527236&amp;p=50729209&amp;viewfull=1#post50729209">stupid shit</a> with the reason “<b>Literally can't read</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=delsoft"><img border="0" height="16" src="fp/events/delsoft.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> deleted the thread <a href="showthread.php.html?t=1527236">stupid shit</a> in <a href="forumdisplay.php.html?f=36">Drop Dead Thread</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=646829">Assassin723</a><a href="#" onclick="return OpenEventlog( '646829' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527236">stupid shit</a> in <a href="forumdisplay.php.html?f=189">Games In Progress</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=736290">Great Dog</a><a href="#" onclick="return OpenEventlog( '736290' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>7 Days</b> in <a href="showthread.php.html?t=1527238&amp;p=50729219&amp;viewfull=1#post50729219">Duneld Trampe</a> with the reason “<b>Lots of shitposts</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=736290">Great Dog</a><a href="#" onclick="return OpenEventlog( '736290' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527227">Which came first, the chicken or the egg?</a> in <a href="forumdisplay.php.html?f=60">Fast Threads</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=736290">Great Dog</a><a href="#" onclick="return OpenEventlog( '736290' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527224">So, JBMod. Still a competetor?</a> in <a href="forumdisplay.php.html?f=6">General Discussion</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=736290">Great Dog</a><a href="#" onclick="return OpenEventlog( '736290' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527238&amp;p=50729219&amp;viewfull=1#post50729219">Duneld Trampe</a> with the reason “<b>Lots of shitposts</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=delsoft"><img border="0" height="16" src="fp/events/delsoft.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> deleted the thread <a href="showthread.php.html?t=1527238">Duneld Trampe</a> in <a href="forumdisplay.php.html?f=36">Drop Dead Thread</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=736290">Great Dog</a><a href="#" onclick="return OpenEventlog( '736290' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527238">Duneld Trampe</a> in <a href="forumdisplay.php.html?f=6">General Discussion</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=1800">Orkel</a><a href="#" onclick="return OpenEventlog( '1800' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=228847">Map in a box</a><a href="#" onclick="return OpenEventlog( '228847' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>3 Days</b> in <a href="showthread.php.html?t=1526792&amp;p=50727960&amp;viewfull=1#post50727960">LMAO Pics V. LMAO Pics: GO</a> with the reason “<b>top kek</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=closed"><img border="0" height="16" src="fp/events/closed.png" width="16"/></a>
+ <a href="member.php.html?u=1800">Orkel</a><a href="#" onclick="return OpenEventlog( '1800' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> closed <a href="member.php.html?u=77603">Robman8908</a><a href="#" onclick="return OpenEventlog( '77603' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527215">Pokemon GO down: Hackers claim responsibility</a> in <a href="forumdisplay.php.html?f=396">Sensationalist Headlines</a> with the reason “<b>no</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=736951">soul_awesome</a><a href="#" onclick="return OpenEventlog( '736951' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527222&amp;p=50728376&amp;viewfull=1#post50728376">Faded DarkRP</a> with the reason “<b>can't read</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=delsoft"><img border="0" height="16" src="fp/events/delsoft.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> deleted the thread <a href="showthread.php.html?t=1527222">Faded DarkRP</a> in <a href="forumdisplay.php.html?f=36">Drop Dead Thread</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=736951">soul_awesome</a><a href="#" onclick="return OpenEventlog( '736951' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527222">Faded DarkRP</a> in <a href="forumdisplay.php.html?f=189">Games In Progress</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=205107">Big Dumb American</a><a href="#" onclick="return OpenEventlog( '205107' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=221252">IAreLegend</a><a href="#" onclick="return OpenEventlog( '221252' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1527209&amp;p=50727926&amp;viewfull=1#post50727926">Man shot at teens playing 'Pokemon Go'</a> with the reason “<b>Memeshit</b>”
+</li></div></ul></div><div class="eventtime">7 Days ago<ul><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=42774">UncleJimmema</a><a href="#" onclick="return OpenEventlog( '42774' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=443097">EddieLTU</a><a href="#" onclick="return OpenEventlog( '443097' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1527182&amp;p=50726995&amp;viewfull=1#post50726995">Active Shooter targeting police in Baton Rouge, LA</a> with the reason “<b>Shit Posting</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=242336">Pascall</a><a href="#" onclick="return OpenEventlog( '242336' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=736946">Cybil</a><a href="#" onclick="return OpenEventlog( '736946' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527185">This is what happens when two men have a baby</a> in <a href="forumdisplay.php.html?f=64">Videos And Flash Movies and That Kind Of Crap</a> with the reason “<b>Crap thread.</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=closed"><img border="0" height="16" src="fp/events/closed.png" width="16"/></a>
+ <a href="member.php.html?u=242336">Pascall</a><a href="#" onclick="return OpenEventlog( '242336' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> closed <a href="member.php.html?u=736946">Cybil</a><a href="#" onclick="return OpenEventlog( '736946' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527185">This is what happens when two men have a baby</a> in <a href="forumdisplay.php.html?f=64">Videos And Flash Movies and That Kind Of Crap</a> with the reason “<b>Crap thread.</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=242336">Pascall</a><a href="#" onclick="return OpenEventlog( '242336' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=736946">Cybil</a><a href="#" onclick="return OpenEventlog( '736946' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527185&amp;p=50726639&amp;viewfull=1#post50726639">This is what happens when two men have a baby</a> with the reason “<b>Gimmick</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=closed"><img border="0" height="16" src="fp/events/closed.png" width="16"/></a>
+ <a href="member.php.html?u=72507">Swebonny</a><a href="#" onclick="return OpenEventlog( '72507' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> closed <a href="member.php.html?u=86230">Thlis</a><a href="#" onclick="return OpenEventlog( '86230' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527059">France ‘Suppressed Reports of Gruesome Torture’ at Bataclan Massacre</a> in <a href="forumdisplay.php.html?f=396">Sensationalist Headlines</a> with the reason “<b>Crap Thread</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=736921">NoDachshund</a><a href="#" onclick="return OpenEventlog( '736921' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527148&amp;p=50724957&amp;viewfull=1#post50724957">French Ministers Calls on Patriotic Citizens to Become Reservists</a> with the reason “<b>Gimmick</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=736931">Miffzerp</a><a href="#" onclick="return OpenEventlog( '736931' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527162&amp;p=50725507&amp;viewfull=1#post50725507">The first pregnant man</a> with the reason “<b>Spam</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=718815">Radical_ed</a><a href="#" onclick="return OpenEventlog( '718815' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1527144&amp;p=50724817&amp;viewfull=1#post50724817">CSGO Streamer Phantoml0rd found to own gambling site CSGOShuffle</a> with the reason “<b>Shitpost</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=1800">Orkel</a><a href="#" onclick="return OpenEventlog( '1800' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=412024">Andre Gomes</a><a href="#" onclick="return OpenEventlog( '412024' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>3 Days</b> in <a href="showthread.php.html?t=1526792&amp;p=50723157&amp;viewfull=1#post50723157">LMAO Pics V. LMAO Pics: GO</a> with the reason “<b>not a lmao pic</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=closed"><img border="0" height="16" src="fp/events/closed.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> closed <a href="member.php.html?u=736914">DaddyBlackLeg</a><a href="#" onclick="return OpenEventlog( '736914' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527133">Can someone help me my friend accidentally deleted superadmin on my server!</a> in <a href="forumdisplay.php.html?f=15">Garry's Mod General Discussion</a> with the reason “<b>Crap Thread</b>”
+</li></div></ul></div><div class="eventtime">8 Days ago<ul><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=242336">Pascall</a><a href="#" onclick="return OpenEventlog( '242336' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=27885">tomatmann</a><a href="#" onclick="return OpenEventlog( '27885' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1526875&amp;p=50719089&amp;viewfull=1#post50719089">No Man's Sky - Explore Trailer - STILL BORING</a> with the reason “<b>Pointless post.</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=mov"><img border="0" height="16" src="fp/events/mov.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> moved <a href="member.php.html?u=596672">Woodehh</a><a href="#" onclick="return OpenEventlog( '596672' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread titled “<a href="showthread.php.html?t=1527101">Making a replacement for crowbar through pointshop</a>” from <a href="forumdisplay.php.html?f=16">Help &amp; Support</a> to <a href="forumdisplay.php.html?f=65">Developer Discussion</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=242336">Pascall</a><a href="#" onclick="return OpenEventlog( '242336' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=203872">Royalpain</a><a href="#" onclick="return OpenEventlog( '203872' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1527018&amp;p=50721249&amp;viewfull=1#post50721249">Turkey Experienced Failed Military Coup</a> with the reason “<b>Flaming.</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=205107">Big Dumb American</a><a href="#" onclick="return OpenEventlog( '205107' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=736885">Moversfifth</a><a href="#" onclick="return OpenEventlog( '736885' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527071">Bunch Similar products Together In your vehicle for effectively secured unloading Packers and Movers</a> in <a href="forumdisplay.php.html?f=6">General Discussion</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=205107">Big Dumb American</a><a href="#" onclick="return OpenEventlog( '205107' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=736885">Moversfifth</a><a href="#" onclick="return OpenEventlog( '736885' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527071&amp;p=50720154&amp;viewfull=1#post50720154">Bunch Similar products Together In your vehicle for effectively secured unloading Packers and Movers</a> with the reason “<b>Spam</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=526496">robinkooli</a><a href="#" onclick="return OpenEventlog( '526496' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1527018&amp;p=50719291&amp;viewfull=1#post50719291">Turkey Experienced Failed Military Coup</a> with the reason “<b>Same, but this is shitposting</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=205107">Big Dumb American</a><a href="#" onclick="return OpenEventlog( '205107' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=151122">Boilrig</a><a href="#" onclick="return OpenEventlog( '151122' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>3 Days</b> in <a href="showthread.php.html?t=1527018&amp;p=50719688&amp;viewfull=1#post50719688">Turkey Experienced Failed Military Coup</a> with the reason “<b>Shitposting</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=205107">Big Dumb American</a><a href="#" onclick="return OpenEventlog( '205107' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=341038">Pitchfork</a><a href="#" onclick="return OpenEventlog( '341038' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>3 Days</b> in <a href="showthread.php.html?t=1527018&amp;p=50719793&amp;viewfull=1#post50719793">Turkey Experienced Failed Military Coup</a> with the reason “<b>Flaming/shitposting</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=205107">Big Dumb American</a><a href="#" onclick="return OpenEventlog( '205107' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=669101">clearsky</a><a href="#" onclick="return OpenEventlog( '669101' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>3 Days</b> in <a href="showthread.php.html?t=1527018&amp;p=50719127&amp;viewfull=1#post50719127">Turkey Experienced Failed Military Coup</a> with the reason “<b>Clarification: "Get a gun and shot yourself in the head"</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=205107">Big Dumb American</a><a href="#" onclick="return OpenEventlog( '205107' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=669101">clearsky</a><a href="#" onclick="return OpenEventlog( '669101' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>3 Days</b> in <a href="showthread.php.html?t=1527018&amp;p=50719127&amp;viewfull=1#post50719127">Turkey Experienced Failed Military Coup</a> with the reason “<b>Shitposting</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=244899">Bradyns</a><a href="#" onclick="return OpenEventlog( '244899' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=39571">Arc Nova</a><a href="#" onclick="return OpenEventlog( '39571' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>3 Days</b> in <a href="showthread.php.html?t=1527061&amp;p=50719832&amp;viewfull=1#post50719832">Visitor abuse? Really?? How??</a> with the reason “<b>Reduced - Understands</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=258413">VenomousBeetle</a><a href="#" onclick="return OpenEventlog( '258413' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1526875&amp;p=50718734&amp;viewfull=1#post50718734">No Man's Sky - Explore Trailer - STILL BORING</a> with the reason “<b>Threadshitting</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=244899">Bradyns</a><a href="#" onclick="return OpenEventlog( '244899' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=39571">Arc Nova</a><a href="#" onclick="return OpenEventlog( '39571' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Month</b> in <a href="showthread.php.html?t=1526875&amp;p=50718714&amp;viewfull=1#post50718714">No Man's Sky - Explore Trailer - STILL BORING</a> with the reason “<b>Shitposting + Visitor Message Abuse + Ban History.</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=unban"><img border="0" height="16" src="fp/events/unban.png" width="16"/></a>
+ <a href="member.php.html?u=244899">Bradyns</a><a href="#" onclick="return OpenEventlog( '244899' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> unbanned <a href="member.php.html?u=69615">Mr.Cookie</a><a href="#" onclick="return OpenEventlog( '69615' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> with the explanation “<b>Understands</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=closed"><img border="0" height="16" src="fp/events/closed.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> closed <a href="member.php.html?u=736879">diegarry</a><a href="#" onclick="return OpenEventlog( '736879' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527058">How I'm going to fuck up garry</a> in <a href="forumdisplay.php.html?f=60">Fast Threads</a> with the reason “<b>Crap Thread</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=736879">diegarry</a><a href="#" onclick="return OpenEventlog( '736879' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527058&amp;p=50719425&amp;viewfull=1#post50719425">How I'm going to fuck up garry</a> with the reason “<b>Ban me</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=87204">ridinmybike</a><a href="#" onclick="return OpenEventlog( '87204' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>12 Hours</b> in <a href="showthread.php.html?t=1527054&amp;p=50719187&amp;viewfull=1#post50719187">facepunch</a> with the reason “<b>UTT</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=244899">Bradyns</a><a href="#" onclick="return OpenEventlog( '244899' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=503997">Gary D</a><a href="#" onclick="return OpenEventlog( '503997' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>12 Hours</b> in <a href="showthread.php.html?t=1527018&amp;p=50719155&amp;viewfull=1#post50719155">Turkey Experienced Failed Military Coup</a> with the reason “<b>Discussing ratings.</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=244899">Bradyns</a><a href="#" onclick="return OpenEventlog( '244899' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=340743">Daniel Smith</a><a href="#" onclick="return OpenEventlog( '340743' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>12 Hours</b> in <a href="showthread.php.html?t=1527018&amp;p=50719177&amp;viewfull=1#post50719177">Turkey Experienced Failed Military Coup</a> with the reason “<b>Discussing ratings.</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=244899">Bradyns</a><a href="#" onclick="return OpenEventlog( '244899' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=69615">Mr.Cookie</a><a href="#" onclick="return OpenEventlog( '69615' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>12 Hours</b> in <a href="showthread.php.html?t=1527018&amp;p=50719184&amp;viewfull=1#post50719184">Turkey Experienced Failed Military Coup</a> with the reason “<b>Discussing ratings.</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=244899">Bradyns</a><a href="#" onclick="return OpenEventlog( '244899' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=716667">Prettyflacko</a><a href="#" onclick="return OpenEventlog( '716667' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>12 Hours</b> in <a href="showthread.php.html?t=1527018&amp;p=50719207&amp;viewfull=1#post50719207">Turkey Experienced Failed Military Coup</a> with the reason “<b>Why reply?</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=242336">Pascall</a><a href="#" onclick="return OpenEventlog( '242336' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=736753">Ozwell</a><a href="#" onclick="return OpenEventlog( '736753' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527041">Coup Underway In Turkey</a> in <a href="forumdisplay.php.html?f=397">Hardware and Software</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=closed"><img border="0" height="16" src="fp/events/closed.png" width="16"/></a>
+ <a href="member.php.html?u=242336">Pascall</a><a href="#" onclick="return OpenEventlog( '242336' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> closed <a href="member.php.html?u=736753">Ozwell</a><a href="#" onclick="return OpenEventlog( '736753' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527041">Coup Underway In Turkey</a> in <a href="forumdisplay.php.html?f=397">Hardware and Software</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=736803">mercer6</a><a href="#" onclick="return OpenEventlog( '736803' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1462910&amp;p=50714959&amp;viewfull=1#post50714959">Best Gaming Laptop</a> with the reason “<b>advertising gimmick</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=delsoft"><img border="0" height="16" src="fp/events/delsoft.png" width="16"/></a>
+ <a href="member.php.html?u=228576">BANNED USER</a><a href="#" onclick="return OpenEventlog( '228576' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> deleted the thread <a href="showthread.php.html?t=1527033">Buy Registered IELTS,TOEFL,Certificates,Passports,Drivers License,ID Cards</a> in <a href="forumdisplay.php.html?f=110">General Games Discussion</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=228576">BANNED USER</a><a href="#" onclick="return OpenEventlog( '228576' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=736863">meagan13</a><a href="#" onclick="return OpenEventlog( '736863' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1527033&amp;p=50717164&amp;viewfull=1#post50717164">Buy Registered IELTS,TOEFL,Certificates,Passports,Drivers License,ID Cards</a> with the reason “<b>spam</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=205107">Big Dumb American</a><a href="#" onclick="return OpenEventlog( '205107' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=60236">Kite_shugo</a><a href="#" onclick="return OpenEventlog( '60236' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1527024">Rogue One: A Star Wars Story - Trailer #2</a> in <a href="forumdisplay.php.html?f=64">Videos And Flash Movies and That Kind Of Crap</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=mov"><img border="0" height="16" src="fp/events/mov.png" width="16"/></a>
+ <a href="member.php.html?u=42774">UncleJimmema</a><a href="#" onclick="return OpenEventlog( '42774' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> moved <a href="member.php.html?u=410344">YouWithTheFace.</a><a href="#" onclick="return OpenEventlog( '410344' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread titled “<a href="showthread.php.html?t=1527020">FOUND: Ultra-Rare Nintendo Prototype N64 Add-On (US Version of 64DD)</a>” from <a href="forumdisplay.php.html?f=64">Videos And Flash Movies and That Kind Of Crap</a> to <a href="forumdisplay.php.html?f=64">Videos And Flash Movies and That Kind Of Crap</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=mov"><img border="0" height="16" src="fp/events/mov.png" width="16"/></a>
+ <a href="member.php.html?u=42774">UncleJimmema</a><a href="#" onclick="return OpenEventlog( '42774' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> moved <a href="member.php.html?u=410344">YouWithTheFace.</a><a href="#" onclick="return OpenEventlog( '410344' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread titled “<a href="showthread.php.html?t=1527020">FOUND: Ultra-Rare Nintendo Prototype N64 Add-On (US Version of 64DD)</a>” from <a href="forumdisplay.php.html?f=396">Sensationalist Headlines</a> to <a href="forumdisplay.php.html?f=64">Videos And Flash Movies and That Kind Of Crap</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=671233">Snoberry Tea</a><a href="#" onclick="return OpenEventlog( '671233' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1526792&amp;p=50713493&amp;viewfull=1#post50713493">LMAO Pics V. LMAO Pics: GO</a> with the reason “<b>Not a lmao pic</b>”
+</li></div></ul></div><div class="eventtime">9 Days ago<ul><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=42774">UncleJimmema</a><a href="#" onclick="return OpenEventlog( '42774' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=735293">AD/HD</a><a href="#" onclick="return OpenEventlog( '735293' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1526635&amp;p=50715508&amp;viewfull=1#post50715508">Major Update Speculation V34 - Whose War is it Anyway?</a> with the reason “<b>Shit post, if it's up long enough to get quoted it's too late</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=closed"><img border="0" height="16" src="fp/events/closed.png" width="16"/></a>
+ <a href="member.php.html?u=72507">Swebonny</a><a href="#" onclick="return OpenEventlog( '72507' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> closed <a href="member.php.html?u=318110">Vizip</a><a href="#" onclick="return OpenEventlog( '318110' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1526986">T-Mobile Exempts 'Pokemon Go' From Data Caps</a> in <a href="forumdisplay.php.html?f=396">Sensationalist Headlines</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=205107">Big Dumb American</a><a href="#" onclick="return OpenEventlog( '205107' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=205104">SomeRandomGuy18</a><a href="#" onclick="return OpenEventlog( '205104' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Month</b> in <a href="showthread.php.html?t=1526903&amp;p=50713035&amp;viewfull=1#post50713035">Panic in Nice as lorry hits crowd. 84 dead, 18 critical, many in a serious condition</a> with the reason “<b>More xenophobic shit, last chance</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=205107">Big Dumb American</a><a href="#" onclick="return OpenEventlog( '205107' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=648204">Fourier</a><a href="#" onclick="return OpenEventlog( '648204' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>3 Days</b> in <a href="showthread.php.html?t=1526870&amp;p=50710673&amp;viewfull=1#post50710673">Poland's education minister denies Jewish massacres in the 1940s</a> with the reason “<b>Shitpost</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=205107">Big Dumb American</a><a href="#" onclick="return OpenEventlog( '205107' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=224629">karlosfandango</a><a href="#" onclick="return OpenEventlog( '224629' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>7 Days</b> in <a href="showthread.php.html?t=1526903&amp;p=50715297&amp;viewfull=1#post50715297">Panic in Nice as lorry hits crowd. 84 dead, 18 critical, many in a serious condition</a> with the reason “<b>Shitposting/Trolling AGAIN</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=1800">Orkel</a><a href="#" onclick="return OpenEventlog( '1800' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=736668">Terranigmus</a><a href="#" onclick="return OpenEventlog( '736668' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1526903&amp;p=50713594&amp;viewfull=1#post50713594">Panic in Nice as lorry hits crowd. 84 dead, 18 critical, many in a serious condition</a> with the reason “<b>alt of perma'd user</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=244899">Bradyns</a><a href="#" onclick="return OpenEventlog( '244899' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=725958">WJS</a><a href="#" onclick="return OpenEventlog( '725958' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>12 Hours</b> in <a href="showthread.php.html?t=1526870&amp;p=50710158&amp;viewfull=1#post50710158">Poland's education minister denies Jewish massacres in the 1940s</a> with the reason “<b>Why reply?</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=244899">Bradyns</a><a href="#" onclick="return OpenEventlog( '244899' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=664386">Richoxen</a><a href="#" onclick="return OpenEventlog( '664386' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>12 Hours</b> in <a href="showthread.php.html?t=1526941&amp;p=50713393&amp;viewfull=1#post50713393">France warned of terrorist attack plan on Rio Olympics team</a> with the reason “<b>Memeshit</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=72507">Swebonny</a><a href="#" onclick="return OpenEventlog( '72507' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=647426">momoiro</a><a href="#" onclick="return OpenEventlog( '647426' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>3 Days</b> in <a href="showthread.php.html?t=1526870&amp;p=50710926&amp;viewfull=1#post50710926">Poland's education minister denies Jewish massacres in the 1940s</a> with the reason “<b>Trolling</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=736817">rainsten</a><a href="#" onclick="return OpenEventlog( '736817' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> with the reason “<b>Alt</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=toobig"><img border="0" height="16" src="fp/events/toobig.png" width="16"/></a>
+ The thread <a href="showthread.php.html?t=1526125">What Are You Thinking v. Bagged milk dealers only</a> was closed because it had over “<b>5000</b>” posts
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=244899">Bradyns</a><a href="#" onclick="return OpenEventlog( '244899' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=714431">Stroheim</a><a href="#" onclick="return OpenEventlog( '714431' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>3 Days</b> in <a href="showthread.php.html?t=1526903&amp;p=50713506&amp;viewfull=1#post50713506">Panic in Nice as lorry hits crowd. 84 dead, 18 critical, many in a serious condition</a> with the reason “<b>Why reply?</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=delsoft"><img border="0" height="16" src="fp/events/delsoft.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> deleted the thread <a href="showthread.php.html?t=1526945">This pokemon video will make you VERY MAD</a> in <a href="forumdisplay.php.html?f=36">Drop Dead Thread</a> with the reason “<b>Spam</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=736842">Marva</a><a href="#" onclick="return OpenEventlog( '736842' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1526945">This pokemon video will make you VERY MAD</a> in <a href="forumdisplay.php.html?f=64">Videos And Flash Movies and That Kind Of Crap</a> with the reason “<b>Spam</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=736842">Marva</a><a href="#" onclick="return OpenEventlog( '736842' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1526945&amp;p=50713458&amp;viewfull=1#post50713458">This pokemon video will make you VERY MAD</a> with the reason “<b>Spam</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=closed"><img border="0" height="16" src="fp/events/closed.png" width="16"/></a>
+ <a href="member.php.html?u=8190">postal</a><a href="#" onclick="return OpenEventlog( '8190' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> closed <a href="member.php.html?u=280652">Kartoffel</a><a href="#" onclick="return OpenEventlog( '280652' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1526940">Team Fortress 2: Stream Harassment, Volume 3</a> in <a href="forumdisplay.php.html?f=64">Videos And Flash Movies and That Kind Of Crap</a> with the reason “<b>ya schmuck</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=unban"><img border="0" height="16" src="fp/events/unban.png" width="16"/></a>
+ <a href="member.php.html?u=244899">Bradyns</a><a href="#" onclick="return OpenEventlog( '244899' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> unbanned <a href="member.php.html?u=310302">GhillieBacca</a><a href="#" onclick="return OpenEventlog( '310302' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> with the explanation “<b>Understands</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=393371">Rainboo</a><a href="#" onclick="return OpenEventlog( '393371' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1526903&amp;p=50712752&amp;viewfull=1#post50712752">Panic in Nice as lorry hits crowd. 84 dead, 18 critical, many in a serious condition</a> with the reason “<b>Flaming</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=727896">Komodoh</a><a href="#" onclick="return OpenEventlog( '727896' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1526903&amp;p=50711351&amp;viewfull=1#post50711351">Panic in Nice as lorry hits crowd. 84 dead, 18 critical, many in a serious condition</a> with the reason “<b>Shitposting</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=727896">Komodoh</a><a href="#" onclick="return OpenEventlog( '727896' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>3 Days</b> in <a href="showthread.php.html?t=1526903&amp;p=50711351&amp;viewfull=1#post50711351">Panic in Nice as lorry hits crowd. 84 dead, 18 critical, many in a serious condition</a> with the reason “<b>Shitposting</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=91754">wystan</a><a href="#" onclick="return OpenEventlog( '91754' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>7 Days</b> in <a href="showthread.php.html?t=1526903&amp;p=50711561&amp;viewfull=1#post50711561">Panic in Nice as lorry hits crowd. 84 dead, 18 critical, many in a serious condition</a> with the reason “<b>Trolling</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=42774">UncleJimmema</a><a href="#" onclick="return OpenEventlog( '42774' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=538153">phygon</a><a href="#" onclick="return OpenEventlog( '538153' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1526903&amp;p=50712405&amp;viewfull=1#post50712405">Panic in Nice as lorry hits crowd. 84 dead, 18 critical, many in a serious condition</a> with the reason “<b>Shit Posting</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=unban"><img border="0" height="16" src="fp/events/unban.png" width="16"/></a>
+ <a href="member.php.html?u=42774">UncleJimmema</a><a href="#" onclick="return OpenEventlog( '42774' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> unbanned <a href="member.php.html?u=239774">Pretiacruento</a><a href="#" onclick="return OpenEventlog( '239774' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> with the explanation “<b>I don goofed</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=42774">UncleJimmema</a><a href="#" onclick="return OpenEventlog( '42774' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=239774">Pretiacruento</a><a href="#" onclick="return OpenEventlog( '239774' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1526818&amp;p=50711667&amp;viewfull=1#post50711667">Transgender gets death threats from leftist hate mob</a> with the reason “<b>Shit posting</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=172540">Novangel</a><a href="#" onclick="return OpenEventlog( '172540' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=658680">Jelman</a><a href="#" onclick="return OpenEventlog( '658680' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1526903&amp;p=50710692&amp;viewfull=1#post50710692">Panic in Nice as lorry hits crowd. 84 dead, 18 critical, many in a serious condition</a> with the reason “<b>Pointless reply</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=736502">ggod</a><a href="#" onclick="return OpenEventlog( '736502' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1526125&amp;p=50712257&amp;viewfull=1#post50712257">What Are You Thinking v. Bagged milk dealers only</a> with the reason “<b>Gimmick</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=244899">Bradyns</a><a href="#" onclick="return OpenEventlog( '244899' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=310302">GhillieBacca</a><a href="#" onclick="return OpenEventlog( '310302' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>12 Hours</b> in <a href="showthread.php.html?t=1526903&amp;p=50712194&amp;viewfull=1#post50712194">Panic in Nice as lorry hits crowd. 84 dead, 18 critical, many in a serious condition</a> with the reason “<b>Source your updates.</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=72507">Swebonny</a><a href="#" onclick="return OpenEventlog( '72507' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=77855">Techno-Man</a><a href="#" onclick="return OpenEventlog( '77855' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>3 Days</b> in <a href="showthread.php.html?t=1526903&amp;p=50711522&amp;viewfull=1#post50711522">Panic in Nice as lorry hits crowd. 84 dead, 18 critical, many in a serious condition</a> with the reason “<b>Quit the shitposting</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=closed"><img border="0" height="16" src="fp/events/closed.png" width="16"/></a>
+ <a href="member.php.html?u=91315">OvB</a><a href="#" onclick="return OpenEventlog( '91315' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> closed <a href="member.php.html?u=567322">dimitrik129</a><a href="#" onclick="return OpenEventlog( '567322' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1526906">Panic in Nice as lorry hits crowd</a> in <a href="forumdisplay.php.html?f=396">Sensationalist Headlines</a> with the reason “<b>Late</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=closed"><img border="0" height="16" src="fp/events/closed.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> closed <a href="member.php.html?u=347936">Stoffy</a><a href="#" onclick="return OpenEventlog( '347936' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1451989">test video please do not watch</a> in <a href="forumdisplay.php.html?f=64">Videos And Flash Movies and That Kind Of Crap</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=pban"><img border="0" height="16" src="fp/events/pban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> permabanned <a href="member.php.html?u=736828">kickpuncher2</a><a href="#" onclick="return OpenEventlog( '736828' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> in <a href="showthread.php.html?t=1451989&amp;p=50710962&amp;viewfull=1#post50710962">test video please do not watch</a> with the reason “<b>Bumping threads</b>”
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ddt"><img border="0" height="16" src="fp/events/ddt.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> DDT'd <a href="member.php.html?u=554025">Julez</a><a href="#" onclick="return OpenEventlog( '554025' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>'s thread called <a href="showthread.php.html?t=1372884">Test</a> in <a href="forumdisplay.php.html?f=6">General Discussion</a>
+</li></div><div class="event">
+<li><a href="fp_events.php.html?type=ban"><img border="0" height="16" src="fp/events/ban.png" width="16"/></a>
+ <a href="member.php.html?u=50699">Craptasket</a><a href="#" onclick="return OpenEventlog( '50699' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> banned <a href="member.php.html?u=554025">Julez</a><a href="#" onclick="return OpenEventlog( '554025' );"><img alt="Show Events" src="fp/navbar/events.png"/></a> for <b>1 Day</b> in <a href="showthread.php.html?t=1372884&amp;p=44143951&amp;viewfull=1#post44143951">Test</a> with the reason “<b>Not a place to test</b>”
+</li></div></ul></div></div></div><br/></div>
+</div>
+<div class="below_body" style="clear: both;">
+<div class="shade footer_time" id="footer_time">All times are GMT. The time now is <span class="time">07:50PM</span>.</div>
+<div class="shade footer_copyright" id="footer_copyright">
+
+
+</div>
+<div class="shade footer_morecopyright" id="footer_morecopyright">
+
+
+</div>
+</div>
+</div>
+<center>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4109526466655731";
+/* Facepunch Bottom */
+google_ad_slot = "7520600124";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+
+</center>
+<div class="floatcontainer footer" id="footer">
+<div id="content_pad">
+<div class="footer_links">
+<a href="showgroups.php.html" rel="nofollow">Moderators</a> - <a href="fp_events.php.html#top" onclick="document.location.hash='top'; return false;">Top</a>
+</div>
+<div id="fps">Facepunch Studios</div>
+<div id="fps_copyright"><a href="fp_rules.php.html">The Rules</a> 
+| <a href="archive/index.html">The Archive</a></div>
+</div>
+<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+</div>
+
+</body>
+</html>

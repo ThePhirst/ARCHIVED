@@ -1,0 +1,3323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" id="vbulletin_html" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+
+
+
+
+<meta content="width=750" name="viewport"/>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta content="index.html" id="e_vb_meta_bburl" name="vb_meta_bburl"/>
+
+<meta content="vBulletin 4.1.10" name="generator"/>
+
+<link href="favicon.ico" rel="Shortcut Icon" type="image/x-icon"/>
+<script src="https://web.archive.org/web/20160719005138js_/https://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/yuiloader-dom-event/yuiloader-dom-event.js?v=4110" type="text/javascript"></script>
+<script src="https://web.archive.org/web/20160719005138js_/https://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/connection/connection-min.js?v=4110" type="text/javascript"></script>
+
+<script src="clientscript/vbulletin-core.js?v=4110" type="text/javascript"></script>
+<link href="external.php.html?type=RSS2" rel="alternate" title="Facepunch RSS Feed" type="application/rss+xml"/>
+<link href="external.php.html?type=RSS2&amp;forumids=38" rel="alternate" title="Facepunch - Mapping - RSS Feed" type="application/rss+xml"/>
+<link href="css.php.css?styleid=6&amp;langid=1&amp;d=1467029151&amp;td=ltr&amp;sheet=bbcode.css,editor.css,popupmenu.css,reset-fonts.css,vbulletin.css,vbulletin-chrome.css,vbulletin-formcontrols.css" rel="stylesheet" type="text/css"/>
+<script src="//web.archive.org/web/20160719005138js_/http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<script src="fp/js/jQuery/tipsy/jquery.tipsy.js" type="text/javascript"></script>
+<script src="fp/js/jQuery/color/jquery.color.js" type="text/javascript"></script>
+
+<script src="fp/js/rainbow-custom.min.js?6" type="text/javascript"></script>
+<script src="fp/js/Facepunch/fp.js?6" type="text/javascript"></script>
+<script src="fp/js/image_zoomer3.js?6" type="text/javascript"></script>
+<style type="text/css">
+			CANVAS
+			{
+				z-index: 1000;
+				position: fixed;
+				left: 0;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				pointer-events: none;
+			}
+		</style>
+<meta content="update, community-led, project, gm_construct" name="keywords"/>
+<meta content="http://i.imgur.com/chzI1.png 
+ 
+ 
+ 
+Official Map Developers: 
+-HighVoltage: (Eric Lowther): Lead Project Mapper 
+-MaxOfS2D: Assistant Lead Mapper 
+-Colton Rappe: Assistant Lead Mapper" name="description"/>
+<title> gm_construct Map Project (The Community-Led update for GMod 13)</title>
+<script src="clientscript/vbulletin_textedit.js?v=4110" type="text/javascript"></script>
+<script src="clientscript/vbulletin_post_loader.js?v=4110" type="text/javascript"></script>
+<link href="css.php.css?styleid=6&amp;langid=1&amp;d=1467029151&amp;td=ltr&amp;sheet=postlist.css,showthread.css,postbit.css,attachment.css,poll.css,lightbox.css" rel="stylesheet" type="text/css"/>
+
+<link href="fp/fp-2013.css?21" rel="stylesheet" type="text/css"/>
+<link href="fp/small.css?7" media="only screen and (min-width: 100px) and (max-width: 1000px)" rel="stylesheet"/>
+
+</head>
+<body>
+<div id="content_pad">
+<div class="above_body boxshadow"> 
+<div class="floatcontainer doc_header" id="header">
+<div id="logo"><a href="forum.php.html" name="top"><img alt="Facepunch" src="fp/navbar_inner.png"/></a></div>
+<div id="navbar-login">
+<script src="clientscript/vbulletin_md5.js?v=4110" type="text/javascript"></script>
+<form action="login.php.html?do=login" id="navbar_loginform" method="post" onsubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
+<fieldset class="logindetails" id="logindetails">
+<input accesskey="u" class="textbox" id="navbar_username" name="vb_login_username" size="10" style="font-size: 11px" tabindex="101" type="text" value="User Name"/>
+<input class="textbox default-value" id="navbar_password_hint" name="vb_login_password_hint" size="10" style="display:none;" tabindex="102" type="text" value="Password"/>
+<input class="textbox" id="navbar_password" name="vb_login_password" size="10" tabindex="102" type="password"/>
+<input accesskey="s" class="loginbutton" tabindex="104" title="Enter your username and password in the boxes provided to login, or click the 'register' button to create a profile for yourself." type="submit" value="Log in"/>
+</fieldset>
+<input name="s" type="hidden" value=""/>
+<input name="cookieuser" type="hidden" value="1"/>
+<input name="securitytoken" type="hidden" value="guest"/>
+<input name="do" type="hidden" value="login"/>
+<input name="vb_login_md5password" type="hidden"/>
+<input name="vb_login_md5password_utf" type="hidden"/>
+</form>
+<script type="text/javascript">
+			YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+			YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+			YAHOO.util.Dom.setStyle('navbar_username', "color", "#828282");
+			vB_XHTML_Ready.subscribe(function()
+			{
+			//
+				YAHOO.util.Event.on('navbar_username', "focus", navbar_username_focus);
+				YAHOO.util.Event.on('navbar_username', "blur", navbar_username_blur);
+				YAHOO.util.Event.on('navbar_password_hint', "focus", navbar_password_hint);
+				YAHOO.util.Event.on('navbar_password', "blur", navbar_password);
+			});
+			
+			function navbar_username_focus(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == 'User Name')
+				{
+				//
+					textbox.value='';
+					textbox.style.color='black';
+				}
+			}
+
+			function navbar_username_blur(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				if (textbox.value == '')
+				{
+				//
+					textbox.value='User Name';
+					textbox.style.color='#828282';
+				}
+			}
+			
+			function navbar_password_hint(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "none");
+				YAHOO.util.Dom.setStyle('navbar_password', "display", "inline");
+				YAHOO.util.Dom.get('navbar_password').focus();
+			}
+
+			function navbar_password(e)
+			{
+			//
+				var textbox = YAHOO.util.Event.getTarget(e);
+				
+				if (textbox.value == '')
+				{
+					YAHOO.util.Dom.setStyle('navbar_password_hint', "display", "inline");
+					YAHOO.util.Dom.setStyle('navbar_password', "display", "none");
+				}
+			}
+			</script>
+</div>
+<div id="breadcrumb"><a href="forum.php.html">Home</a>
+<span class="navbit">&gt; <a href="forum.php.html">Forum</a></span>
+<span class="navbit">&gt; <a href="forumdisplay.php.html?f=413">Developers</a></span>
+<span class="navbit">&gt; <a href="forumdisplay.php.html?f=38">Mapping</a></span>
+<div id="lastelement">
+<span> gm_construct Map Project (The Community-Led update for GMod 13)</span>
+</div></div>
+<div id="navbarlinks">
+<div class="navbarlink"><a href="register.php.html"><img alt="Register" src="fp/navbar/register.png"/> Register</a></div>
+<div class="navbarlink"><a href="fp_events.php.html"><img alt="Events" src="fp/navbar/events.png"/> Events</a></div>
+<div class="navbarlink"><a href="fp_popular.php.html"><img alt="Popular Threads" src="fp/navbar/popular.png"/> Popular</a></div>
+
+
+<div class="navbarlink"><a href="#" onclick="return OpenURLInBox( 'more', 'fp/more.html' );"><img alt="More" src="fp/navbar/more.png"/> More</a></div>
+</div>
+<div class="ad_global_header">
+</div>
+<hr/>
+</div>
+</div>
+<div id="content_inner">
+<div class="above_postlist" id="above_postlist">
+<div class="pagination_top" id="pagination_top">
+<div action="showthread.php.html?t=1171345&amp;page=11" class="pagination popupmenu nohovermenu" method="get" style="float: right; clear: both;">
+<input name="t" type="hidden" value="1171345"/>
+<span><a class="popupctrl" href="javascript://">Page 1 of 65</a></span>
+<span class="selected"><a href="javascript://" title="Results 1 to 40 of 2,588">1</a></span><span><a href="showthread.php.html?t=1171345&amp;page=2" title="Show results 41 to 80 of 2,588">2</a></span><span><a href="showthread.php.html?t=1171345&amp;page=3" title="Show results 81 to 120 of 2,588">3</a></span><span><a href="showthread.php.html?t=1171345&amp;page=4" title="Show results 121 to 160 of 2,588">4</a></span><span><a href="showthread.php.html?t=1171345&amp;page=5" title="Show results 161 to 200 of 2,588">5</a></span><span><a href="showthread.php.html?t=1171345&amp;page=6" title="Show results 201 to 240 of 2,588">6</a></span><span><a href="showthread.php.html?t=1171345&amp;page=7" title="Show results 241 to 280 of 2,588">7</a></span><span><a href="showthread.php.html?t=1171345&amp;page=8" title="Show results 281 to 320 of 2,588">8</a></span><span><a href="showthread.php.html?t=1171345&amp;page=9" title="Show results 321 to 360 of 2,588">9</a></span><span><a href="showthread.php.html?t=1171345&amp;page=10" title="Show results 361 to 400 of 2,588">10</a></span><span><a href="showthread.php.html?t=1171345&amp;page=11" title="Show results 401 to 440 of 2,588">11</a></span>
+<span class="prev_next"><a href="showthread.php.html?t=1171345&amp;page=2" rel="next" title="Next Page - Results 41 to 80 of 2,588">&gt;</a></span>
+<span class="first_last"><a href="showthread.php.html?t=1171345&amp;page=65" title="Last Page - Results 2,561 to 2,588 of 2,588">Last <strong>»</strong></a></span>
+</div>
+</div>
+</div>
+<div class="postlist restrain" id="postlist">
+<div class="threadhead">
+<h2>
+<span id="reply_button">
+<a href="newreply.php.html?p=35209989&amp;noquote=1">Reply</a>
+</span>
+<span id="subscribe_button">
+<a href="subscription.php.html?do=addsubscription&amp;t=1171345" rel="nofollow">Subscribe</a>
+</span>
+</h2>
+</div>
+<ol class="posts" id="posts" start="1">
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35206177">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 18:57:14">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35206177&amp;viewfull=1#post35206177" name="post35206177"><img src="fp/link.png"/> Post #1</a><a id="postcount35206177" name="1"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_72658 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=72658" title="Colton Rappe is offline"><strong><font color="#A06000">Colton Rappe</font></strong></a>
+</div>
+<span class="usertitle">
+				Gold Member
+			</span>
+<div id="userdata">
+<a href="member.php.html?u=72658" title="Colton Rappe is offline">
+<img alt="Colton Rappe's Avatar" class="avatar_image" src="image.php.html?u=72658&amp;dateline=1350709238" title="Colton Rappe's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						August 2006<br/>
+						1,038 Posts
+					</div>
+<div class="imlinks">
+<img alt="Homepage" src="fp/social/new/homepage.png" title="Homepage"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow has_after_content">
+<div class="content">
+<div id="post_message_35206177">
+<blockquote class="postcontent restore">
+<img alt="" border="0" src="https://web.archive.org/web/20160719005138im_/http://i.imgur.com/chzI1.png"/><br/>
+<br/>
+<br/>
+<br/>
+<b><u>Official Map Developers:</u></b><br/>
+<b><i>-</i></b><a href="members/220931-highvoltage.html" target="_blank"><b><i><u>HighVoltage:</u></i></b></a><b><i> (Eric Lowther): Lead Project Mapper</i></b><br/>
+<b><i>-MaxOfS2D<i>: </i>Assistant Lead Mapper</i></b><br/>
+<b><i>-</i></b><a href="members/72658-Colton-Rappe.html" target="_blank"><b><i><u>Colton Rappe:</u></i></b></a><b><i> Assistant Lead Mapper</i></b><br/>
+<br/>
+<div class="quote">
+<div class="information">
+			
+				garry posted:
+			
+		</div>
+<div class="message">I’ve agreed that if it’s good enough it’ll replace gm_construct in the big GMod 13 update.</div>
+</div> <b><u>Key Features:</u></b> <img alt="" border="0" class="inlineimg" src="fp/emotes_std/eng101.png" title="English 101"/><br/>
+<i>-High-Detailed 3D Brush-based Multi-Level Enterable Buildings.</i><br/>
+<i>-Different shadow-casting in the world.</i><br/>
+<i>-More grass and slopes to build and play on.</i><br/>
+<i>-Lake size and depth increased. </i><br/>
+<i>-New Room under Garage to Build in (with Mirror!)</i><br/>
+<i>-New easter egg room.<br/>
+-Other great things!</i><br/>
+<br/>
+<div class="quote">
+<div class="message"><b><i>Will you release the Source VMF for the map?</i></b></div>
+</div> The source files have just been released, you can find them here:<br/>
+<br/>
+<b>gm_construct_13 Source Map Archive</b><br/>
+Download: <b>http://www.mediafire.com/?0sa3r73p4sdvshy</b><br/>
+<br/>
+<b>gm_construct_13 Final Build</b><br/>
+Download: <b>http://www.mediafire.com/?l9arcakn9axk5b1</b>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35206177" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35206177" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35206177" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35206177" id="qrwq_35206177" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 8" height="16" src="fp/browser/windows8.png" width="16"/> <img height="16" src="fp/browser/firefox.png" width="16"/> <img alt="United States" src="fp/flags/us.png"/>
+<a href="#" onclick="return OpenEventlog( '72658' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35206177); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35206177">
+<span><img alt="Winner" src="fp/ratings/winner.png"/>  x <strong>102</strong></span><span><img alt="Dumb" src="fp/ratings/box.png"/>  x <strong>12</strong></span><span><img alt="Agree" src="fp/ratings/tick.png"/>  x <strong>6</strong></span><span><img alt="Artistic" src="fp/ratings/palette.png"/>  x <strong>5</strong></span><span><img alt="Mapping King" src="fp/ratings/mapping_king.png"/>  x <strong>3</strong></span><span><img alt="Useful" src="fp/ratings/wrench.png"/>  x <strong>2</strong></span><span><img alt="Funny" src="fp/ratings/funny2.png"/>  x <strong>2</strong></span><span><img alt="Friendly" src="fp/ratings/heart.png"/>  x <strong>1</strong></span><span><img alt="Informative" src="fp/ratings/information.png"/>  x <strong>1</strong></span><span><img alt="Zing" src="fp/ratings/zing.png"/>  x <strong>1</strong></span><span><img alt="Disagree" src="fp/ratings/cross.png"/>  x <strong>1</strong></span><span><img alt="Late" src="fp/ratings/clock.png"/>  x <strong>1</strong></span><span><img alt="Optimistic" src="fp/ratings/rainbow.png"/>  x <strong>1</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35206177');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35206214">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 19:00:15">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35206214&amp;viewfull=1#post35206214" name="post35206214"><img src="fp/link.png"/> Post #2</a><a id="postcount35206214" name="2"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_354501 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=354501" title="danielmm8888 is offline"><strong><font color="#A06000">danielmm8888</font></strong></a>
+</div>
+<span class="usertitle">
+				Gold Member
+			</span>
+<div id="userdata">
+<a href="member.php.html?u=354501" title="danielmm8888 is offline">
+<img alt="danielmm8888's Avatar" class="avatar_image" src="image.php.html?u=354501&amp;dateline=1424402038" title="danielmm8888's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						November 2010<br/>
+						544 Posts
+					</div>
+<div class="imlinks">
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow">
+<div class="content">
+<div id="post_message_35206214">
+<blockquote class="postcontent restore">
+							Are you gonna bring back the 4th building?
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35206214" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35206214" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35206214" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35206214" id="qrwq_35206214" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/chrome.png" width="16"/> <img alt="Croatia" src="fp/flags/hr.png"/>
+<a href="#" onclick="return OpenEventlog( '354501' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35206214); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35206214">
+<span><img alt="Winner" src="fp/ratings/winner.png"/> Winner x <strong>11</strong></span><span><img alt="Disagree" src="fp/ratings/cross.png"/> Disagree x <strong>3</strong></span><span><img alt="Funny" src="fp/ratings/funny2.png"/> Funny x <strong>1</strong></span><span><img alt="Informative" src="fp/ratings/information.png"/> Informative x <strong>1</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35206214');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35206218">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 19:00:34">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35206218&amp;viewfull=1#post35206218" name="post35206218"><img src="fp/link.png"/> Post #3</a><a id="postcount35206218" name="3"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_458032 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=458032" title="BBQ_Sauze is offline"><span style="color:#147;">BBQ_Sauze</span></a>
+</div>
+<span class="usertitle">
+</span>
+<div id="userdata">
+<a href="member.php.html?u=458032" title="BBQ_Sauze is offline">
+<img alt="BBQ_Sauze's Avatar" class="avatar_image" src="image.php.html?u=458032&amp;dateline=1339083296" title="BBQ_Sauze's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						November 2011<br/>
+						58 Posts
+					</div>
+<div class="imlinks">
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+<img alt="YouTube Channel" src="fp/social/new/youtube.png" title="YouTube Channel"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow has_after_content">
+<div class="content">
+<div id="post_message_35206218">
+<blockquote class="postcontent restore">
+<div class="quote">
+<div class="information">
+<a href="showthread.php.html?p=35206214#post35206214" rel="nofollow">danielmm8888 posted:</a>
+</div>
+<div class="message">Are you gonna bring back the 4th building?</div>
+</div> Oh please, I passionatedly hate that building, as long as that building is gone, I'll rest assured I won't kill.. someone.. <img alt="" border="0" class="inlineimg" src="fp/emotes_std/eng101.png" title="English 101"/><br/>
+<img alt="" border="0" src="https://web.archive.org/web/20160719005138im_/http://i.imgur.com/MEW6b.jpg"/> Straight to the basics ; I turned off all the lights in the mirror room and it still appears as if they were on.
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35206218" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35206218" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35206218" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35206218" id="qrwq_35206218" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/firefox.png" width="16"/> <img alt="Netherlands" src="fp/flags/nl.png"/>
+<a href="#" onclick="return OpenEventlog( '458032' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35206218); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35206218">
+<span><img alt="Funny" src="fp/ratings/funny2.png"/> Funny x <strong>7</strong></span><span><img alt="Winner" src="fp/ratings/winner.png"/> Winner x <strong>1</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35206218');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35206282">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 19:05:19">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35206282&amp;viewfull=1#post35206282" name="post35206282"><img src="fp/link.png"/> Post #4</a><a id="postcount35206282" name="4"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_72658 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=72658" title="Colton Rappe is offline"><strong><font color="#A06000">Colton Rappe</font></strong></a>
+</div>
+<span class="usertitle">
+				Gold Member
+			</span>
+<div id="userdata">
+<a href="member.php.html?u=72658" title="Colton Rappe is offline">
+<img alt="Colton Rappe's Avatar" class="avatar_image" src="image.php.html?u=72658&amp;dateline=1350709238" title="Colton Rappe's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						August 2006<br/>
+						1,038 Posts
+					</div>
+<div class="imlinks">
+<img alt="Homepage" src="fp/social/new/homepage.png" title="Homepage"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow">
+<div class="content">
+<div id="post_message_35206282">
+<blockquote class="postcontent restore">
+<div class="quote">
+<div class="information">
+<a href="showthread.php.html?p=35206214#post35206214" rel="nofollow">danielmm8888 posted:</a>
+</div>
+<div class="message">Are you gonna bring back the 4th building?</div>
+</div> Eventually, yes, if garry still wants it there.  HighVoltage is working on making the brushwork for it, but has a fiery passionate hate for it. <img alt="" border="0" class="inlineimg" src="fp/emotes_std/v.png" title="Funny"/><br/>
+<br/>
+<font color="#444444" size="1"><b>Edited:</b></font><br/>
+<br/>
+<div class="quote">
+<div class="information">
+<a href="showthread.php.html?p=35206218#post35206218" rel="nofollow">BBQ_Sauze posted:</a>
+</div>
+<div class="message"><img alt="" border="0" src="https://web.archive.org/web/20160719005138im_/http://i.imgur.com/MEW6b.jpg"/> Straight to the basics ; I turned off all the lights in the mirror room and it still appears as if they were on.</div>
+</div> They work correctly in Episode Two, we are not sure why they dont work in Garry's Mod 13.
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35206282" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35206282" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35206282" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35206282" id="qrwq_35206282" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 8" height="16" src="fp/browser/windows8.png" width="16"/> <img height="16" src="fp/browser/firefox.png" width="16"/> <img alt="United States" src="fp/flags/us.png"/>
+<a href="#" onclick="return OpenEventlog( '72658' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35206282); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35206282">
+<span><img alt="Funny" src="fp/ratings/funny2.png"/> Funny x <strong>4</strong></span><span><img alt="Dumb" src="fp/ratings/box.png"/> Dumb x <strong>3</strong></span><span><img alt="Agree" src="fp/ratings/tick.png"/> Agree x <strong>2</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35206282');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35206342">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 19:09:58">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35206342&amp;viewfull=1#post35206342" name="post35206342"><img src="fp/link.png"/> Post #5</a><a id="postcount35206342" name="5"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_458032 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=458032" title="BBQ_Sauze is offline"><span style="color:#147;">BBQ_Sauze</span></a>
+</div>
+<span class="usertitle">
+</span>
+<div id="userdata">
+<a href="member.php.html?u=458032" title="BBQ_Sauze is offline">
+<img alt="BBQ_Sauze's Avatar" class="avatar_image" src="image.php.html?u=458032&amp;dateline=1339083296" title="BBQ_Sauze's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						November 2011<br/>
+						58 Posts
+					</div>
+<div class="imlinks">
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+<img alt="YouTube Channel" src="fp/social/new/youtube.png" title="YouTube Channel"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow">
+<div class="content">
+<div id="post_message_35206342">
+<blockquote class="postcontent restore">
+<div class="quote">
+<div class="information">
+<a href="showthread.php.html?p=35206282#post35206282" rel="nofollow">Colton Rappe posted:</a>
+</div>
+<div class="message">HighVoltage is working on making the brushwork for it, but has a fiery passionate hate for it. <img alt="" border="0" class="inlineimg" src="fp/emotes_std/v.png" title="Funny"/></div>
+</div> This reminds me of someone... <img alt="" border="0" class="inlineimg" src="fp/emotes_std/suicide.gif" title="Suicide"/>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35206342" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35206342" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35206342" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35206342" id="qrwq_35206342" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/firefox.png" width="16"/> <img alt="Netherlands" src="fp/flags/nl.png"/>
+<a href="#" onclick="return OpenEventlog( '458032' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35206342); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35206342">
+<span><img alt="Funny" src="fp/ratings/funny2.png"/> Funny x <strong>6</strong></span><span><img alt="Late" src="fp/ratings/clock.png"/> Late x <strong>1</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35206342');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35206422">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 19:15:18">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35206422&amp;viewfull=1#post35206422" name="post35206422"><img src="fp/link.png"/> Post #6</a><a id="postcount35206422" name="6"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_72658 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=72658" title="Colton Rappe is offline"><strong><font color="#A06000">Colton Rappe</font></strong></a>
+</div>
+<span class="usertitle">
+				Gold Member
+			</span>
+<div id="userdata">
+<a href="member.php.html?u=72658" title="Colton Rappe is offline">
+<img alt="Colton Rappe's Avatar" class="avatar_image" src="image.php.html?u=72658&amp;dateline=1350709238" title="Colton Rappe's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						August 2006<br/>
+						1,038 Posts
+					</div>
+<div class="imlinks">
+<img alt="Homepage" src="fp/social/new/homepage.png" title="Homepage"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow has_after_content">
+<div class="content">
+<div id="post_message_35206422">
+<blockquote class="postcontent restore">
+<b>Garry, can you redirect the link on garrysmod.com to this thread now, and update the image on garrysmod.com to the main image in the first post of this thread?<br/>
+<br/>
+Much appreciated!</b>  Also, please test the map and give some feedback when you can.<br/>
+<br/>
+<br/>
+Edit:  Link has been redirected.  Just the image left.
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35206422" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35206422" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35206422" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35206422" id="qrwq_35206422" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 8" height="16" src="fp/browser/windows8.png" width="16"/> <img height="16" src="fp/browser/firefox.png" width="16"/> <img alt="United States" src="fp/flags/us.png"/>
+<a href="#" onclick="return OpenEventlog( '72658' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35206422); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35206422">
+<span><img alt="Optimistic" src="fp/ratings/rainbow.png"/> Optimistic x <strong>7</strong></span><span><img alt="Friendly" src="fp/ratings/heart.png"/> Friendly x <strong>1</strong></span><span><img alt="Dumb" src="fp/ratings/box.png"/> Dumb x <strong>1</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35206422');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35206532">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 19:24:40">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35206532&amp;viewfull=1#post35206532" name="post35206532"><img src="fp/link.png"/> Post #7</a><a id="postcount35206532" name="7"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_240810 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=240810" title="Adzter is offline"><strong><font color="#A06000">Adzter</font></strong></a>
+</div>
+<span class="usertitle">
+				Gold Member
+			</span>
+<div id="userdata">
+<a href="member.php.html?u=240810" title="Adzter is offline">
+<img alt="Adzter's Avatar" class="avatar_image" src="image.php.html?u=240810&amp;dateline=1335699420" title="Adzter's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						September 2009<br/>
+						2,291 Posts
+					</div>
+<div class="imlinks">
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow">
+<div class="content">
+<div id="post_message_35206532">
+<blockquote class="postcontent restore">
+<img border="0" class="thumbnail" src="https://web.archive.org/web/20160719005138im_/http://dl.dropbox.com/u/21048340/gm_construct_130002.jpg"/><br/>
+Small lighting bug<br/>
+<br/>
+Also perhaps change the texture of this, for some reason it doesn't quite suit a balcony, perhaps a glass texture?:<br/>
+<img border="0" class="thumbnail" src="https://web.archive.org/web/20160719005138im_/http://dl.dropbox.com/u/21048340/gm_construct_130000.jpg"/><br/>
+<img border="0" class="thumbnail" src="https://web.archive.org/web/20160719005138im_/http://dl.dropbox.com/u/21048340/gm_construct_130001.jpg"/>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35206532" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35206532" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35206532" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35206532" id="qrwq_35206532" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/chrome.png" width="16"/> <img alt="United Kingdom" src="fp/flags/gb.png"/>
+<a href="#" onclick="return OpenEventlog( '240810' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35206532); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35206532">
+<span><img alt="Agree" src="fp/ratings/tick.png"/> Agree x <strong>27</strong></span><span><img alt="Disagree" src="fp/ratings/cross.png"/> Disagree x <strong>4</strong></span><span><img alt="Funny" src="fp/ratings/funny2.png"/> Funny x <strong>1</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35206532');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35206752">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 19:40:42">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35206752&amp;viewfull=1#post35206752" name="post35206752"><img src="fp/link.png"/> Post #8</a><a id="postcount35206752" name="8"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_473095 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=473095" title="powback is offline"><span style="color:#147;">powback</span></a>
+</div>
+<span class="usertitle">
+</span>
+<div id="userdata">
+<a href="member.php.html?u=473095" title="powback is offline">
+<img alt="powback's Avatar" class="avatar_image" src="image.php.html?u=473095&amp;dateline=1456925937" title="powback's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						January 2012<br/>
+						302 Posts
+					</div>
+<div class="imlinks">
+<img alt="Homepage" src="fp/social/new/homepage.png" title="Homepage"/>
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+<img alt="DeviantArt Profile" src="fp/social/new/deviantart.png" title="DeviantArt Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow">
+<div class="content">
+<div id="post_message_35206752">
+<blockquote class="postcontent restore">
+							Are the shadows on the outer wall are reflecting too much? Or perhaps the sunny parts of the wall are too dull?<br/>
+Either way, it seems wrong... They look wet...<br/>
+<br/>
+Oh! And by the way: I LOVE the map! It's brilliant! I believe the mapmaking is in good hands. Keep it up!
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35206752" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35206752" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35206752" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35206752" id="qrwq_35206752" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/chrome.png" width="16"/> <img alt="Norway" src="fp/flags/no.png"/>
+<a href="#" onclick="return OpenEventlog( '473095' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35206752); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35206752">
+<span><img alt="Agree" src="fp/ratings/tick.png"/> Agree x <strong>5</strong></span><span><img alt="Friendly" src="fp/ratings/heart.png"/> Friendly x <strong>3</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35206752');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35206756">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 19:40:55">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35206756&amp;viewfull=1#post35206756" name="post35206756"><img src="fp/link.png"/> Post #9</a><a id="postcount35206756" name="9"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_387937 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=387937" title="pennerlord is offline"><span style="color:#147;">pennerlord</span></a>
+</div>
+<span class="usertitle">
+</span>
+<div id="userdata">
+<a href="member.php.html?u=387937" title="pennerlord is offline">
+<img alt="pennerlord's Avatar" class="avatar_image" src="image.php.html?u=387937&amp;dateline=1338583712" title="pennerlord's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						February 2011<br/>
+						557 Posts
+					</div>
+<div class="imlinks">
+<img alt="Homepage" src="fp/social/new/homepage.png" title="Homepage"/>
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow">
+<div class="content">
+<div id="post_message_35206756">
+<blockquote class="postcontent restore">
+<div class="quote">
+<div class="information">
+<a href="showthread.php.html?p=35206282#post35206282" rel="nofollow">Colton Rappe posted:</a>
+</div>
+<div class="message">They work correctly in Episode Two, we are not sure why they dont work in Garry's Mod 13.</div>
+</div> You have to change the skin of the lamp model per input (the light switch button).
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35206756" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35206756" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35206756" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35206756" id="qrwq_35206756" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/chrome.png" width="16"/> <img alt="Germany" src="fp/flags/de.png"/>
+<a href="#" onclick="return OpenEventlog( '387937' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35206756); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35206756">
+<span><img alt="Agree" src="fp/ratings/tick.png"/> Agree x <strong>4</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35206756');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35206804">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 19:45:22">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35206804&amp;viewfull=1#post35206804" name="post35206804"><img src="fp/link.png"/> Post #10</a><a id="postcount35206804" name="10"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_485807 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=485807" title="PenguinGuy is offline"><span style="color:#147;">PenguinGuy</span></a>
+</div>
+<span class="usertitle">
+</span>
+<div id="userdata">
+<a href="member.php.html?u=485807" title="PenguinGuy is offline">
+</a>
+<hr/>
+<div id="userstats">
+						February 2012<br/>
+						195 Posts
+					</div>
+<div class="imlinks">
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow">
+<div class="content">
+<div id="post_message_35206804">
+<blockquote class="postcontent restore">
+							Accidentaly posted, remove this
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35206804" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35206804" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35206804" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35206804" id="qrwq_35206804" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 8" height="16" src="fp/browser/windows8.png" width="16"/> <img height="16" src="fp/browser/chrome.png" width="16"/> <img alt="United Kingdom" src="fp/flags/gb.png"/>
+<a href="#" onclick="return OpenEventlog( '485807' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35206804); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35206804">
+<span><img alt="Winner" src="fp/ratings/winner.png"/> Winner x <strong>17</strong></span><span><img alt="Funny" src="fp/ratings/funny2.png"/> Funny x <strong>4</strong></span><span><img alt="Dumb" src="fp/ratings/box.png"/> Dumb x <strong>2</strong></span><span><img alt="Mapping King" src="fp/ratings/mapping_king.png"/> Mapping King x <strong>1</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35206804');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35206816">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 19:46:08">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35206816&amp;viewfull=1#post35206816" name="post35206816"><img src="fp/link.png"/> Post #11</a><a id="postcount35206816" name="11"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_220931 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=220931" title="highvoltage is offline"><strong><font color="#A06000">highvoltage</font></strong></a>
+</div>
+<span class="usertitle">
+				Gold Member
+			</span>
+<div id="userdata">
+<a href="member.php.html?u=220931" title="highvoltage is offline">
+<img alt="highvoltage's Avatar" class="avatar_image" src="image.php.html?u=220931&amp;dateline=1380854690" title="highvoltage's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						May 2009<br/>
+						2,436 Posts
+					</div>
+<div class="imlinks">
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+<img alt="GitHub Profile" src="fp/social/new/github.png" title="GitHub Profile"/>
+<img alt="YouTube Channel" src="fp/social/new/youtube.png" title="YouTube Channel"/>
+<img alt="XBox Live Profile" src="fp/social/new/xbl.png" title="XBox Live Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow has_after_content">
+<div class="content">
+<div id="post_message_35206816">
+<blockquote class="postcontent restore">
+<div class="quote">
+<div class="information">
+<a href="showthread.php.html?p=35206214#post35206214" rel="nofollow">danielmm8888 posted:</a>
+</div>
+<div class="message">Are you gonna bring back the 4th building?</div>
+</div> I hate it, its so annoying trying to remake it<br/>
+<br/>
+<div class="quote">
+<div class="information">
+<a href="showthread.php.html?p=35206532#post35206532" rel="nofollow">Adzter posted:</a>
+</div>
+<div class="message"><img border="0" class="thumbnail" src="https://web.archive.org/web/20160719005138im_/http://dl.dropbox.com/u/21048340/gm_construct_130002.jpg"/><br/>
+Small lighting bug<br/>
+<br/>
+Also perhaps change the texture of this, for some reason it doesn't quite suit a balcony, perhaps a glass texture?:<br/>
+<img border="0" class="thumbnail" src="https://web.archive.org/web/20160719005138im_/http://dl.dropbox.com/u/21048340/gm_construct_130000.jpg"/><br/>
+<img border="0" class="thumbnail" src="https://web.archive.org/web/20160719005138im_/http://dl.dropbox.com/u/21048340/gm_construct_130001.jpg"/></div>
+</div> I'll fix that up<br/>
+<br/>
+<div class="quote">
+<div class="information">
+<a href="showthread.php.html?p=35206756#post35206756" rel="nofollow">pennerlord posted:</a>
+</div>
+<div class="message">You have to change the skin of the lamp model per input (the light switch button).</div>
+</div> Which is what it does, but it doesn't work in Gmod<br/>
+<br/>
+<font color="#444444" size="1"><b>Edited:</b></font><br/>
+<br/>
+[Rage] And dammit Colton, I should of made the thread [/Rage]
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35206816" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35206816" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35206816" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35206816" id="qrwq_35206816" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/chrome.png" width="16"/> <img alt="Canada" src="fp/flags/ca.png"/>
+<a href="#" onclick="return OpenEventlog( '220931' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35206816); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35206816">
+<span><img alt="Funny" src="fp/ratings/funny2.png"/>  x <strong>8</strong></span><span><img alt="Agree" src="fp/ratings/tick.png"/>  x <strong>2</strong></span><span><img alt="Informative" src="fp/ratings/information.png"/>  x <strong>2</strong></span><span><img alt="Late" src="fp/ratings/clock.png"/>  x <strong>2</strong></span><span><img alt="Winner" src="fp/ratings/winner.png"/>  x <strong>1</strong></span><span><img alt="Dumb" src="fp/ratings/box.png"/>  x <strong>1</strong></span><span><img alt="Disagree" src="fp/ratings/cross.png"/>  x <strong>1</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35206816');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35206880">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 19:50:57">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35206880&amp;viewfull=1#post35206880" name="post35206880"><img src="fp/link.png"/> Post #12</a><a id="postcount35206880" name="12"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_423771 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=423771" title="Lesovikk1 is offline"><span style="color:#147;">Lesovikk1</span></a>
+</div>
+<span class="usertitle">
+</span>
+<div id="userdata">
+<a href="member.php.html?u=423771" title="Lesovikk1 is offline">
+<img alt="Lesovikk1's Avatar" class="avatar_image" src="image.php.html?u=423771&amp;dateline=1386023963" title="Lesovikk1's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						June 2011<br/>
+						115 Posts
+					</div>
+<div class="imlinks">
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow">
+<div class="content">
+<div id="post_message_35206880">
+<blockquote class="postcontent restore">
+<div class="quote">
+<div class="information">
+<a href="showthread.php.html?p=35206816#post35206816" rel="nofollow">highvoltage posted:</a>
+</div>
+<div class="message">[Rage] And dammit Colton, I should of made the thread [/Rage]</div>
+</div> I was thinking the same thing, when i saw the first post, why didnt you make it first rofl
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35206880" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35206880" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35206880" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35206880" id="qrwq_35206880" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/chrome.png" width="16"/> <img alt="United Kingdom" src="fp/flags/gb.png"/>
+<a href="#" onclick="return OpenEventlog( '423771' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35206880); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35206880">
+<span><img alt="Dumb" src="fp/ratings/box.png"/> Dumb x <strong>6</strong></span><span><img alt="Late" src="fp/ratings/clock.png"/> Late x <strong>3</strong></span><span><img alt="Funny" src="fp/ratings/funny2.png"/> Funny x <strong>2</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35206880');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35206899">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 19:52:29">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35206899&amp;viewfull=1#post35206899" name="post35206899"><img src="fp/link.png"/> Post #13</a><a id="postcount35206899" name="13"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_220931 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=220931" title="highvoltage is offline"><strong><font color="#A06000">highvoltage</font></strong></a>
+</div>
+<span class="usertitle">
+				Gold Member
+			</span>
+<div id="userdata">
+<a href="member.php.html?u=220931" title="highvoltage is offline">
+<img alt="highvoltage's Avatar" class="avatar_image" src="image.php.html?u=220931&amp;dateline=1380854690" title="highvoltage's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						May 2009<br/>
+						2,436 Posts
+					</div>
+<div class="imlinks">
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+<img alt="GitHub Profile" src="fp/social/new/github.png" title="GitHub Profile"/>
+<img alt="YouTube Channel" src="fp/social/new/youtube.png" title="YouTube Channel"/>
+<img alt="XBox Live Profile" src="fp/social/new/xbl.png" title="XBox Live Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow">
+<div class="content">
+<div id="post_message_35206899">
+<blockquote class="postcontent restore">
+<div class="quote">
+<div class="information">
+<a href="showthread.php.html?p=35206880#post35206880" rel="nofollow">Lesovikk1 posted:</a>
+</div>
+<div class="message">I was thinking the same thing, when i saw the first post, why didnt you make it first rofl</div>
+</div> I don't mind, Colton is being a huge help
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35206899" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35206899" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35206899" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35206899" id="qrwq_35206899" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/chrome.png" width="16"/> <img alt="Canada" src="fp/flags/ca.png"/>
+<a href="#" onclick="return OpenEventlog( '220931' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35206899); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35206899">
+<span><img alt="Friendly" src="fp/ratings/heart.png"/>  x <strong>8</strong></span><span><img alt="Winner" src="fp/ratings/winner.png"/>  x <strong>1</strong></span><span><img alt="Disagree" src="fp/ratings/cross.png"/>  x <strong>1</strong></span><span><img alt="Agree" src="fp/ratings/tick.png"/>  x <strong>1</strong></span><span><img alt="Dumb" src="fp/ratings/box.png"/>  x <strong>1</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35206899');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35207035">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 20:00:54">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35207035&amp;viewfull=1#post35207035" name="post35207035"><img src="fp/link.png"/> Post #14</a><a id="postcount35207035" name="14"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_469314 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=469314" title="Darkassassin0 is offline"><span style="color:#147;">Darkassassin0</span></a>
+</div>
+<span class="usertitle">
+</span>
+<div id="userdata">
+<a href="member.php.html?u=469314" title="Darkassassin0 is offline">
+<img alt="Darkassassin0's Avatar" class="avatar_image" src="image.php.html?u=469314&amp;dateline=1332145446" title="Darkassassin0's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						January 2012<br/>
+						216 Posts
+					</div>
+<div class="imlinks">
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow">
+<div class="content">
+<div id="post_message_35207035">
+<blockquote class="postcontent restore">
+<div class="quote">
+<div class="information">
+			
+				Garry posted:
+			
+		</div>
+<div class="message">I'm a huge fan of this room, but not really a fan of the lights.</div>
+</div> the lights (old round ones in basement): replace models with florescent tube lights? possibly make them so you can shoot them out?<br/>
+<br/>
+<br/>
+reposted because of 21 agrees but no response<br/>
+<img border="0" class="thumbnail" src="https://web.archive.org/web/20160719005138im_/http://img94.imageshack.us/img94/2630/gmconstruct130000.jpg"/><br/>
+<br/>
+<br/>
+this never got fixed i think.<br/>
+<div class="quote">
+<div class="information">
+			
+				Darkassassin0 posted:
+			
+		</div>
+<div class="message">your stairs are way smaller than garry's could you make them bigger?<br/>
+<img border="0" class="thumbnail" src="https://web.archive.org/web/20160719005138im_/http://cloud.steampowered.com/ugc/487752896013720090/8CDB1670C009B817A30544CF59E7FAA277D9F645/"/><br/>
+<img border="0" class="thumbnail" src="https://web.archive.org/web/20160719005138im_/http://cloud.steampowered.com/ugc/487752896013719457/C62605356644E7390C9BD393C72BE8758E607FEA/"/></div>
+</div> <div class="quote">
+<div class="information">
+			
+				Highvoltage posted:
+			
+		</div>
+<div class="message">I'll change them anyways to match the rest of the stairs</div>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35207035" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35207035" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35207035" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35207035" id="qrwq_35207035" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Mac" height="16" src="fp/browser/osx.png" width="16"/> <img height="16" src="fp/browser/safari.png" width="16"/> <img alt="Canada" src="fp/flags/ca.png"/>
+<a href="#" onclick="return OpenEventlog( '469314' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35207035); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35207035">
+<span><img alt="Agree" src="fp/ratings/tick.png"/> Agree x <strong>17</strong></span><span><img alt="Dumb" src="fp/ratings/box.png"/> Dumb x <strong>2</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35207035');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35207060">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 20:02:16">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35207060&amp;viewfull=1#post35207060" name="post35207060"><img src="fp/link.png"/> Post #15</a><a id="postcount35207060" name="15"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_486066 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=486066" title="Mr.D.M.C is offline"><strong><font color="#A06000">Mr.D.M.C</font></strong></a>
+</div>
+<span class="usertitle">
+				Gold Member
+			</span>
+<div id="userdata">
+<a href="member.php.html?u=486066" title="Mr.D.M.C is offline">
+</a>
+<hr/>
+<div id="userstats">
+						February 2012<br/>
+						46 Posts
+					</div>
+<div class="imlinks">
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow">
+<div class="content">
+<div id="post_message_35207060">
+<blockquote class="postcontent restore">
+							Hey highvoltage, can you do a tutorial on how to map for the beta like how to set it up for mapping?
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35207060" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35207060" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35207060" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35207060" id="qrwq_35207060" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/chrome.png" width="16"/> <img alt="United Kingdom" src="fp/flags/gb.png"/>
+<a href="#" onclick="return OpenEventlog( '486066' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35207060); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35207060">
+<span><img alt="Dumb" src="fp/ratings/box.png"/> Dumb x <strong>13</strong></span><span><img alt="Funny" src="fp/ratings/funny2.png"/> Funny x <strong>6</strong></span><span><img alt="Agree" src="fp/ratings/tick.png"/> Agree x <strong>1</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35207060');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35207152">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 20:07:39">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35207152&amp;viewfull=1#post35207152" name="post35207152"><img src="fp/link.png"/> Post #16</a><a id="postcount35207152" name="16"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_469314 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=469314" title="Darkassassin0 is offline"><span style="color:#147;">Darkassassin0</span></a>
+</div>
+<span class="usertitle">
+</span>
+<div id="userdata">
+<a href="member.php.html?u=469314" title="Darkassassin0 is offline">
+<img alt="Darkassassin0's Avatar" class="avatar_image" src="image.php.html?u=469314&amp;dateline=1332145446" title="Darkassassin0's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						January 2012<br/>
+						216 Posts
+					</div>
+<div class="imlinks">
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow">
+<div class="content">
+<div id="post_message_35207152">
+<blockquote class="postcontent restore">
+<div class="quote">
+<div class="information">
+<a href="showthread.php.html?p=35207060#post35207060" rel="nofollow">Mr.D.M.C posted:</a>
+</div>
+<div class="message">Hey highvoltage, can you do a tutorial on how to map for the beta like how to set it up for mapping?</div>
+</div> nothings different then mapping for gmod 12 it uses the same system.
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35207152" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35207152" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35207152" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35207152" id="qrwq_35207152" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Mac" height="16" src="fp/browser/osx.png" width="16"/> <img height="16" src="fp/browser/safari.png" width="16"/> <img alt="Canada" src="fp/flags/ca.png"/>
+<a href="#" onclick="return OpenEventlog( '469314' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35207152); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35207152">
+<span><img alt="Agree" src="fp/ratings/tick.png"/> Agree x <strong>14</strong></span><span><img alt="Dumb" src="fp/ratings/box.png"/> Dumb x <strong>5</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35207152');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35207329">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 20:18:58">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35207329&amp;viewfull=1#post35207329" name="post35207329"><img src="fp/link.png"/> Post #17</a><a id="postcount35207329" name="17"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_490250 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=490250" title="Mrcookiejar is offline"><span style="color:#147;">Mrcookiejar</span></a>
+</div>
+<span class="usertitle">
+</span>
+<div id="userdata">
+<a href="member.php.html?u=490250" title="Mrcookiejar is offline">
+<img alt="Mrcookiejar's Avatar" class="avatar_image" src="image.php.html?u=490250&amp;dateline=1453840472" title="Mrcookiejar's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						March 2012<br/>
+						2 Posts
+					</div>
+<div class="imlinks">
+<img alt="YouTube Channel" src="fp/social/new/youtube.png" title="YouTube Channel"/>
+<img alt="Facebook Profile" src="fp/social/new/facebook.png" title="Facebook Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow has_after_content">
+<div class="content">
+<div id="post_message_35207329">
+<blockquote class="postcontent restore">
+							Wow, amazing, stunning AND AWESOME LIKE COOKIEZZZZZZ! <img alt="" border="0" class="inlineimg" src="fp/emotes_std/dance.gif" title="Dance"/><br/>
+Edit: Lol my comment ain't dumb :(
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35207329" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35207329" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35207329" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35207329" id="qrwq_35207329" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/chrome.png" width="16"/> <img alt="Sweden" src="fp/flags/se.png"/>
+<a href="#" onclick="return OpenEventlog( '490250' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35207329); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35207329">
+<span><img alt="Dumb" src="fp/ratings/box.png"/>  x <strong>101</strong></span><span><img alt="Funny" src="fp/ratings/funny2.png"/>  x <strong>2</strong></span><span><img alt="Disagree" src="fp/ratings/cross.png"/>  x <strong>2</strong></span><span><img alt="Agree" src="fp/ratings/tick.png"/>  x <strong>2</strong></span><span><img alt="Informative" src="fp/ratings/information.png"/>  x <strong>1</strong></span><span><img alt="Artistic" src="fp/ratings/palette.png"/>  x <strong>1</strong></span><span><img alt="Winner" src="fp/ratings/winner.png"/>  x <strong>1</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35207329');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35207368">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 20:20:57">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35207368&amp;viewfull=1#post35207368" name="post35207368"><img src="fp/link.png"/> Post #18</a><a id="postcount35207368" name="18"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_289470 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=289470" title="DinoJesus is offline"><strong><font color="#A06000">DinoJesus</font></strong></a>
+</div>
+<span class="usertitle">
+The Savior of FP
+</span>
+<div id="userdata">
+<a href="member.php.html?u=289470" title="DinoJesus is offline">
+<img alt="DinoJesus's Avatar" class="avatar_image" src="image.php.html?u=289470&amp;dateline=1353221447" title="DinoJesus's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						May 2010<br/>
+						5,693 Posts
+					</div>
+<div class="imlinks">
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow has_after_content">
+<div class="content">
+<div id="post_message_35207368">
+<blockquote class="postcontent restore">
+							Are you guys going to try and reduce far off texture repeat patterns. It isn't a big deal but I figure it would make the map prettier. If you couldn't do that for optimization reasons then maybe you could just try to vary the grass textures a bit in certain spots. It looks like you've done it a bit already but I mean to a more noticeable degree. I'm no mapper though so if any of this is just stupid wishful thinking then just disregard it.
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35207368" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35207368" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35207368" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35207368" id="qrwq_35207368" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/firefox.png" width="16"/> <img alt="United States" src="fp/flags/us.png"/>
+<a href="#" onclick="return OpenEventlog( '289470' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35207368); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35207368">
+<span><img alt="Optimistic" src="fp/ratings/rainbow.png"/> Optimistic x <strong>2</strong></span><span><img alt="Dumb" src="fp/ratings/box.png"/> Dumb x <strong>1</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35207368');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35207390">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 20:22:30">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35207390&amp;viewfull=1#post35207390" name="post35207390"><img src="fp/link.png"/> Post #19</a><a id="postcount35207390" name="19"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_220931 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=220931" title="highvoltage is offline"><strong><font color="#A06000">highvoltage</font></strong></a>
+</div>
+<span class="usertitle">
+				Gold Member
+			</span>
+<div id="userdata">
+<a href="member.php.html?u=220931" title="highvoltage is offline">
+<img alt="highvoltage's Avatar" class="avatar_image" src="image.php.html?u=220931&amp;dateline=1380854690" title="highvoltage's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						May 2009<br/>
+						2,436 Posts
+					</div>
+<div class="imlinks">
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+<img alt="GitHub Profile" src="fp/social/new/github.png" title="GitHub Profile"/>
+<img alt="YouTube Channel" src="fp/social/new/youtube.png" title="YouTube Channel"/>
+<img alt="XBox Live Profile" src="fp/social/new/xbl.png" title="XBox Live Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow">
+<div class="content">
+<div id="post_message_35207390">
+<blockquote class="postcontent restore">
+<div class="quote">
+<div class="information">
+<a href="showthread.php.html?p=35207035#post35207035" rel="nofollow">Darkassassin0 posted:</a>
+</div>
+<div class="message">the lights (old round ones in basement): replace models with florescent tube lights? possibly make them so you can shoot them out?</div>
+</div> I replaced the models with florescent one, I didn't earlier because I couldn't find the model for some reason.<br/>
+<div class="quote">
+<div class="information">
+<a href="showthread.php.html?p=35207035#post35207035" rel="nofollow">Darkassassin0 posted:</a>
+</div>
+<div class="message">reposted because of 21 agrees but no response<br/>
+<img border="0" class="thumbnail" src="https://web.archive.org/web/20160719005138im_/http://img94.imageshack.us/img94/2630/gmconstruct130000.jpg"/></div>
+</div> The problem is that doors wouldn't change colour with the room.<br/>
+<br/>
+<div class="quote">
+<div class="information">
+<a href="showthread.php.html?p=35207035#post35207035" rel="nofollow">Darkassassin0 posted:</a>
+</div>
+<div class="message">this never got fixed i think.<br/>
+-Stairs-</div>
+</div> I'll do that right this second, I must of been messing with something else at the moment when i said that.
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35207390" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35207390" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35207390" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35207390" id="qrwq_35207390" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/chrome.png" width="16"/> <img alt="Canada" src="fp/flags/ca.png"/>
+<a href="#" onclick="return OpenEventlog( '220931' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35207390); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35207390">
+<span><img alt="Agree" src="fp/ratings/tick.png"/> Agree x <strong>1</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35207390');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35207442">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 20:25:46">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35207442&amp;viewfull=1#post35207442" name="post35207442"><img src="fp/link.png"/> Post #20</a><a id="postcount35207442" name="20"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_248899 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=248899" title="ColossalSoft is offline"><strong><font color="#A06000">ColossalSoft</font></strong></a>
+</div>
+<span class="usertitle">
+				Gold Member
+			</span>
+<div id="userdata">
+<a href="member.php.html?u=248899" title="ColossalSoft is offline">
+<img alt="ColossalSoft's Avatar" class="avatar_image" src="image.php.html?u=248899&amp;dateline=1446871847" title="ColossalSoft's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						November 2009<br/>
+						7,454 Posts
+					</div>
+<div class="imlinks">
+<img alt="Homepage" src="fp/social/new/homepage.png" title="Homepage"/>
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+<img alt="YouTube Channel" src="fp/social/new/youtube.png" title="YouTube Channel"/>
+<img alt="Tumblr Profile" src="fp/social/new/tumblr.png" title="Tumblr Profile"/>
+<img alt="Playstation Network Profile" src="fp/social/new/psn.png" title="Playstation Network Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow">
+<div class="content">
+<div id="post_message_35207442">
+<blockquote class="postcontent restore">
+							Water should be expanded a little. Not saying an entire ocean, but a little larger than it is.
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35207442" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35207442" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35207442" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35207442" id="qrwq_35207442" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/chrome.png" width="16"/> <img alt="United States" src="fp/flags/us.png"/>
+<a href="#" onclick="return OpenEventlog( '248899' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35207442); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35207442">
+<span><img alt="Agree" src="fp/ratings/tick.png"/> Agree x <strong>7</strong></span><span><img alt="Disagree" src="fp/ratings/cross.png"/> Disagree x <strong>1</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35207442');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35207446">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 20:26:07">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35207446&amp;viewfull=1#post35207446" name="post35207446"><img src="fp/link.png"/> Post #21</a><a id="postcount35207446" name="21"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_473620 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=473620" title="Chippiewill00 is offline"><span style="color:#147;">Chippiewill00</span></a>
+</div>
+<span class="usertitle">
+</span>
+<div id="userdata">
+<a href="member.php.html?u=473620" title="Chippiewill00 is offline">
+</a>
+<hr/>
+<div id="userstats">
+						January 2012<br/>
+						35 Posts
+					</div>
+<div class="imlinks">
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow">
+<div class="content">
+<div id="post_message_35207446">
+<blockquote class="postcontent restore">
+							As far as I can tell a lot of people liked my submarine area suggestion in the last thread so I'll just leave it here as a reminder.<br/>
+<div class="quote">
+<div class="message"><img alt="" border="0" src="https://web.archive.org/web/20160719005138im_/http://cloud.steampowered.com/ugc/505767596138293187/0C38F6A2C909BC4DBD2551B12C7BA7B534C37AD8/"/><br/>
+There's this massive brick wall here, it'd be cool to have a little area for submarines to go into. Maybe one of Garry's tunnels could lead round into a little room underneath here.</div>
+</div> <a href="threads/1168260.html?p=35190922&amp;highlight=#post35190922" target="_blank">http://facepunch.com/threads/1168260...=#post35190922</a>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35207446" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35207446" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35207446" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35207446" id="qrwq_35207446" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/chrome.png" width="16"/> <img alt="United Kingdom" src="fp/flags/gb.png"/>
+<a href="#" onclick="return OpenEventlog( '473620' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35207446); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35207446">
+<span><img alt="Agree" src="fp/ratings/tick.png"/> Agree x <strong>32</strong></span><span><img alt="Disagree" src="fp/ratings/cross.png"/> Disagree x <strong>1</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35207446');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35207472">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 20:27:56">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35207472&amp;viewfull=1#post35207472" name="post35207472"><img src="fp/link.png"/> Post #22</a><a id="postcount35207472" name="22"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_72658 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=72658" title="Colton Rappe is offline"><strong><font color="#A06000">Colton Rappe</font></strong></a>
+</div>
+<span class="usertitle">
+				Gold Member
+			</span>
+<div id="userdata">
+<a href="member.php.html?u=72658" title="Colton Rappe is offline">
+<img alt="Colton Rappe's Avatar" class="avatar_image" src="image.php.html?u=72658&amp;dateline=1350709238" title="Colton Rappe's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						August 2006<br/>
+						1,038 Posts
+					</div>
+<div class="imlinks">
+<img alt="Homepage" src="fp/social/new/homepage.png" title="Homepage"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow">
+<div class="content">
+<div id="post_message_35207472">
+<blockquote class="postcontent restore">
+<div class="quote">
+<div class="information">
+<a href="showthread.php.html?p=35207442#post35207442" rel="nofollow">ColossalSoft posted:</a>
+</div>
+<div class="message">Water should be expanded a little. Not saying an entire ocean, but a little larger than it is.</div>
+</div> Semi-Major changes like that should be left up to Garry's discretion when he gives feedback on the map.
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35207472" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35207472" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35207472" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35207472" id="qrwq_35207472" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 8" height="16" src="fp/browser/windows8.png" width="16"/> <img height="16" src="fp/browser/firefox.png" width="16"/> <img alt="United States" src="fp/flags/us.png"/>
+<a href="#" onclick="return OpenEventlog( '72658' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35207472); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35207472">
+<span><img alt="Agree" src="fp/ratings/tick.png"/> Agree x <strong>1</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35207472');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35207491">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 20:29:17">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35207491&amp;viewfull=1#post35207491" name="post35207491"><img src="fp/link.png"/> Post #23</a><a id="postcount35207491" name="23"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_469314 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=469314" title="Darkassassin0 is offline"><span style="color:#147;">Darkassassin0</span></a>
+</div>
+<span class="usertitle">
+</span>
+<div id="userdata">
+<a href="member.php.html?u=469314" title="Darkassassin0 is offline">
+<img alt="Darkassassin0's Avatar" class="avatar_image" src="image.php.html?u=469314&amp;dateline=1332145446" title="Darkassassin0's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						January 2012<br/>
+						216 Posts
+					</div>
+<div class="imlinks">
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow has_after_content">
+<div class="content">
+<div id="post_message_35207491">
+<blockquote class="postcontent restore">
+<div class="quote">
+<div class="information">
+<a href="showthread.php.html?p=35207390#post35207390" rel="nofollow">highvoltage posted:</a>
+</div>
+<div class="message">The problem is that doors wouldn't change colour with the room.</div>
+</div> make them the same as the walls,is there a flag to nocolide with player or something like that?,mat the out side with something different (just to tell its there and to see thru)<br/>
+(no buttons to move them just have then permanently there.)<br/>
+<br/>
+<font color="#444444" size="1"><b>Edited:</b></font><br/>
+<div class="quote">
+<div class="information">
+			
+				Chippiewill00 posted:
+			
+		</div>
+<div class="message"><img border="0" class="thumbnail" src="https://web.archive.org/web/20160719005138im_/http://cloud.steampowered.com/ugc/505767596138293187/0C38F6A2C909BC4DBD2551B12C7BA7B534C37AD8/"/><br/>
+There's this massive brick wall here, it'd be cool to have a little area for submarines to go into. Maybe one of Garry's tunnels could lead round into a little room underneath here.</div>
+</div> i agree it would be nice to have like a gloomy under water cave that leads up into an air pocket (possibly with stairs or some other means of transport into the spawn building or garage) and maybe access to the air vents.<br/>
+<br/>
+and by cave i mean no straight edges make it completely out of displacements.
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35207491" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35207491" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35207491" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35207491" id="qrwq_35207491" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Mac" height="16" src="fp/browser/osx.png" width="16"/> <img height="16" src="fp/browser/safari.png" width="16"/> <img alt="Canada" src="fp/flags/ca.png"/>
+<a href="#" onclick="return OpenEventlog( '469314' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35207491); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35207491">
+<span><img alt="Agree" src="fp/ratings/tick.png"/> Agree x <strong>10</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35207491');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35207567">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 20:33:38">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35207567&amp;viewfull=1#post35207567" name="post35207567"><img src="fp/link.png"/> Post #24</a><a id="postcount35207567" name="24"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_220931 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=220931" title="highvoltage is offline"><strong><font color="#A06000">highvoltage</font></strong></a>
+</div>
+<span class="usertitle">
+				Gold Member
+			</span>
+<div id="userdata">
+<a href="member.php.html?u=220931" title="highvoltage is offline">
+<img alt="highvoltage's Avatar" class="avatar_image" src="image.php.html?u=220931&amp;dateline=1380854690" title="highvoltage's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						May 2009<br/>
+						2,436 Posts
+					</div>
+<div class="imlinks">
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+<img alt="GitHub Profile" src="fp/social/new/github.png" title="GitHub Profile"/>
+<img alt="YouTube Channel" src="fp/social/new/youtube.png" title="YouTube Channel"/>
+<img alt="XBox Live Profile" src="fp/social/new/xbl.png" title="XBox Live Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow">
+<div class="content">
+<div id="post_message_35207567">
+<blockquote class="postcontent restore">
+<div class="quote">
+<div class="information">
+<a href="showthread.php.html?p=35207491#post35207491" rel="nofollow">Darkassassin0 posted:</a>
+</div>
+<div class="message">make them the same as the walls,is there a flag to nocolide with player or something like that?,mat the out side with something different (just to tell its there and to see thru)<br/>
+(no buttons to move them just have then permanently there.)</div>
+</div> I mean that they won't change colour at the same time as the wall. Also it would colour the other side of the door making it look bad.
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35207567" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35207567" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35207567" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35207567" id="qrwq_35207567" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/chrome.png" width="16"/> <img alt="Canada" src="fp/flags/ca.png"/>
+<a href="#" onclick="return OpenEventlog( '220931' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35207567); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35207567">
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35207715">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 20:42:16">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35207715&amp;viewfull=1#post35207715" name="post35207715"><img src="fp/link.png"/> Post #25</a><a id="postcount35207715" name="25"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_469314 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=469314" title="Darkassassin0 is offline"><span style="color:#147;">Darkassassin0</span></a>
+</div>
+<span class="usertitle">
+</span>
+<div id="userdata">
+<a href="member.php.html?u=469314" title="Darkassassin0 is offline">
+<img alt="Darkassassin0's Avatar" class="avatar_image" src="image.php.html?u=469314&amp;dateline=1332145446" title="Darkassassin0's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						January 2012<br/>
+						216 Posts
+					</div>
+<div class="imlinks">
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow has_after_content">
+<div class="content">
+<div id="post_message_35207715">
+<blockquote class="postcontent restore">
+<div class="quote">
+<div class="information">
+<a href="showthread.php.html?p=35207567#post35207567" rel="nofollow">highvoltage posted:</a>
+</div>
+<div class="message">I mean that they won't change colour at the same time as the wall. Also it would colour the other side of the door making it look bad.</div>
+</div> ah then maybe make the other side of the door nodraw? and couldent you just make the hole wall just 1 brush then make the wall brushes as they are now to stop you walking thru it anywhere but the doors?<br/>
+<br/>
+<b>[</b> = door<br/>
+| = NC'd wall (colorable)<br/>
+I =Norm wall (invis)<br/>
+<br/>
+I|<br/>
+<b>[</b>|<br/>
+I|<br/>
+I|<br/>
+I|<br/>
+I|<br/>
+<b>[</b>|<br/>
+I|<br/>
+<br/>
+so just make the wall as it is now completely invis, add 1 more brush over the hole thing make it colourable and NC'd<br/>
+<br/>
+you could even leave space for spectators:<br/>
+<br/>
+<b>[</b> = door<br/>
+| = NC'd wall (colorable)<br/>
+I =Norm wall (brick)<br/>
+<br/>
+I      |<br/>
+<b>[</b>      |<br/>
+I      |<br/>
+I      |<br/>
+I      |<br/>
+I      |<br/>
+<b>[</b>      |<br/>
+I      |<br/>
+<br/>
+<br/>
+<div class="center"><div class="video"></div></div><br/>
+i think the one with a gap would be better tho so you can walk thru any spot on the wall not just the doors
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35207715" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35207715" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35207715" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35207715" id="qrwq_35207715" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Mac" height="16" src="fp/browser/osx.png" width="16"/> <img height="16" src="fp/browser/safari.png" width="16"/> <img alt="Canada" src="fp/flags/ca.png"/>
+<a href="#" onclick="return OpenEventlog( '469314' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35207715); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35207715">
+<span><img alt="Agree" src="fp/ratings/tick.png"/>  x <strong>5</strong></span><span><img alt="Dumb" src="fp/ratings/box.png"/>  x <strong>2</strong></span><span><img alt="Informative" src="fp/ratings/information.png"/>  x <strong>1</strong></span><span><img alt="Artistic" src="fp/ratings/palette.png"/>  x <strong>1</strong></span><span><img alt="Zing" src="fp/ratings/zing.png"/>  x <strong>1</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35207715');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35207913">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 20:56:04">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35207913&amp;viewfull=1#post35207913" name="post35207913"><img src="fp/link.png"/> Post #26</a><a id="postcount35207913" name="26"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_356027 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=356027" title="Skerion is offline"><strong><font color="#A06000">Skerion</font></strong></a>
+</div>
+<span class="usertitle">
+				Gold Member
+			</span>
+<div id="userdata">
+<a href="member.php.html?u=356027" title="Skerion is offline">
+<img alt="Skerion's Avatar" class="avatar_image" src="image.php.html?u=356027&amp;dateline=1458671783" title="Skerion's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						November 2010<br/>
+						4,858 Posts
+					</div>
+<div class="imlinks">
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow has_after_content">
+<div class="content">
+<div id="post_message_35207913">
+<blockquote class="postcontent restore">
+							It's about time you guys made your own thread for this.  This is awesome.
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35207913" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35207913" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35207913" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35207913" id="qrwq_35207913" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/chrome.png" width="16"/> <img alt="United States" src="fp/flags/us.png"/>
+<a href="#" onclick="return OpenEventlog( '356027' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35207913); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35207913">
+<span><img alt="Agree" src="fp/ratings/tick.png"/> Agree x <strong>5</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35207913');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35208585">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 21:37:47">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35208585&amp;viewfull=1#post35208585" name="post35208585"><img src="fp/link.png"/> Post #27</a><a id="postcount35208585" name="27"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_450542 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=450542" title="FLy1nRabBit is offline"><span style="color:#147;">FLy1nRabBit</span></a>
+</div>
+<span class="usertitle">
+</span>
+<div id="userdata">
+<a href="member.php.html?u=450542" title="FLy1nRabBit is offline">
+</a>
+<hr/>
+<div id="userstats">
+						October 2011<br/>
+						3 Posts
+					</div>
+<div class="imlinks">
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow">
+<div class="content">
+<div id="post_message_35208585">
+<blockquote class="postcontent restore">
+							I'm really going to miss the old gm_construct, but then again we do need something new. Either way I'm going to save the old gm_construct just in case :) Either way pretty cool map! Keep the good work!
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35208585" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35208585" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35208585" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35208585" id="qrwq_35208585" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/chrome.png" width="16"/> <img alt="United States" src="fp/flags/us.png"/>
+<a href="#" onclick="return OpenEventlog( '450542' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35208585); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35208585">
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35208951">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 21:59:53">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35208951&amp;viewfull=1#post35208951" name="post35208951"><img src="fp/link.png"/> Post #28</a><a id="postcount35208951" name="28"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_340743 status_x_is_online_now">
+<div class="username_container">
+<a class="username online" href="member.php.html?u=340743" title="Daniel Smith is online now"><strong><font color="#A06000">Daniel Smith</font></strong></a>
+</div>
+<span class="usertitle">
+<b><font color="purple">Ask me about my progressive rock fetish</font></b>
+</span>
+<div id="userdata">
+<a href="member.php.html?u=340743" title="Daniel Smith is online now">
+<img alt="Daniel Smith's Avatar" class="avatar_image" src="image.php.html?u=340743&amp;dateline=1466617234" title="Daniel Smith's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						September 2010<br/>
+						14,778 Posts
+					</div>
+<div class="imlinks">
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+<img alt="DeviantArt Profile" src="fp/social/new/deviantart.png" title="DeviantArt Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow">
+<div class="content">
+<div id="post_message_35208951">
+<blockquote class="postcontent restore">
+							So awesome. I will check out every new revision each day <img alt="" border="0" class="inlineimg" src="fp/emoot/quagmire.gif" title="Quagmire"/>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35208951" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35208951" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35208951" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35208951" id="qrwq_35208951" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/chrome.png" width="16"/> <img alt="Canada" src="fp/flags/ca.png"/>
+<a href="#" onclick="return OpenEventlog( '340743' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35208951); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35208951">
+<span><img alt="Funny" src="fp/ratings/funny2.png"/> Funny x <strong>2</strong></span><span><img alt="Agree" src="fp/ratings/tick.png"/> Agree x <strong>1</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35208951');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35208958">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 22:00:17">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35208958&amp;viewfull=1#post35208958" name="post35208958"><img src="fp/link.png"/> Post #29</a><a id="postcount35208958" name="29"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_199317 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=199317" title="Loures is offline"><strong><font color="#A06000">Loures</font></strong></a>
+</div>
+<span class="usertitle">
+				Gold Member
+			</span>
+<div id="userdata">
+<a href="member.php.html?u=199317" title="Loures is offline">
+<img alt="Loures's Avatar" class="avatar_image" src="image.php.html?u=199317&amp;dateline=1464178304" title="Loures's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						February 2009<br/>
+						2,185 Posts
+					</div>
+<div class="imlinks">
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow">
+<div class="content">
+<div id="post_message_35208958">
+<blockquote class="postcontent restore">
+							Is there gonna be a secret credit room aswell?
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35208958" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35208958" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35208958" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35208958" id="qrwq_35208958" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/chrome.png" width="16"/> <img alt="Italy" src="fp/flags/it.png"/>
+<a href="#" onclick="return OpenEventlog( '199317' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35208958); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35208958">
+<span><img alt="Agree" src="fp/ratings/tick.png"/> Agree x <strong>8</strong></span><span><img alt="Disagree" src="fp/ratings/cross.png"/> Disagree x <strong>1</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35208958');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35209077">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 22:06:56">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35209077&amp;viewfull=1#post35209077" name="post35209077"><img src="fp/link.png"/> Post #30</a><a id="postcount35209077" name="30"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_220931 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=220931" title="highvoltage is offline"><strong><font color="#A06000">highvoltage</font></strong></a>
+</div>
+<span class="usertitle">
+				Gold Member
+			</span>
+<div id="userdata">
+<a href="member.php.html?u=220931" title="highvoltage is offline">
+<img alt="highvoltage's Avatar" class="avatar_image" src="image.php.html?u=220931&amp;dateline=1380854690" title="highvoltage's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						May 2009<br/>
+						2,436 Posts
+					</div>
+<div class="imlinks">
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+<img alt="GitHub Profile" src="fp/social/new/github.png" title="GitHub Profile"/>
+<img alt="YouTube Channel" src="fp/social/new/youtube.png" title="YouTube Channel"/>
+<img alt="XBox Live Profile" src="fp/social/new/xbl.png" title="XBox Live Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow">
+<div class="content">
+<div id="post_message_35209077">
+<blockquote class="postcontent restore">
+<div class="quote">
+<div class="information">
+<a href="showthread.php.html?p=35208958#post35208958" rel="nofollow">Loures posted:</a>
+</div>
+<div class="message">Is there gonna be a secret credit room aswell?</div>
+</div> Undecided
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35209077" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35209077" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35209077" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35209077" id="qrwq_35209077" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/chrome.png" width="16"/> <img alt="Canada" src="fp/flags/ca.png"/>
+<a href="#" onclick="return OpenEventlog( '220931' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35209077); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35209077">
+<span><img alt="Disagree" src="fp/ratings/cross.png"/> Disagree x <strong>10</strong></span><span><img alt="Informative" src="fp/ratings/information.png"/> Informative x <strong>2</strong></span><span><img alt="Zing" src="fp/ratings/zing.png"/> Zing x <strong>1</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35209077');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35209187">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 22:13:49">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35209187&amp;viewfull=1#post35209187" name="post35209187"><img src="fp/link.png"/> Post #31</a><a id="postcount35209187" name="31"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_152306 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=152306" title="Robotboy655 is offline"><span style="color:rgb(0, 112, 255);font-weight:bold;">Robotboy655</span></a>
+</div>
+<span class="usertitle">
+				Don't PM me about moderation - PM any of the mods.
+			</span>
+<div id="userdata">
+<a href="member.php.html?u=152306" title="Robotboy655 is offline">
+<img alt="Robotboy655's Avatar" class="avatar_image" src="image.php.html?u=152306&amp;dateline=1463678839" title="Robotboy655's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						May 2008<br/>
+						13,310 Posts
+					</div>
+<div class="imlinks">
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+<img alt="GitHub Profile" src="fp/social/new/github.png" title="GitHub Profile"/>
+<img alt="YouTube Channel" src="fp/social/new/youtube.png" title="YouTube Channel"/>
+<img alt="Twitch Profile" src="fp/social/new/twitch.png" title="Twitch Profile"/>
+<img alt="Facebook Profile" src="fp/social/new/facebook.png" title="Facebook Profile"/>
+<img alt="Twitter Handle" src="fp/social/new/twitter.png" title="Twitter Handle"/>
+<img alt="Google+ Profile" src="fp/social/new/googleplus.png" title="Google+ Profile"/>
+<img alt="XBox Live Profile" src="fp/social/new/xbl.png" title="XBox Live Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow">
+<div class="content">
+<div id="post_message_35209187">
+<blockquote class="postcontent restore">
+<div class="quote">
+<div class="information">
+<a href="showthread.php.html?p=35207390#post35207390" rel="nofollow">highvoltage posted:</a>
+</div>
+<div class="message">The problem is that doors wouldn't change colour with the room.</div>
+</div> At least move the switch.
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35209187" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35209187" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35209187" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35209187" id="qrwq_35209187" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/opera.png" width="16"/> <img alt="Estonia" src="fp/flags/ee.png"/>
+<a href="#" onclick="return OpenEventlog( '152306' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35209187); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35209187">
+<span><img alt="Agree" src="fp/ratings/tick.png"/> Agree x <strong>1</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35209187');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35209218">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 22:15:19">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35209218&amp;viewfull=1#post35209218" name="post35209218"><img src="fp/link.png"/> Post #32</a><a id="postcount35209218" name="32"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_469314 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=469314" title="Darkassassin0 is offline"><span style="color:#147;">Darkassassin0</span></a>
+</div>
+<span class="usertitle">
+</span>
+<div id="userdata">
+<a href="member.php.html?u=469314" title="Darkassassin0 is offline">
+<img alt="Darkassassin0's Avatar" class="avatar_image" src="image.php.html?u=469314&amp;dateline=1332145446" title="Darkassassin0's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						January 2012<br/>
+						216 Posts
+					</div>
+<div class="imlinks">
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow has_after_content">
+<div class="content">
+<div id="post_message_35209218">
+<blockquote class="postcontent restore">
+<img border="0" class="thumbnail" src="https://web.archive.org/web/20160719005138im_/http://cloud.steampowered.com/ugc/488879030307032587/47842AD108E27007D861EA84F63C91356628C92B/"/><br/>
+<br/>
+it would be nice if the line between grass and sand wasn't so straight (dont change the shape of the lake just the material so its a little more random like a real beach)<br/>
+<br/>
+<font color="#444444" size="1"><b>Edited:</b></font><br/>
+<br/>
+<img border="0" class="thumbnail" src="https://web.archive.org/web/20160719005138im_/http://cloud.steampowered.com/ugc/488879030307316717/947B63C8DA1A16B1860C6DCB400C4805398AB91C/"/><br/>
+<br/>
+miss-aligned texture (may be a cube map tho)
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35209218" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35209218" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35209218" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35209218" id="qrwq_35209218" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/safari.png" width="16"/> <img alt="Canada" src="fp/flags/ca.png"/>
+<a href="#" onclick="return OpenEventlog( '469314' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35209218); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35209218">
+<span><img alt="Agree" src="fp/ratings/tick.png"/> Agree x <strong>16</strong></span><span><img alt="Informative" src="fp/ratings/information.png"/> Informative x <strong>1</strong></span><span><img alt="Dumb" src="fp/ratings/box.png"/> Dumb x <strong>1</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35209218');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35209415">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 22:29:19">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35209415&amp;viewfull=1#post35209415" name="post35209415"><img src="fp/link.png"/> Post #33</a><a id="postcount35209415" name="33"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_340743 status_x_is_online_now">
+<div class="username_container">
+<a class="username online" href="member.php.html?u=340743" title="Daniel Smith is online now"><strong><font color="#A06000">Daniel Smith</font></strong></a>
+</div>
+<span class="usertitle">
+<b><font color="purple">Ask me about my progressive rock fetish</font></b>
+</span>
+<div id="userdata">
+<a href="member.php.html?u=340743" title="Daniel Smith is online now">
+<img alt="Daniel Smith's Avatar" class="avatar_image" src="image.php.html?u=340743&amp;dateline=1466617234" title="Daniel Smith's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						September 2010<br/>
+						14,778 Posts
+					</div>
+<div class="imlinks">
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+<img alt="DeviantArt Profile" src="fp/social/new/deviantart.png" title="DeviantArt Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow">
+<div class="content">
+<div id="post_message_35209415">
+<blockquote class="postcontent restore">
+							This is the first bug that I've noticed, you are probably already aware of it though.<br/>
+<img alt="" border="0" src="https://web.archive.org/web/20160719005138im_/http://i.imgur.com/Ka3ss.jpg"/><br/>
+<br/>
+That brush shouldn't reflect.<br/>
+<img alt="" border="0" src="https://web.archive.org/web/20160719005138im_/http://i.imgur.com/smJCQ.jpg"/><br/>
+<br/>
+Tuning down the HDR would be good.<br/>
+<img alt="" border="0" src="https://web.archive.org/web/20160719005138im_/http://i.imgur.com/ISWjd.jpg"/><br/>
+<br/>
+One of the sides isn't quite touching the ground.<br/>
+<img alt="" border="0" src="https://web.archive.org/web/20160719005138im_/http://i.imgur.com/vpFmL.jpg"/><br/>
+<br/>
+Age-old bug, should be taken care of.<br/>
+<img alt="" border="0" src="https://web.archive.org/web/20160719005138im_/http://i.imgur.com/A5mUO.jpg"/><br/>
+<br/>
+The stairs leading to the expanded dark room shouldn't reflect.<br/>
+<img alt="" border="0" src="https://web.archive.org/web/20160719005138im_/http://i.imgur.com/DPrap.jpg"/><br/>
+<br/>
+Not quite matching the width of the other one.<br/>
+<img alt="" border="0" src="https://web.archive.org/web/20160719005138im_/http://i.imgur.com/QcuhG.jpg"/><br/>
+<br/>
+Maybe it should be invisible?<br/>
+<img alt="" border="0" src="https://web.archive.org/web/20160719005138im_/http://i.imgur.com/u8tio.jpg"/><br/>
+<br/>
+You can see this while flying above, try lowering the displacement a bit.<br/>
+<img alt="" border="0" src="https://web.archive.org/web/20160719005138im_/http://i.imgur.com/zgJK0.jpg"/>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35209415" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35209415" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35209415" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35209415" id="qrwq_35209415" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/chrome.png" width="16"/> <img alt="Canada" src="fp/flags/ca.png"/>
+<a href="#" onclick="return OpenEventlog( '340743' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35209415); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35209415">
+<span><img alt="Agree" src="fp/ratings/tick.png"/>  x <strong>23</strong></span><span><img alt="Informative" src="fp/ratings/information.png"/>  x <strong>9</strong></span><span><img alt="Useful" src="fp/ratings/wrench.png"/>  x <strong>3</strong></span><span><img alt="Friendly" src="fp/ratings/heart.png"/>  x <strong>1</strong></span><span><img alt="Disagree" src="fp/ratings/cross.png"/>  x <strong>1</strong></span><span><img alt="Dumb" src="fp/ratings/box.png"/>  x <strong>1</strong></span><span><img alt="Mapping King" src="fp/ratings/mapping_king.png"/>  x <strong>1</strong></span><span><img alt="Winner" src="fp/ratings/winner.png"/>  x <strong>1</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35209415');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35209619">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 22:42:42">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35209619&amp;viewfull=1#post35209619" name="post35209619"><img src="fp/link.png"/> Post #34</a><a id="postcount35209619" name="34"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_469314 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=469314" title="Darkassassin0 is offline"><span style="color:#147;">Darkassassin0</span></a>
+</div>
+<span class="usertitle">
+</span>
+<div id="userdata">
+<a href="member.php.html?u=469314" title="Darkassassin0 is offline">
+<img alt="Darkassassin0's Avatar" class="avatar_image" src="image.php.html?u=469314&amp;dateline=1332145446" title="Darkassassin0's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						January 2012<br/>
+						216 Posts
+					</div>
+<div class="imlinks">
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow has_after_content">
+<div class="content">
+<div id="post_message_35209619">
+<blockquote class="postcontent restore">
+<div class="quote">
+<div class="information">
+<a href="showthread.php.html?p=35209415#post35209415" rel="nofollow">Daniel Smith posted:</a>
+</div>
+<div class="message">This is the first bug that I've noticed, you are probably already aware of it though.<br/>
+<img alt="" border="0" src="https://web.archive.org/web/20160719005138im_/http://i.imgur.com/Ka3ss.jpg"/></div>
+</div> <b>for the last -snip- time the mirror will NOT work in gmod 12 you MUST have gmod 13 for it to work!</b><br/>
+<br/>
+<br/>
+<div class="quote">
+<div class="information">
+<a href="showthread.php.html?p=1#post1" rel="nofollow">Colton Rappe posted:</a>
+</div>
+<div class="message"><div class="quote">
+<div class="message"><b>Can I test for bugs playing the map in Garry's Mod 12 instead of Gmod 13 Beta?</b></div>
+</div> You can, but there are issues that arise by running the map in Gmod12, such as <b>the mirror in the mirror room being glitched.</b> So we discourage it.</div>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35209619" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35209619" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35209619" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35209619" id="qrwq_35209619" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/safari.png" width="16"/> <img alt="Canada" src="fp/flags/ca.png"/>
+<a href="#" onclick="return OpenEventlog( '469314' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35209619); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35209619">
+<span><img alt="Agree" src="fp/ratings/tick.png"/> Agree x <strong>7</strong></span><span><img alt="Dumb" src="fp/ratings/box.png"/> Dumb x <strong>1</strong></span><span><img alt="Informative" src="fp/ratings/information.png"/> Informative x <strong>1</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35209619');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35209759">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 22:51:28">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35209759&amp;viewfull=1#post35209759" name="post35209759"><img src="fp/link.png"/> Post #35</a><a id="postcount35209759" name="35"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_340743 status_x_is_online_now">
+<div class="username_container">
+<a class="username online" href="member.php.html?u=340743" title="Daniel Smith is online now"><strong><font color="#A06000">Daniel Smith</font></strong></a>
+</div>
+<span class="usertitle">
+<b><font color="purple">Ask me about my progressive rock fetish</font></b>
+</span>
+<div id="userdata">
+<a href="member.php.html?u=340743" title="Daniel Smith is online now">
+<img alt="Daniel Smith's Avatar" class="avatar_image" src="image.php.html?u=340743&amp;dateline=1466617234" title="Daniel Smith's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						September 2010<br/>
+						14,778 Posts
+					</div>
+<div class="imlinks">
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+<img alt="DeviantArt Profile" src="fp/social/new/deviantart.png" title="DeviantArt Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow">
+<div class="content">
+<div id="post_message_35209759">
+<blockquote class="postcontent restore">
+<div class="quote">
+<div class="information">
+<a href="showthread.php.html?p=35209619#post35209619" rel="nofollow">Darkassassin0 posted:</a>
+</div>
+<div class="message"><b>for the last -snip- time the mirror will NOT work in gmod 12 you MUST have gmod 13 for it to work!</b></div>
+</div> Damnit!
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35209759" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35209759" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35209759" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35209759" id="qrwq_35209759" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/chrome.png" width="16"/> <img alt="Canada" src="fp/flags/ca.png"/>
+<a href="#" onclick="return OpenEventlog( '340743' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35209759); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35209759">
+<span><img alt="Funny" src="fp/ratings/funny2.png"/> Funny x <strong>29</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35209759');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35209817">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 22:55:24">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35209817&amp;viewfull=1#post35209817" name="post35209817"><img src="fp/link.png"/> Post #36</a><a id="postcount35209817" name="36"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_121032 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=121032" title="DarthTealc is offline"><strong><font color="#A06000">DarthTealc</font></strong></a>
+</div>
+<span class="usertitle">
+				Gold Member
+			</span>
+<div id="userdata">
+<a href="member.php.html?u=121032" title="DarthTealc is offline">
+<img alt="DarthTealc's Avatar" class="avatar_image" src="image.php.html?u=121032&amp;dateline=1410167543" title="DarthTealc's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						October 2007<br/>
+						648 Posts
+					</div>
+<div class="imlinks">
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow">
+<div class="content">
+<div id="post_message_35209817">
+<blockquote class="postcontent restore">
+							I'll repeat what I said in the other topic - <br/>
+<br/>
+I'd suggest putting a solid wall behind the mirror with a texture which says "Mirror requires Gmod 13". Nobody with Gmod 13 would notice the difference, but Gmod 12 players would see it. <br/>
+<br/>
+This will stop Gmod 12 users reporting it as a bug. An alternative would be just a solid wall with no message - it is better than no wall.
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35209817" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35209817" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35209817" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35209817" id="qrwq_35209817" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/firefox.png" width="16"/> <img alt="Australia" src="fp/flags/au.png"/>
+<a href="#" onclick="return OpenEventlog( '121032' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35209817); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35209817">
+<span><img alt="Agree" src="fp/ratings/tick.png"/>  x <strong>26</strong></span><span><img alt="Disagree" src="fp/ratings/cross.png"/>  x <strong>5</strong></span><span><img alt="Winner" src="fp/ratings/winner.png"/>  x <strong>4</strong></span><span><img alt="Useful" src="fp/ratings/wrench.png"/>  x <strong>2</strong></span><span><img alt="Funny" src="fp/ratings/funny2.png"/>  x <strong>1</strong></span><span><img alt="Informative" src="fp/ratings/information.png"/>  x <strong>1</strong></span><span><img alt="Dumb" src="fp/ratings/box.png"/>  x <strong>1</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35209817');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35209879">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 22:59:41">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35209879&amp;viewfull=1#post35209879" name="post35209879"><img src="fp/link.png"/> Post #37</a><a id="postcount35209879" name="37"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_152306 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=152306" title="Robotboy655 is offline"><span style="color:rgb(0, 112, 255);font-weight:bold;">Robotboy655</span></a>
+</div>
+<span class="usertitle">
+				Don't PM me about moderation - PM any of the mods.
+			</span>
+<div id="userdata">
+<a href="member.php.html?u=152306" title="Robotboy655 is offline">
+<img alt="Robotboy655's Avatar" class="avatar_image" src="image.php.html?u=152306&amp;dateline=1463678839" title="Robotboy655's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						May 2008<br/>
+						13,310 Posts
+					</div>
+<div class="imlinks">
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+<img alt="GitHub Profile" src="fp/social/new/github.png" title="GitHub Profile"/>
+<img alt="YouTube Channel" src="fp/social/new/youtube.png" title="YouTube Channel"/>
+<img alt="Twitch Profile" src="fp/social/new/twitch.png" title="Twitch Profile"/>
+<img alt="Facebook Profile" src="fp/social/new/facebook.png" title="Facebook Profile"/>
+<img alt="Twitter Handle" src="fp/social/new/twitter.png" title="Twitter Handle"/>
+<img alt="Google+ Profile" src="fp/social/new/googleplus.png" title="Google+ Profile"/>
+<img alt="XBox Live Profile" src="fp/social/new/xbl.png" title="XBox Live Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow">
+<div class="content">
+<div id="post_message_35209879">
+<blockquote class="postcontent restore">
+							The floor in the mirror room is reflective too (when lights turned off) which i think shouldn't be.
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35209879" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35209879" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35209879" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35209879" id="qrwq_35209879" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/opera.png" width="16"/> <img alt="Estonia" src="fp/flags/ee.png"/>
+<a href="#" onclick="return OpenEventlog( '152306' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35209879); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35209879">
+<span><img alt="Agree" src="fp/ratings/tick.png"/> Agree x <strong>1</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35209879');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35209896">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 23:00:41">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35209896&amp;viewfull=1#post35209896" name="post35209896"><img src="fp/link.png"/> Post #38</a><a id="postcount35209896" name="38"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_212114 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=212114" title="cprossu is offline"><strong><font color="#A06000">cprossu</font></strong></a>
+</div>
+<span class="usertitle">
+				Gold Member
+			</span>
+<div id="userdata">
+<a href="member.php.html?u=212114" title="cprossu is offline">
+<img alt="cprossu's Avatar" class="avatar_image" src="image.php.html?u=212114&amp;dateline=1329591060" title="cprossu's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						April 2009<br/>
+						226 Posts
+					</div>
+<div class="imlinks">
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+<img alt="Google+ Profile" src="fp/social/new/googleplus.png" title="Google+ Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow">
+<div class="content">
+<div id="post_message_35209896">
+<blockquote class="postcontent restore">
+<div class="quote">
+<div class="message">I'd suggest putting a solid wall behind the mirror with a texture which says "Mirror requires Gmod 13". Nobody with Gmod 13 would notice the difference, but Gmod 12 players would see it.</div>
+</div> except those who noclip through maps to look for such things...<br/>
+I say leave it the hell alone, gmod 12 will be gone soon enough.
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35209896" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35209896" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35209896" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35209896" id="qrwq_35209896" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows XP Professional x64" height="16" src="fp/browser/windows-old.gif" width="16"/> <img height="16" src="fp/browser/firefox.png" width="16"/> <img alt="United States" src="fp/flags/us.png"/>
+<a href="#" onclick="return OpenEventlog( '212114' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35209896); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35209896">
+<span><img alt="Agree" src="fp/ratings/tick.png"/>  x <strong>14</strong></span><span><img alt="Optimistic" src="fp/ratings/rainbow.png"/>  x <strong>3</strong></span><span><img alt="Disagree" src="fp/ratings/cross.png"/>  x <strong>2</strong></span><span><img alt="Dumb" src="fp/ratings/box.png"/>  x <strong>1</strong></span><span><img alt="Funny" src="fp/ratings/funny2.png"/>  x <strong>1</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35209896');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35209947">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 23:05:57">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35209947&amp;viewfull=1#post35209947" name="post35209947"><img src="fp/link.png"/> Post #39</a><a id="postcount35209947" name="39"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_469314 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=469314" title="Darkassassin0 is offline"><span style="color:#147;">Darkassassin0</span></a>
+</div>
+<span class="usertitle">
+</span>
+<div id="userdata">
+<a href="member.php.html?u=469314" title="Darkassassin0 is offline">
+<img alt="Darkassassin0's Avatar" class="avatar_image" src="image.php.html?u=469314&amp;dateline=1332145446" title="Darkassassin0's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						January 2012<br/>
+						216 Posts
+					</div>
+<div class="imlinks">
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow has_after_content">
+<div class="content">
+<div id="post_message_35209947">
+<blockquote class="postcontent restore">
+<div class="quote">
+<div class="information">
+<a href="showthread.php.html?p=35209817#post35209817" rel="nofollow">DarthTealc posted:</a>
+</div>
+<div class="message">I'll repeat what I said in the other topic - <br/>
+<br/>
+I'd suggest putting a solid wall behind the mirror with a texture which says "Mirror requires Gmod 13". Nobody with Gmod 13 would notice the difference, but Gmod 12 players would see it. <br/>
+<br/>
+This will stop Gmod 12 users reporting it as a bug. An alternative would be just a solid wall with no message - it is better than no wall.</div>
+</div> this will not work for 2 reasons:<br/>
+<br/>
+1) there is already a wall there if you noclip out<br/>
+2) its not that its not appearing in gmod 12 (if it wasn't you would see the void) its just not reflecting correctly
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35209947" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35209947" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35209947" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35209947" id="qrwq_35209947" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/safari.png" width="16"/> <img alt="Canada" src="fp/flags/ca.png"/>
+<a href="#" onclick="return OpenEventlog( '469314' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35209947); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35209947">
+<span><img alt="Informative" src="fp/ratings/information.png"/> Informative x <strong>2</strong></span><span><img alt="Agree" src="fp/ratings/tick.png"/> Agree x <strong>1</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35209947');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+<li class="postbitlegacy postbitim postcontainer postbitold" id="post_35209989">
+
+<div class="posthead">
+<div id="time_image">
+<img src="fp/time.png"/>
+</div>
+<span class="postdate old">
+<span class="date" title="19 March 2012 23:09:02">19th March 2012</span>
+</span>
+<span class="nodecontrols">
+<a class="postcounter" href="showthread.php.html?t=1171345&amp;p=35209989&amp;viewfull=1#post35209989" name="post35209989"><img src="fp/link.png"/> Post #40</a><a id="postcount35209989" name="40"></a>
+</span>
+</div>
+<div class="postdetails">
+<div class="userinfo user_228210 status_x_is_offline">
+<div class="username_container">
+<a class="username offline" href="member.php.html?u=228210" title="Spencer Sharkey is offline"><strong><font color="#A06000">Spencer Sharkey</font></strong></a>
+</div>
+<span class="usertitle">
+My Blog
+</span>
+<div id="userdata">
+<a href="member.php.html?u=228210" title="Spencer Sharkey is offline">
+<img alt="Spencer Sharkey's Avatar" class="avatar_image" src="image.php.html?u=228210&amp;dateline=1443495159" title="Spencer Sharkey's Avatar"/>
+</a>
+<hr/>
+<div id="userstats">
+						July 2009<br/>
+						1,996 Posts
+					</div>
+<div class="imlinks">
+<img alt="Steam Profile" src="fp/social/new/steam.png" title="Steam Profile"/>
+<img alt="YouTube Channel" src="fp/social/new/youtube.png" title="YouTube Channel"/>
+<img alt="Facebook Profile" src="fp/social/new/facebook.png" title="Facebook Profile"/>
+<img alt="Twitter Handle" src="fp/social/new/twitter.png" title="Twitter Handle"/>
+</div>
+</div>
+</div>
+<div class="postbody">
+<div class="postrow">
+<div class="content">
+<div id="post_message_35209989">
+<blockquote class="postcontent restore">
+<img alt="" border="0" src="https://web.archive.org/web/20160719005138im_/http://4stor.com/images/SDs1.png"/><br/>
+<br/>
+Continue the red footer texture thing up the wall there?
+						</blockquote>
+</div>
+</div>
+</div>
+<div class="cleardiv"></div>
+</div>
+</div>
+<div class="postfoot">
+
+<span class="postcontrols">
+<img alt="" id="progress_35209989" src="fp/vb/misc/progress.gif" style="display:none"/>
+<img alt="Reply With Quote" id="quoteimg_35209989" src="clear.gif"/>
+<img alt="Edit / Delete" id="editimg_35209989" src="clear.gif"/>
+<a class="newreply post_button" href="newreply.php.html?do=newreply&amp;p=35209989" id="qrwq_35209989" rel="nofollow">Reply</a>
+</span>
+<span class="postlinking">
+<img alt="Windows 7" height="16" src="fp/browser/windows7.png" width="16"/> <img height="16" src="fp/browser/chrome.png" width="16"/> <img alt="United States" src="fp/flags/us.png"/>
+<a href="#" onclick="return OpenEventlog( '228210' );"><img alt="Show Events" src="fp/navbar/events.png"/></a>
+<a href="#" onclick="ReportPost(35209989); return false;"><img src="fp/report.png"/></a>
+</span>
+<span class="rating_results" id="rating_35209989">
+<span><img alt="Agree" src="fp/ratings/tick.png"/> Agree x <strong>73</strong></span><span><img alt="Artistic" src="fp/ratings/palette.png"/> Artistic x <strong>5</strong></span> <a class="rating_users" href="#" onclick="return RatingsList('35209989');">(list)</a>
+</span>
+
+</div>
+<hr/>
+</li>
+</ol>
+<div class="separator"></div>
+<div class="threadfoot">
+<h2>
+<span id="reply_button">
+<a href="newreply.php.html?p=35209989&amp;noquote=1">Reply</a>
+</span>
+<span id="subscribe_button">
+<a href="subscription.php.html?do=addsubscription&amp;t=1171345" rel="nofollow">Subscribe</a>
+</span>
+</h2>
+</div>
+</div>
+<div class="noinlinemod below_postlist" id="below_postlist">
+<div class="pagination_bottom" id="pagination_bottom">
+<div action="showthread.php.html?t=1171345&amp;page=11" class="pagination popupmenu nohovermenu" method="get" style="float: right; clear: both;">
+<input name="t" type="hidden" value="1171345"/>
+<span><a class="popupctrl" href="javascript://">Page 1 of 65</a></span>
+<span class="selected"><a href="javascript://" title="Results 1 to 40 of 2,588">1</a></span><span><a href="showthread.php.html?t=1171345&amp;page=2" title="Show results 41 to 80 of 2,588">2</a></span><span><a href="showthread.php.html?t=1171345&amp;page=3" title="Show results 81 to 120 of 2,588">3</a></span><span><a href="showthread.php.html?t=1171345&amp;page=4" title="Show results 121 to 160 of 2,588">4</a></span><span><a href="showthread.php.html?t=1171345&amp;page=5" title="Show results 161 to 200 of 2,588">5</a></span><span><a href="showthread.php.html?t=1171345&amp;page=6" title="Show results 201 to 240 of 2,588">6</a></span><span><a href="showthread.php.html?t=1171345&amp;page=7" title="Show results 241 to 280 of 2,588">7</a></span><span><a href="showthread.php.html?t=1171345&amp;page=8" title="Show results 281 to 320 of 2,588">8</a></span><span><a href="showthread.php.html?t=1171345&amp;page=9" title="Show results 321 to 360 of 2,588">9</a></span><span><a href="showthread.php.html?t=1171345&amp;page=10" title="Show results 361 to 400 of 2,588">10</a></span><span><a href="showthread.php.html?t=1171345&amp;page=11" title="Show results 401 to 440 of 2,588">11</a></span>
+<span class="prev_next"><a href="showthread.php.html?t=1171345&amp;page=2" rel="next" title="Next Page - Results 41 to 80 of 2,588">&gt;</a></span>
+<span class="first_last"><a href="showthread.php.html?t=1171345&amp;page=65" title="Last Page - Results 2,561 to 2,588 of 2,588">Last <strong>»</strong></a></span>
+</div>
+</div>
+</div>
+<script type="text/javascript">InitShowthread();</script>
+</div>
+<div class="below_body" style="clear: both;">
+<div class="shade footer_time" id="footer_time">All times are GMT. The time now is <span class="time">12:51AM</span>.</div>
+<div class="shade footer_copyright" id="footer_copyright">
+
+
+</div>
+<div class="shade footer_morecopyright" id="footer_morecopyright">
+
+
+</div>
+</div>
+</div>
+<center>
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-4109526466655731";
+/* Facepunch Bottom */
+google_ad_slot = "7520600124";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+
+</center>
+<div class="floatcontainer footer" id="footer">
+<div id="content_pad">
+<div class="footer_links">
+<a href="showgroups.php.html" rel="nofollow">Moderators</a> - <a href="showthread.php.html?t=1171345#top" onclick="document.location.hash='top'; return false;">Top</a>
+</div>
+<div id="fps">Facepunch Studios</div>
+<div id="fps_copyright"><a href="fp_rules.php.html">The Rules</a> 
+| <a href="archive/index.html">The Archive</a></div>
+</div>
+<script type="text/javascript">
+	<!--
+		// Main vBulletin Javascript Initialization
+		vBulletin_init();
+	//-->
+	</script>
+</div>
+
+</body>
+</html>
