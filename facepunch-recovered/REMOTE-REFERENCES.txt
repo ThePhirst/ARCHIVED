@@ -155,6 +155,7 @@ facepunch-recovered/private.php.html: //web.archive.org/web/20150924143737js_/ht
 facepunch-recovered/private.php.html: https://web.archive.org/web/20150924143737js_/https://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/connection/connection-min.js?v=4110
 facepunch-recovered/private.php.html: https://web.archive.org/web/20150924143737js_/https://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/yuiloader-dom-event/yuiloader-dom-event.js?v=4110
 facepunch-recovered/register.php.html: //web.archive.org/web/20160720043758js_/http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js
+facepunch-recovered/register.php.html: https://web.archive.org/web/20160720043758if_/http://www.google.com/recaptcha/api/noscript?k=6LfsseMSAAAAAO3KqMrRAr0lJMZyBI-vlxcc9bpU
 facepunch-recovered/register.php.html: https://web.archive.org/web/20160720043758js_/http://www.google.com/recaptcha/api/challenge?k=6LfsseMSAAAAAO3KqMrRAr0lJMZyBI-vlxcc9bpU
 facepunch-recovered/register.php.html: https://web.archive.org/web/20160720043758js_/https://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/connection/connection-min.js?v=4110
 facepunch-recovered/register.php.html: https://web.archive.org/web/20160720043758js_/https://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/yuiloader-dom-event/yuiloader-dom-event.js?v=4110
@@ -166,6 +167,7 @@ facepunch-recovered/showgroups.php.html: //web.archive.org/web/20160716155605js_
 facepunch-recovered/showgroups.php.html: https://web.archive.org/web/20160716155605js_/https://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/connection/connection-min.js?v=4110
 facepunch-recovered/showgroups.php.html: https://web.archive.org/web/20160716155605js_/https://ajax.googleapis.com/ajax/libs/yui/2.9.0/build/yuiloader-dom-event/yuiloader-dom-event.js?v=4110
 facepunch-recovered/showthread.php.html: //web.archive.org/web/20160719005138js_/http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js
+facepunch-recovered/showthread.php.html: https://web.archive.org/web/20160719005138if_/https://www.youtube.com/embed/RlX2PtIpZxo?hd=1
 facepunch-recovered/showthread.php.html: https://web.archive.org/web/20160719005138im_/http://4stor.com/images/SDs1.png
 facepunch-recovered/showthread.php.html: https://web.archive.org/web/20160719005138im_/http://cloud.steampowered.com/ugc/487752896013719457/C62605356644E7390C9BD393C72BE8758E607FEA/
 facepunch-recovered/showthread.php.html: https://web.archive.org/web/20160719005138im_/http://cloud.steampowered.com/ugc/487752896013720090/8CDB1670C009B817A30544CF59E7FAA277D9F645/

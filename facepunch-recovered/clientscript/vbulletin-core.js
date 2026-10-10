@@ -22,7 +22,7 @@ if(window.console===undefined){window.console={};var names=["log","debug","info"
 
 /*
      FILE ARCHIVED ON 19:15:21 Jul 18, 2016 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 03:13:28 Oct 10, 2026.
+     INTERNET ARCHIVE ON 04:13:38 Oct 10, 2026.
      JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
      ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
@@ -30,13 +30,13 @@ if(window.console===undefined){window.console={};var names=["log","debug","info"
 */
 /*
 playback timings (ms):
-  captures_list: 0.97
-  exclusion.robots: 0.09
-  exclusion.robots.policy: 0.078
-  esindex: 0.011
-  cdx.remote: 16.906
-  LoadShardBlock: 116.293 (6)
-  PetaboxLoader3.datanode: 128.862 (8)
-  load_resource: 641.458 (2)
-  PetaboxLoader3.resolve: 602.036 (2)
+  captures_list: 0.47
+  exclusion.robots: 0.058
+  exclusion.robots.policy: 0.049
+  esindex: 0.007
+  cdx.remote: 6.002
+  LoadShardBlock: 737.147 (6)
+  PetaboxLoader3.datanode: 113.092 (8)
+  load_resource: 221.447 (2)
+  PetaboxLoader3.resolve: 184.767 (2)
 */

@@ -22,7 +22,7 @@ function vB_AJAX_NameVerify(C,A){var B=userAgent.match(/applewebkit\/([0-9]+)/);
 
 /*
      FILE ARCHIVED ON 13:03:41 Jun 08, 2016 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 03:14:30 Oct 10, 2026.
+     INTERNET ARCHIVE ON 04:14:21 Oct 10, 2026.
      JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
      ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
@@ -30,13 +30,13 @@ function vB_AJAX_NameVerify(C,A){var B=userAgent.match(/applewebkit\/([0-9]+)/);
 */
 /*
 playback timings (ms):
-  captures_list: 0.613
-  exclusion.robots: 0.074
-  exclusion.robots.policy: 0.062
-  esindex: 0.01
-  cdx.remote: 28.557
-  LoadShardBlock: 588.994 (3)
-  PetaboxLoader3.datanode: 586.208 (4)
-  load_resource: 256.115
-  PetaboxLoader3.resolve: 212.053
+  captures_list: 0.598
+  exclusion.robots: 0.088
+  exclusion.robots.policy: 0.076
+  esindex: 0.008
+  cdx.remote: 26.832
+  LoadShardBlock: 40.448 (3)
+  PetaboxLoader3.datanode: 63.322 (4)
+  load_resource: 73.752
+  PetaboxLoader3.resolve: 39.469
 */

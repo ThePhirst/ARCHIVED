@@ -228,7 +228,7 @@ let opener = _____WB$wombat$assign$function_____("opener");
 
 /*
      FILE ARCHIVED ON 19:15:21 Jul 18, 2016 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 03:13:29 Oct 10, 2026.
+     INTERNET ARCHIVE ON 04:13:41 Oct 10, 2026.
      JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
      ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
@@ -236,13 +236,13 @@ let opener = _____WB$wombat$assign$function_____("opener");
 */
 /*
 playback timings (ms):
-  captures_list: 0.394
-  exclusion.robots: 0.047
-  exclusion.robots.policy: 0.039
-  esindex: 0.007
-  cdx.remote: 8.81
-  LoadShardBlock: 362.357 (3)
-  PetaboxLoader3.datanode: 401.448 (5)
-  load_resource: 501.183 (2)
-  PetaboxLoader3.resolve: 453.365 (2)
+  captures_list: 0.395
+  exclusion.robots: 0.049
+  exclusion.robots.policy: 0.041
+  esindex: 0.006
+  cdx.remote: 6.653
+  LoadShardBlock: 51.834 (3)
+  PetaboxLoader3.datanode: 1821.156 (5)
+  load_resource: 1989.167 (2)
+  PetaboxLoader3.resolve: 207.157 (2)
 */

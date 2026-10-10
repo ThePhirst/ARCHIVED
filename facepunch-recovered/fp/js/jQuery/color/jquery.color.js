@@ -140,7 +140,7 @@ let opener = _____WB$wombat$assign$function_____("opener");
 
 /*
      FILE ARCHIVED ON 19:15:21 Jul 18, 2016 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 03:13:30 Oct 10, 2026.
+     INTERNET ARCHIVE ON 04:13:41 Oct 10, 2026.
      JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
      ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
@@ -148,13 +148,13 @@ let opener = _____WB$wombat$assign$function_____("opener");
 */
 /*
 playback timings (ms):
-  captures_list: 0.728
-  exclusion.robots: 0.078
-  exclusion.robots.policy: 0.063
-  esindex: 0.009
-  cdx.remote: 80.979
-  LoadShardBlock: 50.566 (3)
-  PetaboxLoader3.datanode: 300.628 (5)
-  load_resource: 357.747 (2)
-  PetaboxLoader3.resolve: 100.028 (2)
+  captures_list: 0.404
+  exclusion.robots: 0.053
+  exclusion.robots.policy: 0.043
+  esindex: 0.006
+  cdx.remote: 8.197
+  LoadShardBlock: 91.33 (3)
+  PetaboxLoader3.resolve: 137.941 (5)
+  PetaboxLoader3.datanode: 81.814 (5)
+  load_resource: 134.475 (2)
 */

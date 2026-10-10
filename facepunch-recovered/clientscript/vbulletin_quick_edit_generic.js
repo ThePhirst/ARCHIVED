@@ -22,7 +22,7 @@ vBulletin.events.systemInit.subscribe(function(){if(AJAX_Compatible){vB_QuickEdi
 
 /*
      FILE ARCHIVED ON 21:21:20 Jun 16, 2016 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 03:15:11 Oct 10, 2026.
+     INTERNET ARCHIVE ON 04:14:53 Oct 10, 2026.
      JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
      ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
@@ -30,13 +30,13 @@ vBulletin.events.systemInit.subscribe(function(){if(AJAX_Compatible){vB_QuickEdi
 */
 /*
 playback timings (ms):
-  captures_list: 0.44
-  exclusion.robots: 0.056
-  exclusion.robots.policy: 0.047
+  captures_list: 0.432
+  exclusion.robots: 0.05
+  exclusion.robots.policy: 0.042
   esindex: 0.007
-  cdx.remote: 6.306
-  LoadShardBlock: 322.568 (3)
-  PetaboxLoader3.datanode: 235.733 (5)
-  load_resource: 498.944 (2)
-  PetaboxLoader3.resolve: 432.792 (2)
+  cdx.remote: 6.065
+  LoadShardBlock: 53.064 (3)
+  PetaboxLoader3.datanode: 81.605 (5)
+  load_resource: 534.31 (2)
+  PetaboxLoader3.resolve: 436.387 (2)
 */

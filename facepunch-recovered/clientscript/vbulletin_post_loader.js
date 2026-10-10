@@ -22,7 +22,7 @@ function display_post(A){if(AJAX_Compatible){vB_PostLoader[A]=new vB_AJAX_PostLo
 
 /*
      FILE ARCHIVED ON 09:38:56 Jul 19, 2016 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 03:13:34 Oct 10, 2026.
+     INTERNET ARCHIVE ON 04:13:46 Oct 10, 2026.
      JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
      ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
@@ -30,13 +30,12 @@ function display_post(A){if(AJAX_Compatible){vB_PostLoader[A]=new vB_AJAX_PostLo
 */
 /*
 playback timings (ms):
-  captures_list: 0.962
-  exclusion.robots: 0.106
-  exclusion.robots.policy: 0.09
-  esindex: 0.016
-  cdx.remote: 572.722
-  LoadShardBlock: 104.488 (3)
-  PetaboxLoader3.datanode: 105.543 (5)
-  load_resource: 233.412 (2)
-  PetaboxLoader3.resolve: 205.512
+  captures_list: 0.369
+  exclusion.robots: 0.046
+  exclusion.robots.policy: 0.04
+  esindex: 0.005
+  cdx.remote: 19.066
+  LoadShardBlock: 108.227 (3)
+  PetaboxLoader3.datanode: 139.17 (5)
+  load_resource: 35.282 (2)
 */
