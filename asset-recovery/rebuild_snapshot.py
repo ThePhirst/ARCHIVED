@@ -29,6 +29,8 @@ def unwrap_wayback(url):
 
 def absolute_asset_url(raw, base=SITE_ROOT):
     raw = raw.strip()
+    if raw.startswith("assets/facepunch/"):
+        return raw
     if not raw or raw.startswith(("data:", "blob:", "javascript:", "mailto:", "#")):
         return raw
     return unwrap_wayback(urljoin(base, raw))
