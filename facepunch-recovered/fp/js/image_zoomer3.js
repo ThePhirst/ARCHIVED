@@ -171,7 +171,7 @@ $( function() {
 
 /*
      FILE ARCHIVED ON 19:15:22 Jul 18, 2016 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 04:13:44 Oct 10, 2026.
+     INTERNET ARCHIVE ON 04:51:27 Oct 10, 2026.
      JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
      ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
@@ -179,13 +179,13 @@ $( function() {
 */
 /*
 playback timings (ms):
-  captures_list: 0.428
-  exclusion.robots: 0.038
-  exclusion.robots.policy: 0.032
-  esindex: 0.007
-  cdx.remote: 4.779
-  LoadShardBlock: 278.418 (6)
-  PetaboxLoader3.resolve: 325.975 (6)
-  PetaboxLoader3.datanode: 157.724 (8)
-  load_resource: 223.117 (2)
+  captures_list: 0.667
+  exclusion.robots: 0.061
+  exclusion.robots.policy: 0.049
+  esindex: 0.008
+  cdx.remote: 20.469
+  LoadShardBlock: 115.197 (6)
+  PetaboxLoader3.datanode: 114.401 (8)
+  PetaboxLoader3.resolve: 105.808 (3)
+  load_resource: 117.476 (2)
 */

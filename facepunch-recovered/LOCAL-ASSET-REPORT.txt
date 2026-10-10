@@ -1,0 +1,18 @@
+Local asset localization report
+Downloaded/localized assets this run: 29
+Unresolved asset URLs: 14
+
+http://i64.tinypic.com/vrbo8o.jpg
+http://i65.tinypic.com/33kpxea.jpg
+http://www.heavymetal.com/v2/wp-content/uploads/2015/10/escape-from-ny-vs-lockout-besson-carpenter.jpg
+https://web.archive.org/web/20140814201319im_/http://mystatus.skype.com/smallicon/richyz10
+https://web.archive.org/web/20160719005138im_/http://4stor.com/images/SDs1.png
+https://web.archive.org/web/20160719005138im_/http://cloud.steampowered.com/ugc/487752896013719457/C62605356644E7390C9BD393C72BE8758E607FEA/
+https://web.archive.org/web/20160719005138im_/http://cloud.steampowered.com/ugc/487752896013720090/8CDB1670C009B817A30544CF59E7FAA277D9F645/
+https://web.archive.org/web/20160719005138im_/http://cloud.steampowered.com/ugc/488879030307032587/47842AD108E27007D861EA84F63C91356628C92B/
+https://web.archive.org/web/20160719005138im_/http://cloud.steampowered.com/ugc/488879030307316717/947B63C8DA1A16B1860C6DCB400C4805398AB91C/
+https://web.archive.org/web/20160719005138im_/http://cloud.steampowered.com/ugc/505767596138293187/0C38F6A2C909BC4DBD2551B12C7BA7B534C37AD8/
+https://web.archive.org/web/20160719005138im_/http://dl.dropbox.com/u/21048340/gm_construct_130000.jpg
+https://web.archive.org/web/20160719005138im_/http://dl.dropbox.com/u/21048340/gm_construct_130001.jpg
+https://web.archive.org/web/20160719005138im_/http://img94.imageshack.us/img94/2630/gmconstruct130000.jpg
+https://web.archive.org/web/20170109164734im_/http://mystatus.skype.com/smallicon/xephyr.craft

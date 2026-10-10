@@ -12,7 +12,7 @@ var hexcase=0;var b64pad="";var chrsz=8;function hex_md5(A){return binl2hex(core
 
 /*
      FILE ARCHIVED ON 19:15:22 Jul 18, 2016 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 04:13:47 Oct 10, 2026.
+     INTERNET ARCHIVE ON 04:51:30 Oct 10, 2026.
      JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
      ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
@@ -20,13 +20,13 @@ var hexcase=0;var b64pad="";var chrsz=8;function hex_md5(A){return binl2hex(core
 */
 /*
 playback timings (ms):
-  captures_list: 0.652
-  exclusion.robots: 0.07
-  exclusion.robots.policy: 0.059
+  captures_list: 0.53
+  exclusion.robots: 0.052
+  exclusion.robots.policy: 0.044
   esindex: 0.007
-  cdx.remote: 7.012
-  LoadShardBlock: 117.129 (6)
-  PetaboxLoader3.datanode: 188.832 (8)
-  load_resource: 122.964 (2)
-  PetaboxLoader3.resolve: 46.497
+  cdx.remote: 19.543
+  LoadShardBlock: 1004.898 (6)
+  PetaboxLoader3.datanode: 1011.493 (8)
+  load_resource: 202.251 (2)
+  PetaboxLoader3.resolve: 170.09 (2)
 */

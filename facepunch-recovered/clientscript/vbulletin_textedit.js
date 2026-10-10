@@ -22,7 +22,7 @@ function vB_Text_Editor(C,B){this.autosave_text="";this.autosave_title="";this.i
 
 /*
      FILE ARCHIVED ON 09:38:56 Jul 19, 2016 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 04:13:46 Oct 10, 2026.
+     INTERNET ARCHIVE ON 04:51:28 Oct 10, 2026.
      JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
      ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
@@ -30,12 +30,13 @@ function vB_Text_Editor(C,B){this.autosave_text="";this.autosave_title="";this.i
 */
 /*
 playback timings (ms):
-  captures_list: 0.397
-  exclusion.robots: 0.04
-  exclusion.robots.policy: 0.034
-  esindex: 0.005
-  cdx.remote: 8.065
-  LoadShardBlock: 159.151 (6)
-  PetaboxLoader3.datanode: 181.465 (8)
-  load_resource: 34.868 (2)
+  captures_list: 0.436
+  exclusion.robots: 0.044
+  exclusion.robots.policy: 0.037
+  esindex: 0.006
+  cdx.remote: 14.632
+  LoadShardBlock: 414.176 (6)
+  PetaboxLoader3.datanode: 430.233 (8)
+  load_resource: 132.321 (2)
+  PetaboxLoader3.resolve: 86.433 (2)
 */

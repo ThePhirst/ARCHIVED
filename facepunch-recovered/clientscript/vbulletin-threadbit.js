@@ -22,7 +22,7 @@ vB_XHTML_Ready.subscribe(init_ThreadBits);function init_ThreadBits(){var B=YAHOO
 
 /*
      FILE ARCHIVED ON 05:59:51 Jul 12, 2016 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 04:14:20 Oct 10, 2026.
+     INTERNET ARCHIVE ON 04:52:10 Oct 10, 2026.
      JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
      ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
@@ -30,13 +30,13 @@ vB_XHTML_Ready.subscribe(init_ThreadBits);function init_ThreadBits(){var B=YAHOO
 */
 /*
 playback timings (ms):
-  captures_list: 0.503
-  exclusion.robots: 0.058
-  exclusion.robots.policy: 0.048
-  esindex: 0.007
-  cdx.remote: 17.064
-  LoadShardBlock: 96.029 (3)
-  PetaboxLoader3.datanode: 108.95 (5)
-  load_resource: 567.127 (2)
-  PetaboxLoader3.resolve: 516.275 (2)
+  captures_list: 0.583
+  exclusion.robots: 0.085
+  exclusion.robots.policy: 0.072
+  esindex: 0.008
+  cdx.remote: 12.664
+  LoadShardBlock: 172.16 (3)
+  PetaboxLoader3.datanode: 192.31 (5)
+  load_resource: 613.557 (2)
+  PetaboxLoader3.resolve: 557.16 (2)
 */

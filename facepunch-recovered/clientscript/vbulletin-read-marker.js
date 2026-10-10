@@ -22,7 +22,7 @@ var vB_ReadMarker={forum_statusicon_prefix:"forum_statusicon_",thread_statusicon
 
 /*
      FILE ARCHIVED ON 17:27:57 Jul 29, 2016 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 04:14:20 Oct 10, 2026.
+     INTERNET ARCHIVE ON 04:52:11 Oct 10, 2026.
      JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
      ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
@@ -30,13 +30,13 @@ var vB_ReadMarker={forum_statusicon_prefix:"forum_statusicon_",thread_statusicon
 */
 /*
 playback timings (ms):
-  captures_list: 0.367
-  exclusion.robots: 0.045
-  exclusion.robots.policy: 0.038
+  captures_list: 0.464
+  exclusion.robots: 0.057
+  exclusion.robots.policy: 0.048
   esindex: 0.007
-  cdx.remote: 7.361
-  LoadShardBlock: 158.891 (3)
-  PetaboxLoader3.datanode: 217.373 (5)
-  load_resource: 273.361 (2)
-  PetaboxLoader3.resolve: 171.188 (2)
+  cdx.remote: 4.057
+  LoadShardBlock: 118.274 (3)
+  PetaboxLoader3.datanode: 174.66 (5)
+  load_resource: 209.605 (2)
+  PetaboxLoader3.resolve: 93.188 (2)
 */

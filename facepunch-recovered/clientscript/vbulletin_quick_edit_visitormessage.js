@@ -12,7 +12,7 @@ function vB_QuickEditor_VisitorMessage_Vars(A){this.init()}vB_QuickEditor_Visito
 
 /*
      FILE ARCHIVED ON 22:30:44 Jun 16, 2016 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 04:14:54 Oct 10, 2026.
+     INTERNET ARCHIVE ON 04:53:00 Oct 10, 2026.
      JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
      ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
@@ -20,13 +20,13 @@ function vB_QuickEditor_VisitorMessage_Vars(A){this.init()}vB_QuickEditor_Visito
 */
 /*
 playback timings (ms):
-  captures_list: 0.504
-  exclusion.robots: 0.078
-  exclusion.robots.policy: 0.068
+  captures_list: 0.453
+  exclusion.robots: 0.064
+  exclusion.robots.policy: 0.056
   esindex: 0.008
-  cdx.remote: 11.701
-  LoadShardBlock: 443.982 (3)
-  PetaboxLoader3.datanode: 462.865 (5)
-  load_resource: 121.444 (2)
-  PetaboxLoader3.resolve: 71.581 (2)
+  cdx.remote: 4.895
+  LoadShardBlock: 2859.96 (3)
+  PetaboxLoader3.datanode: 2870.207 (5)
+  load_resource: 481.096 (2)
+  PetaboxLoader3.resolve: 444.902 (2)
 */

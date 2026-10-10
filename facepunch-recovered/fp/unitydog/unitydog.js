@@ -113,7 +113,7 @@ jQuery( function ()
 
 /*
      FILE ARCHIVED ON 18:35:20 Jul 12, 2016 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 04:15:00 Oct 10, 2026.
+     INTERNET ARCHIVE ON 04:53:06 Oct 10, 2026.
      JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
      ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
@@ -121,13 +121,13 @@ jQuery( function ()
 */
 /*
 playback timings (ms):
-  captures_list: 0.395
-  exclusion.robots: 0.037
-  exclusion.robots.policy: 0.03
-  esindex: 0.008
-  cdx.remote: 5.914
-  LoadShardBlock: 54.976 (3)
-  PetaboxLoader3.datanode: 51.98 (4)
-  load_resource: 53.877
-  PetaboxLoader3.resolve: 49.482
+  captures_list: 0.386
+  exclusion.robots: 0.064
+  exclusion.robots.policy: 0.056
+  esindex: 0.006
+  cdx.remote: 13.846
+  LoadShardBlock: 83.434 (3)
+  PetaboxLoader3.datanode: 58.144 (4)
+  load_resource: 54.702
+  PetaboxLoader3.resolve: 50.338
 */
