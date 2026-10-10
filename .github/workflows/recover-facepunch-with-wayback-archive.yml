@@ -35,7 +35,7 @@ jobs:
           OPTIMIZE_IMAGES: "false"
           MINIFY_JS: "false"
           MINIFY_CSS: "false"
-          MAX_FILES: "500"
+          MAX_FILES: "1500"
         run: wayback-archive
 
       - name: Audit remaining remote references
