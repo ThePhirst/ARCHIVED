@@ -3174,5 +3174,46 @@ google_ad_height = 90;
 	</script>
 </div>
 
+
+<script type="text/javascript">
+/* Disable legacy forum interactions while preserving custom thread media/downloads. */
+(function () {
+    function isCustomThreadContent(target) {
+        if (!target || !target.closest) return false;
+
+        /* Keep native playback controls for the custom videos embedded in posts. */
+        if (target.closest("video")) return true;
+
+        /* Keep custom downloadable files added to the thread comments. */
+        var downloadLink = target.closest("blockquote.postcontent.restore a[download]");
+        if (downloadLink) return true;
+
+        return false;
+    }
+
+    document.addEventListener("click", function DisableLegacyForumClicks(event) {
+        if (isCustomThreadContent(event.target)) return;
+
+        event.preventDefault();
+        event.stopPropagation();
+        if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+    }, true);
+
+    document.addEventListener("auxclick", function (event) {
+        if (isCustomThreadContent(event.target)) return;
+
+        event.preventDefault();
+        event.stopPropagation();
+        if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+    }, true);
+
+    document.addEventListener("submit", function (event) {
+        event.preventDefault();
+        event.stopPropagation();
+        if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+    }, true);
+})();
+</script>
+
 </body>
 </html>
