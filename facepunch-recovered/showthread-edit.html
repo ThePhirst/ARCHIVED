@@ -68,7 +68,7 @@ THIS IS A TEST PLEASE WORK:
 <script src="clientscript/vbulletin_md5.js?v=4110" type="text/javascript"></script>
 <form action="login.php.html?do=login" id="navbar_loginform" method="post" onsubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)">
 <fieldset class="logindetails" id="logindetails">
-<input accesskey="u" class="textbox" id="navbar_username" name="vb_login_username" size="10" style="font-size: 11px" tabindex="101" type="text" value="User Name"/>
+<input accesskey="u" class="textbox" id="navbar_username" name="vb_login_username" size="10" style="font-size: 11px" tabindex="101" type="text" value="User name"/>
 <input class="textbox default-value" id="navbar_password_hint" name="vb_login_password_hint" size="10" style="display:none;" tabindex="102" type="text" value="Password"/>
 <input class="textbox" id="navbar_password" name="vb_login_password" size="10" tabindex="102" type="password"/>
 <input accesskey="s" class="loginbutton" tabindex="104" title="Enter your username and password in the boxes provided to login, or click the 'register' button to create a profile for yourself." type="submit" value="Log in"/>
@@ -97,7 +97,7 @@ THIS IS A TEST PLEASE WORK:
 			{
 			//
 				var textbox = YAHOO.util.Event.getTarget(e);
-				if (textbox.value == 'User Name')
+				if (textbox.value == 'User name')
 				{
 				//
 					textbox.value='';
@@ -112,7 +112,7 @@ THIS IS A TEST PLEASE WORK:
 				if (textbox.value == '')
 				{
 				//
-					textbox.value='User Name';
+					textbox.value='User name';
 					textbox.style.color='#828282';
 				}
 			}
