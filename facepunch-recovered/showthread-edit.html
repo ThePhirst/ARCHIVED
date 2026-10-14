@@ -3207,6 +3207,15 @@ google_ad_height = 90;
         if (event.stopImmediatePropagation) event.stopImmediatePropagation();
     }, true);
 
+    /* Prevent the browser menu that offers "Open link in new tab" on legacy forum links. */
+    document.addEventListener("contextmenu", function (event) {
+        if (isCustomThreadContent(event.target)) return;
+
+        event.preventDefault();
+        event.stopPropagation();
+        if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+    }, true);
+
     document.addEventListener("submit", function (event) {
         event.preventDefault();
         event.stopPropagation();
